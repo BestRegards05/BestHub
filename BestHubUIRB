@@ -1,0 +1,4470 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local BestUI = {
+	BestUI = Instance.new("ScreenGui"),
+	BestFrame = Instance.new("Frame"),
+	TitleBar = Instance.new("Frame"),
+	Title = Instance.new("TextLabel"),
+	UICorner = Instance.new("UICorner"),
+	UICorner_2 = Instance.new("UICorner"),
+	BtnFrame = Instance.new("Frame"),
+	Button = Instance.new("TextButton"),
+	TextLabel = Instance.new("TextLabel"),
+	UICorner_3 = Instance.new("UICorner"),
+	UICorner_4 = Instance.new("UICorner"),
+	Button_2 = Instance.new("TextButton"),
+	TextLabel_2 = Instance.new("TextLabel"),
+	UICorner_5 = Instance.new("UICorner"),
+	UICorner_6 = Instance.new("UICorner"),
+	Button_3 = Instance.new("TextButton"),
+	TextLabel_3 = Instance.new("TextLabel"),
+	UICorner_7 = Instance.new("UICorner"),
+	UICorner_8 = Instance.new("UICorner"),
+	Button_4 = Instance.new("TextButton"),
+	TextLabel_4 = Instance.new("TextLabel"),
+	UICorner_9 = Instance.new("UICorner"),
+	UICorner_10 = Instance.new("UICorner"),
+	Button_5 = Instance.new("TextButton"),
+	TextLabel_5 = Instance.new("TextLabel"),
+	UICorner_11 = Instance.new("UICorner"),
+	UICorner_12 = Instance.new("UICorner"),
+	Button_6 = Instance.new("TextButton"),
+	TextLabel_6 = Instance.new("TextLabel"),
+	UICorner_13 = Instance.new("UICorner"),
+	UICorner_14 = Instance.new("UICorner"),
+	ScriptsUIFrame = Instance.new("Frame"),
+	ScriptsUITitle = Instance.new("Frame"),
+	Title_2 = Instance.new("TextLabel"),
+	BestIcon = Instance.new("ImageButton"),
+	UICorner_15 = Instance.new("UICorner"),
+	ScrollingFrame = Instance.new("ScrollingFrame"),
+	Button_7 = Instance.new("TextButton"),
+	TextLabel_7 = Instance.new("TextLabel"),
+	UICorner_16 = Instance.new("UICorner"),
+	Button_8 = Instance.new("TextButton"),
+	TextLabel_8 = Instance.new("TextLabel"),
+	UICorner_17 = Instance.new("UICorner"),
+	Button_9 = Instance.new("TextButton"),
+	TextLabel_9 = Instance.new("TextLabel"),
+	UICorner_18 = Instance.new("UICorner"),
+	Button_10 = Instance.new("TextButton"),
+	TextLabel_10 = Instance.new("TextLabel"),
+	UICorner_19 = Instance.new("UICorner"),
+	Button_11 = Instance.new("TextButton"),
+	TextLabel_11 = Instance.new("TextLabel"),
+	UICorner_20 = Instance.new("UICorner"),
+	Button_12 = Instance.new("TextButton"),
+	TextLabel_12 = Instance.new("TextLabel"),
+	UICorner_21 = Instance.new("UICorner"),
+	Button_13 = Instance.new("TextButton"),
+	TextLabel_13 = Instance.new("TextLabel"),
+	UICorner_22 = Instance.new("UICorner"),
+	Button_14 = Instance.new("TextButton"),
+	TextLabel_14 = Instance.new("TextLabel"),
+	UICorner_23 = Instance.new("UICorner"),
+	Button_15 = Instance.new("TextButton"),
+	TextLabel_15 = Instance.new("TextLabel"),
+	UICorner_24 = Instance.new("UICorner"),
+	Button_16 = Instance.new("TextButton"),
+	TextLabel_16 = Instance.new("TextLabel"),
+	TextLabel_17 = Instance.new("TextLabel"),
+	UICorner_25 = Instance.new("UICorner"),
+	Button_17 = Instance.new("TextButton"),
+	TextLabel_18 = Instance.new("TextLabel"),
+	UICorner_26 = Instance.new("UICorner"),
+	Button_18 = Instance.new("TextButton"),
+	TextLabel_19 = Instance.new("TextLabel"),
+	UICorner_27 = Instance.new("UICorner"),
+	Button_19 = Instance.new("TextButton"),
+	TextLabel_20 = Instance.new("TextLabel"),
+	UICorner_28 = Instance.new("UICorner"),
+	Button_20 = Instance.new("TextButton"),
+	TextLabel_21 = Instance.new("TextLabel"),
+	UICorner_29 = Instance.new("UICorner"),
+	Button_21 = Instance.new("TextButton"),
+	TextLabel_22 = Instance.new("TextLabel"),
+	UICorner_30 = Instance.new("UICorner"),
+	Button_22 = Instance.new("TextButton"),
+	TextLabel_23 = Instance.new("TextLabel"),
+	UICorner_31 = Instance.new("UICorner"),
+	Button_23 = Instance.new("TextButton"),
+	TextLabel_24 = Instance.new("TextLabel"),
+	UICorner_32 = Instance.new("UICorner"),
+	Button_24 = Instance.new("TextButton"),
+	TextLabel_25 = Instance.new("TextLabel"),
+	UICorner_33 = Instance.new("UICorner"),
+	Button_25 = Instance.new("TextButton"),
+	TextLabel_26 = Instance.new("TextLabel"),
+	TextLabel_27 = Instance.new("TextLabel"),
+	UICorner_34 = Instance.new("UICorner"),
+	Button_26 = Instance.new("TextButton"),
+	TextLabel_28 = Instance.new("TextLabel"),
+	TextLabel_29 = Instance.new("TextLabel"),
+	UICorner_35 = Instance.new("UICorner"),
+	Button_27 = Instance.new("TextButton"),
+	TextLabel_30 = Instance.new("TextLabel"),
+	TextLabel_31 = Instance.new("TextLabel"),
+	UICorner_36 = Instance.new("UICorner"),
+	Button_28 = Instance.new("TextButton"),
+	TextLabel_32 = Instance.new("TextLabel"),
+	TextLabel_33 = Instance.new("TextLabel"),
+	UICorner_37 = Instance.new("UICorner"),
+	Button_29 = Instance.new("TextButton"),
+	TextLabel_34 = Instance.new("TextLabel"),
+	UICorner_38 = Instance.new("UICorner"),
+	UICorner_39 = Instance.new("UICorner"),
+	UICorner_40 = Instance.new("UICorner"),
+	UICorner_41 = Instance.new("UICorner"),
+	FunUIFrame = Instance.new("Frame"),
+	FunUITitle = Instance.new("Frame"),
+	Title_3 = Instance.new("TextLabel"),
+	UICorner_42 = Instance.new("UICorner"),
+	UICorner_43 = Instance.new("UICorner"),
+	TextButton = Instance.new("TextButton"),
+	UICorner_44 = Instance.new("UICorner"),
+	TextButton_2 = Instance.new("TextButton"),
+	UICorner_45 = Instance.new("UICorner"),
+	TextButton_3 = Instance.new("TextButton"),
+	UICorner_46 = Instance.new("UICorner"),
+	TextButton_4 = Instance.new("TextButton"),
+	UICorner_47 = Instance.new("UICorner"),
+	TextButton_5 = Instance.new("TextButton"),
+	UICorner_48 = Instance.new("UICorner"),
+	UICorner_49 = Instance.new("UICorner"),
+	GamesUIFrame = Instance.new("Frame"),
+	GamesUITitle = Instance.new("Frame"),
+	Title_4 = Instance.new("TextLabel"),
+	UICorner_50 = Instance.new("UICorner"),
+	UICorner_51 = Instance.new("UICorner"),
+	Button_30 = Instance.new("TextButton"),
+	TextLabel_35 = Instance.new("TextLabel"),
+	UICorner_52 = Instance.new("UICorner"),
+	UICorner_53 = Instance.new("UICorner"),
+	UICorner_54 = Instance.new("UICorner"),
+	UniversalBABUIFrame = Instance.new("Frame"),
+	Button_31 = Instance.new("TextButton"),
+	TextLabel_36 = Instance.new("TextLabel"),
+	UICorner_55 = Instance.new("UICorner"),
+	JumpBox = Instance.new("TextBox"),
+	UICorner_56 = Instance.new("UICorner"),
+	SpeedBox = Instance.new("TextBox"),
+	UICorner_57 = Instance.new("UICorner"),
+	Button_32 = Instance.new("TextButton"),
+	TextLabel_37 = Instance.new("TextLabel"),
+	UICorner_58 = Instance.new("UICorner"),
+	UniversalBABUITitle = Instance.new("Frame"),
+	Title_5 = Instance.new("TextLabel"),
+	UICorner_59 = Instance.new("UICorner"),
+	UICorner_60 = Instance.new("UICorner"),
+	Button_33 = Instance.new("TextButton"),
+	TextLabel_38 = Instance.new("TextLabel"),
+	UICorner_61 = Instance.new("UICorner"),
+	UICorner_62 = Instance.new("UICorner"),
+	UniversalARSUIFrame = Instance.new("Frame"),
+	Button_34 = Instance.new("TextButton"),
+	TextLabel_39 = Instance.new("TextLabel"),
+	UICorner_63 = Instance.new("UICorner"),
+	JumpBox_2 = Instance.new("TextBox"),
+	UICorner_64 = Instance.new("UICorner"),
+	SpeedBox_2 = Instance.new("TextBox"),
+	UICorner_65 = Instance.new("UICorner"),
+	Button_35 = Instance.new("TextButton"),
+	TextLabel_40 = Instance.new("TextLabel"),
+	UICorner_66 = Instance.new("UICorner"),
+	UniversalARSUITitle = Instance.new("Frame"),
+	Title_6 = Instance.new("TextLabel"),
+	UICorner_67 = Instance.new("UICorner"),
+	UICorner_68 = Instance.new("UICorner"),
+	Button_36 = Instance.new("TextButton"),
+	TextLabel_41 = Instance.new("TextLabel"),
+	UICorner_69 = Instance.new("UICorner"),
+	UICorner_70 = Instance.new("UICorner"),
+	CreditsUIFrame = Instance.new("Frame"),
+	CreditsUITitle = Instance.new("Frame"),
+	Title_7 = Instance.new("TextLabel"),
+	UICorner_71 = Instance.new("UICorner"),
+	Title_8 = Instance.new("TextLabel"),
+	UICorner_72 = Instance.new("UICorner"),
+	Title_9 = Instance.new("TextLabel"),
+	UICorner_73 = Instance.new("UICorner"),
+	Title_10 = Instance.new("TextLabel"),
+	UICorner_74 = Instance.new("UICorner"),
+	Title_11 = Instance.new("TextLabel"),
+	UICorner_75 = Instance.new("UICorner"),
+	Title_12 = Instance.new("TextLabel"),
+	UICorner_76 = Instance.new("UICorner"),
+	Title_13 = Instance.new("TextLabel"),
+	UICorner_77 = Instance.new("UICorner"),
+	Title_14 = Instance.new("TextLabel"),
+	UICorner_78 = Instance.new("UICorner"),
+	Title_15 = Instance.new("TextLabel"),
+	UICorner_79 = Instance.new("UICorner"),
+	Title_16 = Instance.new("TextLabel"),
+	UICorner_80 = Instance.new("UICorner"),
+	Title_17 = Instance.new("TextLabel"),
+	UICorner_81 = Instance.new("UICorner"),
+	Title_18 = Instance.new("TextLabel"),
+	UICorner_82 = Instance.new("UICorner"),
+	Title_19 = Instance.new("TextLabel"),
+	UICorner_83 = Instance.new("UICorner"),
+	Title_20 = Instance.new("TextLabel"),
+	UICorner_84 = Instance.new("UICorner"),
+	Title_21 = Instance.new("TextLabel"),
+	UICorner_85 = Instance.new("UICorner"),
+	Title_22 = Instance.new("TextLabel"),
+	Title_23 = Instance.new("TextLabel"),
+	UICorner_86 = Instance.new("UICorner"),
+	Title_24 = Instance.new("TextLabel"),
+	UICorner_87 = Instance.new("UICorner"),
+	Title_25 = Instance.new("TextLabel"),
+	UICorner_88 = Instance.new("UICorner"),
+	UICorner_89 = Instance.new("UICorner"),
+	UICorner_90 = Instance.new("UICorner"),
+	UniversalMM2UIFrame = Instance.new("Frame"),
+	UniversalMM2UITitle = Instance.new("Frame"),
+	Title_26 = Instance.new("TextLabel"),
+	UICorner_91 = Instance.new("UICorner"),
+	Button_37 = Instance.new("TextButton"),
+	TextLabel_42 = Instance.new("TextLabel"),
+	UICorner_92 = Instance.new("UICorner"),
+	UICorner_93 = Instance.new("UICorner"),
+	UniversalISGUIFrame = Instance.new("Frame"),
+	UniversalISGUITitle = Instance.new("Frame"),
+	Title_27 = Instance.new("TextLabel"),
+	UICorner_94 = Instance.new("UICorner"),
+	UICorner_95 = Instance.new("UICorner"),
+	Button_38 = Instance.new("TextButton"),
+	TextLabel_43 = Instance.new("TextLabel"),
+	UICorner_96 = Instance.new("UICorner"),
+	UICorner_97 = Instance.new("UICorner"),
+	UniversalUIFrame = Instance.new("Frame"),
+	Button1 = Instance.new("TextButton"),
+	TextLabel_44 = Instance.new("TextLabel"),
+	UICorner_98 = Instance.new("UICorner"),
+	Button2 = Instance.new("TextButton"),
+	TextLabel_45 = Instance.new("TextLabel"),
+	UICorner_99 = Instance.new("UICorner"),
+	JumpBox_3 = Instance.new("TextBox"),
+	UICorner_100 = Instance.new("UICorner"),
+	SpeedBox_3 = Instance.new("TextBox"),
+	UICorner_101 = Instance.new("UICorner"),
+	Button3 = Instance.new("TextButton"),
+	TextLabel_46 = Instance.new("TextLabel"),
+	UICorner_102 = Instance.new("UICorner"),
+	UniversalPlayerUITitle = Instance.new("Frame"),
+	Title_28 = Instance.new("TextLabel"),
+	UICorner_103 = Instance.new("UICorner"),
+	Button1_2 = Instance.new("TextButton"),
+	TextLabel_47 = Instance.new("TextLabel"),
+	UICorner_104 = Instance.new("UICorner"),
+	UICorner_105 = Instance.new("UICorner"),
+	ExecutorUIFrame = Instance.new("Frame"),
+	Button1_3 = Instance.new("TextButton"),
+	TextLabel_48 = Instance.new("TextLabel"),
+	UICorner_106 = Instance.new("UICorner"),
+	ExecuteBox = Instance.new("TextBox"),
+	UICorner_107 = Instance.new("UICorner"),
+	UniversalPlayerUITitle_2 = Instance.new("Frame"),
+	Title_29 = Instance.new("TextLabel"),
+	UICorner_108 = Instance.new("UICorner"),
+	Button1_4 = Instance.new("TextButton"),
+	TextLabel_49 = Instance.new("TextLabel"),
+	UICorner_109 = Instance.new("UICorner"),
+	UICorner_110 = Instance.new("UICorner"),
+	HomeUIFrame = Instance.new("Frame"),
+	HomeUITitle = Instance.new("Frame"),
+	Title_30 = Instance.new("TextLabel"),
+	UICorner_111 = Instance.new("UICorner"),
+	UICorner_112 = Instance.new("UICorner"),
+	DescriptionPlayerText = Instance.new("TextLabel"),
+	UICorner_113 = Instance.new("UICorner"),
+	PlayerImage = Instance.new("ImageLabel"),
+	UICorner_114 = Instance.new("UICorner"),
+	UICorner_115 = Instance.new("UICorner"),
+	Open = Instance.new("TextButton"),
+	TextLabel_50 = Instance.new("TextLabel"),
+	UICorner_116 = Instance.new("UICorner"),
+}
+
+--Properties:
+
+BestUI.BestUI.Name = "BestUI"
+BestUI.BestUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BestUI.BestUI.ResetOnSpawn = false
+
+BestUI.BestFrame.Name = "BestFrame"
+BestUI.BestFrame.Parent = BestUI.BestUI
+BestUI.BestFrame.AnchorPoint = Vector2.new(1, 0)
+BestUI.BestFrame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+BestUI.BestFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.BestFrame.BorderSizePixel = 0
+BestUI.BestFrame.Position = UDim2.new(0, 586, 0, 93)
+BestUI.BestFrame.Size = UDim2.new(0, 492, 0, 267)
+
+BestUI.TitleBar.Name = "TitleBar"
+BestUI.TitleBar.Parent = BestUI.BestFrame
+BestUI.TitleBar.AnchorPoint = Vector2.new(1, 0)
+BestUI.TitleBar.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+BestUI.TitleBar.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TitleBar.BorderSizePixel = 0
+BestUI.TitleBar.Position = UDim2.new(0, 492, 0, -10)
+BestUI.TitleBar.Size = UDim2.new(0, 492, 0, 31)
+
+BestUI.Title.Name = "Title"
+BestUI.Title.Parent = BestUI.TitleBar
+BestUI.Title.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title.BackgroundTransparency = 1.000
+BestUI.Title.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title.BorderSizePixel = 0
+BestUI.Title.Position = UDim2.new(0, 246, 0, 15)
+BestUI.Title.Size = UDim2.new(0, 172, 0, 28)
+BestUI.Title.ZIndex = 2
+BestUI.Title.Font = Enum.Font.GothamSemibold
+BestUI.Title.Text = "BestUI v10"
+BestUI.Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title.TextScaled = true
+BestUI.Title.TextSize = 14.000
+BestUI.Title.TextWrapped = true
+
+BestUI.UICorner.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner.Parent = BestUI.Title
+
+BestUI.UICorner_2.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_2.Parent = BestUI.TitleBar
+
+BestUI.BtnFrame.Name = "BtnFrame"
+BestUI.BtnFrame.Parent = BestUI.BestFrame
+BestUI.BtnFrame.AnchorPoint = Vector2.new(1, 0)
+BestUI.BtnFrame.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+BestUI.BtnFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.BtnFrame.BorderSizePixel = 0
+BestUI.BtnFrame.Position = UDim2.new(0, 493, 0, 30)
+BestUI.BtnFrame.Size = UDim2.new(0, 493, 0, 29)
+
+BestUI.Button.Name = "Button"
+BestUI.Button.Parent = BestUI.BtnFrame
+BestUI.Button.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button.BorderSizePixel = 0
+BestUI.Button.Position = UDim2.new(0, 181, 0, 0)
+BestUI.Button.Size = UDim2.new(0, 88, 0, 29)
+BestUI.Button.ZIndex = 2
+BestUI.Button.Font = Enum.Font.GothamSemibold
+BestUI.Button.Text = "Universal"
+BestUI.Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button.TextScaled = true
+BestUI.Button.TextSize = 14.000
+BestUI.Button.TextWrapped = true
+
+BestUI.TextLabel.Parent = BestUI.Button
+BestUI.TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel.BackgroundTransparency = 1.000
+BestUI.TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel.BorderSizePixel = 0
+BestUI.TextLabel.Position = UDim2.new(0, 33, 0, 13)
+BestUI.TextLabel.Size = UDim2.new(0, 68, 0, 13)
+BestUI.TextLabel.ZIndex = 2
+BestUI.TextLabel.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel.Text = ""
+BestUI.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel.TextScaled = true
+BestUI.TextLabel.TextSize = 14.000
+BestUI.TextLabel.TextWrapped = true
+
+BestUI.UICorner_3.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_3.Parent = BestUI.TextLabel
+
+BestUI.UICorner_4.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_4.Parent = BestUI.Button
+
+BestUI.Button_2.Name = "Button"
+BestUI.Button_2.Parent = BestUI.BtnFrame
+BestUI.Button_2.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_2.BorderSizePixel = 0
+BestUI.Button_2.Position = UDim2.new(0, 286, 0, 0)
+BestUI.Button_2.Size = UDim2.new(0, 105, 0, 29)
+BestUI.Button_2.ZIndex = 2
+BestUI.Button_2.Font = Enum.Font.GothamSemibold
+BestUI.Button_2.Text = "Scripts"
+BestUI.Button_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_2.TextScaled = true
+BestUI.Button_2.TextSize = 14.000
+BestUI.Button_2.TextWrapped = true
+
+BestUI.TextLabel_2.Parent = BestUI.Button_2
+BestUI.TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_2.BackgroundTransparency = 1.000
+BestUI.TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_2.BorderSizePixel = 0
+BestUI.TextLabel_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_2.Size = UDim2.new(1.3225807, -20, 1.125, -20)
+BestUI.TextLabel_2.ZIndex = 2
+BestUI.TextLabel_2.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_2.Text = ""
+BestUI.TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_2.TextScaled = true
+BestUI.TextLabel_2.TextSize = 14.000
+BestUI.TextLabel_2.TextWrapped = true
+
+BestUI.UICorner_5.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_5.Parent = BestUI.TextLabel_2
+
+BestUI.UICorner_6.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_6.Parent = BestUI.Button_2
+
+BestUI.Button_3.Name = "Button"
+BestUI.Button_3.Parent = BestUI.BtnFrame
+BestUI.Button_3.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_3.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_3.BorderSizePixel = 0
+BestUI.Button_3.Position = UDim2.new(0, 390, 0, 0)
+BestUI.Button_3.Size = UDim2.new(0, 104, 0, 29)
+BestUI.Button_3.ZIndex = 2
+BestUI.Button_3.Font = Enum.Font.GothamSemibold
+BestUI.Button_3.Text = "Troll"
+BestUI.Button_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_3.TextScaled = true
+BestUI.Button_3.TextSize = 14.000
+BestUI.Button_3.TextWrapped = true
+
+BestUI.TextLabel_3.Parent = BestUI.Button_3
+BestUI.TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_3.BackgroundTransparency = 1.000
+BestUI.TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_3.BorderSizePixel = 0
+BestUI.TextLabel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_3.Size = UDim2.new(1.3225807, -20, 1.125, -20)
+BestUI.TextLabel_3.ZIndex = 2
+BestUI.TextLabel_3.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_3.Text = ""
+BestUI.TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_3.TextScaled = true
+BestUI.TextLabel_3.TextSize = 14.000
+BestUI.TextLabel_3.TextWrapped = true
+
+BestUI.UICorner_7.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_7.Parent = BestUI.TextLabel_3
+
+BestUI.UICorner_8.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_8.Parent = BestUI.Button_3
+
+BestUI.Button_4.Name = "Button"
+BestUI.Button_4.Parent = BestUI.BtnFrame
+BestUI.Button_4.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_4.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_4.BorderSizePixel = 0
+BestUI.Button_4.Position = UDim2.new(0, 491, 0, -37)
+BestUI.Button_4.Size = UDim2.new(0, 57, 0, 27)
+BestUI.Button_4.ZIndex = 2
+BestUI.Button_4.Font = Enum.Font.GothamSemibold
+BestUI.Button_4.Text = "Credits"
+BestUI.Button_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_4.TextScaled = true
+BestUI.Button_4.TextSize = 14.000
+BestUI.Button_4.TextWrapped = true
+
+BestUI.TextLabel_4.Parent = BestUI.Button_4
+BestUI.TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_4.BackgroundTransparency = 1.000
+BestUI.TextLabel_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_4.BorderSizePixel = 0
+BestUI.TextLabel_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_4.Size = UDim2.new(1.3225807, -20, 1.125, -20)
+BestUI.TextLabel_4.ZIndex = 2
+BestUI.TextLabel_4.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_4.Text = ""
+BestUI.TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_4.TextScaled = true
+BestUI.TextLabel_4.TextSize = 14.000
+BestUI.TextLabel_4.TextWrapped = true
+
+BestUI.UICorner_9.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_9.Parent = BestUI.TextLabel_4
+
+BestUI.UICorner_10.CornerRadius = UDim.new(0.5, 0)
+BestUI.UICorner_10.Parent = BestUI.Button_4
+
+BestUI.Button_5.Name = "Button"
+BestUI.Button_5.Parent = BestUI.BtnFrame
+BestUI.Button_5.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_5.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_5.BorderSizePixel = 0
+BestUI.Button_5.Position = UDim2.new(0, 491, 0, 0)
+BestUI.Button_5.Size = UDim2.new(0, 101, 0, 29)
+BestUI.Button_5.ZIndex = 2
+BestUI.Button_5.Font = Enum.Font.GothamSemibold
+BestUI.Button_5.Text = "Executor"
+BestUI.Button_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_5.TextScaled = true
+BestUI.Button_5.TextSize = 14.000
+BestUI.Button_5.TextWrapped = true
+
+BestUI.TextLabel_5.Parent = BestUI.Button_5
+BestUI.TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_5.BackgroundTransparency = 1.000
+BestUI.TextLabel_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_5.BorderSizePixel = 0
+BestUI.TextLabel_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_5.Size = UDim2.new(1.3225807, -20, 1.125, -20)
+BestUI.TextLabel_5.ZIndex = 2
+BestUI.TextLabel_5.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_5.Text = ""
+BestUI.TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_5.TextScaled = true
+BestUI.TextLabel_5.TextSize = 14.000
+BestUI.TextLabel_5.TextWrapped = true
+
+BestUI.UICorner_11.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_11.Parent = BestUI.TextLabel_5
+
+BestUI.UICorner_12.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_12.Parent = BestUI.Button_5
+
+BestUI.Button_6.Name = "Button"
+BestUI.Button_6.Parent = BestUI.BtnFrame
+BestUI.Button_6.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_6.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_6.BorderSizePixel = 0
+BestUI.Button_6.Position = UDim2.new(0, 93, 0, 0)
+BestUI.Button_6.Size = UDim2.new(0, 93, 0, 29)
+BestUI.Button_6.ZIndex = 2
+BestUI.Button_6.Font = Enum.Font.GothamSemibold
+BestUI.Button_6.Text = "Home"
+BestUI.Button_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_6.TextScaled = true
+BestUI.Button_6.TextSize = 14.000
+BestUI.Button_6.TextWrapped = true
+
+BestUI.TextLabel_6.Parent = BestUI.Button_6
+BestUI.TextLabel_6.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_6.BackgroundTransparency = 1.000
+BestUI.TextLabel_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_6.BorderSizePixel = 0
+BestUI.TextLabel_6.Position = UDim2.new(0, 33, 0, 13)
+BestUI.TextLabel_6.Size = UDim2.new(0, 68, 0, 13)
+BestUI.TextLabel_6.ZIndex = 2
+BestUI.TextLabel_6.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_6.Text = ""
+BestUI.TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_6.TextScaled = true
+BestUI.TextLabel_6.TextSize = 14.000
+BestUI.TextLabel_6.TextWrapped = true
+
+BestUI.UICorner_13.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_13.Parent = BestUI.TextLabel_6
+
+BestUI.UICorner_14.CornerRadius = UDim.new(0.5, 0)
+BestUI.UICorner_14.Parent = BestUI.BtnFrame
+
+BestUI.ScriptsUIFrame.Name = "ScriptsUIFrame"
+BestUI.ScriptsUIFrame.Parent = BestUI.BestFrame
+BestUI.ScriptsUIFrame.AnchorPoint = Vector2.new(1, 0)
+BestUI.ScriptsUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+BestUI.ScriptsUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.ScriptsUIFrame.BorderSizePixel = 0
+BestUI.ScriptsUIFrame.Position = UDim2.new(0, 469, 0, 66)
+BestUI.ScriptsUIFrame.Size = UDim2.new(0, 452, 0, 187)
+BestUI.ScriptsUIFrame.Visible = false
+
+BestUI.ScriptsUITitle.Name = "ScriptsUITitle"
+BestUI.ScriptsUITitle.Parent = BestUI.ScriptsUIFrame
+BestUI.ScriptsUITitle.AnchorPoint = Vector2.new(1, 0)
+BestUI.ScriptsUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+BestUI.ScriptsUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.ScriptsUITitle.BorderSizePixel = 0
+BestUI.ScriptsUITitle.Position = UDim2.new(0, 452, 0, 0)
+BestUI.ScriptsUITitle.Size = UDim2.new(0, 452, 0, 31)
+
+BestUI.Title_2.Name = "Title"
+BestUI.Title_2.Parent = BestUI.ScriptsUITitle
+BestUI.Title_2.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_2.BackgroundTransparency = 1.000
+BestUI.Title_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_2.BorderSizePixel = 0
+BestUI.Title_2.Position = UDim2.new(0.531504035, 0, 0.483870953, 0)
+BestUI.Title_2.Size = UDim2.new(0.42479676, -20, 1.93548381, -20)
+BestUI.Title_2.ZIndex = 2
+BestUI.Title_2.Font = Enum.Font.GothamSemibold
+BestUI.Title_2.Text = "Scripts U"
+BestUI.Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_2.TextScaled = true
+BestUI.Title_2.TextSize = 14.000
+BestUI.Title_2.TextWrapped = true
+
+BestUI.BestIcon.Name = "BestIcon"
+BestUI.BestIcon.Parent = BestUI.ScriptsUITitle
+BestUI.BestIcon.AnchorPoint = Vector2.new(1, 0)
+BestUI.BestIcon.BackgroundTransparency = 1.000
+BestUI.BestIcon.Position = UDim2.new(0.768656194, 0, 0, 0)
+BestUI.BestIcon.Size = UDim2.new(0, 20, 0, 30)
+BestUI.BestIcon.ZIndex = 2
+BestUI.BestIcon.Image = "rbxassetid://3926307971"
+BestUI.BestIcon.ImageRectOffset = Vector2.new(324, 204)
+BestUI.BestIcon.ImageRectSize = Vector2.new(36, 36)
+
+BestUI.UICorner_15.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_15.Parent = BestUI.ScriptsUITitle
+
+BestUI.ScrollingFrame.Parent = BestUI.ScriptsUIFrame
+BestUI.ScrollingFrame.Active = true
+BestUI.ScrollingFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BestUI.ScrollingFrame.Position = UDim2.new(0, 3, 0, 35)
+BestUI.ScrollingFrame.Size = UDim2.new(0, 452, 0, 137)
+
+BestUI.Button_7.Name = "Button"
+BestUI.Button_7.Parent = BestUI.ScrollingFrame
+BestUI.Button_7.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_7.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_7.BorderSizePixel = 0
+BestUI.Button_7.Position = UDim2.new(0, 79, 0, 8)
+BestUI.Button_7.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_7.ZIndex = 2
+BestUI.Button_7.Font = Enum.Font.GothamSemibold
+BestUI.Button_7.Text = ""
+BestUI.Button_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_7.TextScaled = true
+BestUI.Button_7.TextSize = 14.000
+BestUI.Button_7.TextWrapped = true
+
+BestUI.TextLabel_7.Parent = BestUI.Button_7
+BestUI.TextLabel_7.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_7.BackgroundTransparency = 1.000
+BestUI.TextLabel_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_7.BorderSizePixel = 0
+BestUI.TextLabel_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_7.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_7.ZIndex = 2
+BestUI.TextLabel_7.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_7.Text = "Infinite Yeild"
+BestUI.TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_7.TextScaled = true
+BestUI.TextLabel_7.TextSize = 14.000
+BestUI.TextLabel_7.TextWrapped = true
+
+BestUI.UICorner_16.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_16.Parent = BestUI.Button_7
+
+BestUI.Button_8.Name = "Button"
+BestUI.Button_8.Parent = BestUI.ScrollingFrame
+BestUI.Button_8.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_8.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_8.BorderSizePixel = 0
+BestUI.Button_8.Position = UDim2.new(0, 439, 0, 8)
+BestUI.Button_8.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_8.ZIndex = 2
+BestUI.Button_8.Font = Enum.Font.GothamSemibold
+BestUI.Button_8.Text = ""
+BestUI.Button_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_8.TextScaled = true
+BestUI.Button_8.TextSize = 14.000
+BestUI.Button_8.TextWrapped = true
+
+BestUI.TextLabel_8.Parent = BestUI.Button_8
+BestUI.TextLabel_8.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_8.BackgroundTransparency = 1.000
+BestUI.TextLabel_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_8.BorderSizePixel = 0
+BestUI.TextLabel_8.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_8.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_8.ZIndex = 2
+BestUI.TextLabel_8.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_8.Text = "JailBreak UI"
+BestUI.TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_8.TextScaled = true
+BestUI.TextLabel_8.TextSize = 14.000
+BestUI.TextLabel_8.TextWrapped = true
+
+BestUI.UICorner_17.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_17.Parent = BestUI.Button_8
+
+BestUI.Button_9.Name = "Button"
+BestUI.Button_9.Parent = BestUI.ScrollingFrame
+BestUI.Button_9.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_9.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_9.BorderSizePixel = 0
+BestUI.Button_9.Position = UDim2.new(0, 368, 0, 48)
+BestUI.Button_9.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_9.ZIndex = 2
+BestUI.Button_9.Font = Enum.Font.GothamSemibold
+BestUI.Button_9.Text = ""
+BestUI.Button_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_9.TextScaled = true
+BestUI.Button_9.TextSize = 14.000
+BestUI.Button_9.TextWrapped = true
+
+BestUI.TextLabel_9.Parent = BestUI.Button_9
+BestUI.TextLabel_9.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_9.BackgroundTransparency = 1.000
+BestUI.TextLabel_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_9.BorderSizePixel = 0
+BestUI.TextLabel_9.Position = UDim2.new(0, 31, 0, 14)
+BestUI.TextLabel_9.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_9.ZIndex = 2
+BestUI.TextLabel_9.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_9.Text = "Synapse X UI"
+BestUI.TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_9.TextScaled = true
+BestUI.TextLabel_9.TextSize = 14.000
+BestUI.TextLabel_9.TextWrapped = true
+
+BestUI.UICorner_18.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_18.Parent = BestUI.Button_9
+
+BestUI.Button_10.Name = "Button"
+BestUI.Button_10.Parent = BestUI.ScrollingFrame
+BestUI.Button_10.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_10.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_10.BorderSizePixel = 0
+BestUI.Button_10.Position = UDim2.new(0, 223, 0, 8)
+BestUI.Button_10.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_10.ZIndex = 2
+BestUI.Button_10.Font = Enum.Font.GothamSemibold
+BestUI.Button_10.Text = ""
+BestUI.Button_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_10.TextScaled = true
+BestUI.Button_10.TextSize = 14.000
+BestUI.Button_10.TextWrapped = true
+
+BestUI.TextLabel_10.Parent = BestUI.Button_10
+BestUI.TextLabel_10.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_10.BackgroundTransparency = 1.000
+BestUI.TextLabel_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_10.BorderSizePixel = 0
+BestUI.TextLabel_10.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_10.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_10.ZIndex = 2
+BestUI.TextLabel_10.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_10.Text = "Prison Life UI"
+BestUI.TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_10.TextScaled = true
+BestUI.TextLabel_10.TextSize = 14.000
+BestUI.TextLabel_10.TextWrapped = true
+
+BestUI.UICorner_19.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_19.Parent = BestUI.Button_10
+
+BestUI.Button_11.Name = "Button"
+BestUI.Button_11.Parent = BestUI.ScrollingFrame
+BestUI.Button_11.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_11.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_11.BorderSizePixel = 0
+BestUI.Button_11.Position = UDim2.new(0, 223, 0, 48)
+BestUI.Button_11.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_11.ZIndex = 2
+BestUI.Button_11.Font = Enum.Font.GothamSemibold
+BestUI.Button_11.Text = ""
+BestUI.Button_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_11.TextScaled = true
+BestUI.Button_11.TextSize = 14.000
+BestUI.Button_11.TextWrapped = true
+
+BestUI.TextLabel_11.Parent = BestUI.Button_11
+BestUI.TextLabel_11.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_11.BackgroundTransparency = 1.000
+BestUI.TextLabel_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_11.BorderSizePixel = 0
+BestUI.TextLabel_11.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_11.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_11.ZIndex = 2
+BestUI.TextLabel_11.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_11.Text = "Admin UI"
+BestUI.TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_11.TextScaled = true
+BestUI.TextLabel_11.TextSize = 14.000
+BestUI.TextLabel_11.TextWrapped = true
+
+BestUI.UICorner_20.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_20.Parent = BestUI.Button_11
+
+BestUI.Button_12.Name = "Button"
+BestUI.Button_12.Parent = BestUI.ScrollingFrame
+BestUI.Button_12.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_12.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_12.BorderSizePixel = 0
+BestUI.Button_12.Position = UDim2.new(0, 294, 0, 48)
+BestUI.Button_12.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_12.ZIndex = 2
+BestUI.Button_12.Font = Enum.Font.GothamSemibold
+BestUI.Button_12.Text = ""
+BestUI.Button_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_12.TextScaled = true
+BestUI.Button_12.TextSize = 14.000
+BestUI.Button_12.TextWrapped = true
+
+BestUI.TextLabel_12.Parent = BestUI.Button_12
+BestUI.TextLabel_12.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_12.BackgroundTransparency = 1.000
+BestUI.TextLabel_12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_12.BorderSizePixel = 0
+BestUI.TextLabel_12.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_12.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_12.ZIndex = 2
+BestUI.TextLabel_12.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_12.Text = "Admin UI 2"
+BestUI.TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_12.TextScaled = true
+BestUI.TextLabel_12.TextSize = 14.000
+BestUI.TextLabel_12.TextWrapped = true
+
+BestUI.UICorner_21.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_21.Parent = BestUI.Button_12
+
+BestUI.Button_13.Name = "Button"
+BestUI.Button_13.Parent = BestUI.ScrollingFrame
+BestUI.Button_13.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_13.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_13.BorderSizePixel = 0
+BestUI.Button_13.Position = UDim2.new(0, 439, 0, 48)
+BestUI.Button_13.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_13.ZIndex = 2
+BestUI.Button_13.Font = Enum.Font.GothamSemibold
+BestUI.Button_13.Text = ""
+BestUI.Button_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_13.TextScaled = true
+BestUI.Button_13.TextSize = 14.000
+BestUI.Button_13.TextWrapped = true
+
+BestUI.TextLabel_13.Parent = BestUI.Button_13
+BestUI.TextLabel_13.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_13.BackgroundTransparency = 1.000
+BestUI.TextLabel_13.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_13.BorderSizePixel = 0
+BestUI.TextLabel_13.Position = UDim2.new(0, 31, 0, 14)
+BestUI.TextLabel_13.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_13.ZIndex = 2
+BestUI.TextLabel_13.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_13.Text = "Chat Bypasser"
+BestUI.TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_13.TextScaled = true
+BestUI.TextLabel_13.TextSize = 14.000
+BestUI.TextLabel_13.TextWrapped = true
+
+BestUI.UICorner_22.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_22.Parent = BestUI.Button_13
+
+BestUI.Button_14.Name = "Button"
+BestUI.Button_14.Parent = BestUI.ScrollingFrame
+BestUI.Button_14.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_14.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_14.BorderSizePixel = 0
+BestUI.Button_14.Position = UDim2.new(0, 154, 0, 8)
+BestUI.Button_14.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_14.ZIndex = 2
+BestUI.Button_14.Font = Enum.Font.GothamSemibold
+BestUI.Button_14.Text = ""
+BestUI.Button_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_14.TextScaled = true
+BestUI.Button_14.TextSize = 14.000
+BestUI.Button_14.TextWrapped = true
+
+BestUI.TextLabel_14.Parent = BestUI.Button_14
+BestUI.TextLabel_14.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_14.BackgroundTransparency = 1.000
+BestUI.TextLabel_14.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_14.BorderSizePixel = 0
+BestUI.TextLabel_14.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_14.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_14.ZIndex = 2
+BestUI.TextLabel_14.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_14.Text = "Opifinality"
+BestUI.TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_14.TextScaled = true
+BestUI.TextLabel_14.TextSize = 14.000
+BestUI.TextLabel_14.TextWrapped = true
+
+BestUI.UICorner_23.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_23.Parent = BestUI.Button_14
+
+BestUI.Button_15.Name = "Button"
+BestUI.Button_15.Parent = BestUI.ScrollingFrame
+BestUI.Button_15.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_15.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_15.BorderSizePixel = 0
+BestUI.Button_15.Position = UDim2.new(0, 154, 0, 48)
+BestUI.Button_15.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_15.ZIndex = 2
+BestUI.Button_15.Font = Enum.Font.GothamSemibold
+BestUI.Button_15.Text = ""
+BestUI.Button_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_15.TextScaled = true
+BestUI.Button_15.TextSize = 14.000
+BestUI.Button_15.TextWrapped = true
+
+BestUI.TextLabel_15.Parent = BestUI.Button_15
+BestUI.TextLabel_15.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_15.BackgroundTransparency = 1.000
+BestUI.TextLabel_15.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_15.BorderSizePixel = 0
+BestUI.TextLabel_15.Position = UDim2.new(0, 32, 0, 14)
+BestUI.TextLabel_15.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_15.ZIndex = 2
+BestUI.TextLabel_15.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_15.Text = "V3rm Tabs"
+BestUI.TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_15.TextScaled = true
+BestUI.TextLabel_15.TextSize = 14.000
+BestUI.TextLabel_15.TextWrapped = true
+
+BestUI.UICorner_24.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_24.Parent = BestUI.Button_15
+
+BestUI.Button_16.Name = "Button"
+BestUI.Button_16.Parent = BestUI.ScrollingFrame
+BestUI.Button_16.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_16.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_16.BorderSizePixel = 0
+BestUI.Button_16.Position = UDim2.new(0, 79, 0, 90)
+BestUI.Button_16.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_16.ZIndex = 2
+BestUI.Button_16.Font = Enum.Font.GothamSemibold
+BestUI.Button_16.Text = ""
+BestUI.Button_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_16.TextScaled = true
+BestUI.Button_16.TextSize = 14.000
+BestUI.Button_16.TextWrapped = true
+
+BestUI.TextLabel_16.Parent = BestUI.Button_16
+BestUI.TextLabel_16.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_16.BackgroundTransparency = 1.000
+BestUI.TextLabel_16.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_16.BorderSizePixel = 0
+BestUI.TextLabel_16.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_16.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_16.ZIndex = 2
+BestUI.TextLabel_16.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_16.Text = "Cobra Kai UI"
+BestUI.TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_16.TextScaled = true
+BestUI.TextLabel_16.TextSize = 14.000
+BestUI.TextLabel_16.TextWrapped = true
+
+BestUI.TextLabel_17.Parent = BestUI.Button_16
+BestUI.TextLabel_17.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_17.BackgroundTransparency = 1.000
+BestUI.TextLabel_17.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_17.BorderSizePixel = 0
+BestUI.TextLabel_17.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_17.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_17.ZIndex = 2
+BestUI.TextLabel_17.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_17.Text = "Cobra Kai UI"
+BestUI.TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_17.TextScaled = true
+BestUI.TextLabel_17.TextSize = 14.000
+BestUI.TextLabel_17.TextWrapped = true
+
+BestUI.UICorner_25.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_25.Parent = BestUI.Button_16
+
+BestUI.Button_17.Name = "Button"
+BestUI.Button_17.Parent = BestUI.ScrollingFrame
+BestUI.Button_17.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_17.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_17.BorderSizePixel = 0
+BestUI.Button_17.Position = UDim2.new(0, 367, 0, 8)
+BestUI.Button_17.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_17.ZIndex = 2
+BestUI.Button_17.Font = Enum.Font.GothamSemibold
+BestUI.Button_17.Text = ""
+BestUI.Button_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_17.TextScaled = true
+BestUI.Button_17.TextSize = 14.000
+BestUI.Button_17.TextWrapped = true
+
+BestUI.TextLabel_18.Parent = BestUI.Button_17
+BestUI.TextLabel_18.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_18.BackgroundTransparency = 1.000
+BestUI.TextLabel_18.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_18.BorderSizePixel = 0
+BestUI.TextLabel_18.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_18.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_18.ZIndex = 2
+BestUI.TextLabel_18.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_18.Text = "Revis Admin"
+BestUI.TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_18.TextScaled = true
+BestUI.TextLabel_18.TextSize = 14.000
+BestUI.TextLabel_18.TextWrapped = true
+
+BestUI.UICorner_26.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_26.Parent = BestUI.Button_17
+
+BestUI.Button_18.Name = "Button"
+BestUI.Button_18.Parent = BestUI.ScrollingFrame
+BestUI.Button_18.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_18.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_18.BorderSizePixel = 0
+BestUI.Button_18.Position = UDim2.new(0, 79, 0, 48)
+BestUI.Button_18.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_18.ZIndex = 2
+BestUI.Button_18.Font = Enum.Font.GothamSemibold
+BestUI.Button_18.Text = ""
+BestUI.Button_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_18.TextScaled = true
+BestUI.Button_18.TextSize = 14.000
+BestUI.Button_18.TextWrapped = true
+
+BestUI.TextLabel_19.Parent = BestUI.Button_18
+BestUI.TextLabel_19.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_19.BackgroundTransparency = 1.000
+BestUI.TextLabel_19.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_19.BorderSizePixel = 0
+BestUI.TextLabel_19.Position = UDim2.new(0, 31, 0, 15)
+BestUI.TextLabel_19.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_19.ZIndex = 2
+BestUI.TextLabel_19.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_19.Text = "Animation UI"
+BestUI.TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_19.TextScaled = true
+BestUI.TextLabel_19.TextSize = 14.000
+BestUI.TextLabel_19.TextWrapped = true
+
+BestUI.UICorner_27.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_27.Parent = BestUI.Button_18
+
+BestUI.Button_19.Name = "Button"
+BestUI.Button_19.Parent = BestUI.ScrollingFrame
+BestUI.Button_19.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_19.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_19.BorderSizePixel = 0
+BestUI.Button_19.Position = UDim2.new(0, 154, 0, 90)
+BestUI.Button_19.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_19.ZIndex = 2
+BestUI.Button_19.Font = Enum.Font.GothamSemibold
+BestUI.Button_19.Text = ""
+BestUI.Button_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_19.TextScaled = true
+BestUI.Button_19.TextSize = 14.000
+BestUI.Button_19.TextWrapped = true
+
+BestUI.TextLabel_20.Parent = BestUI.Button_19
+BestUI.TextLabel_20.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_20.BackgroundTransparency = 1.000
+BestUI.TextLabel_20.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_20.BorderSizePixel = 0
+BestUI.TextLabel_20.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_20.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_20.ZIndex = 2
+BestUI.TextLabel_20.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_20.Text = "Case Clicker UI"
+BestUI.TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_20.TextScaled = true
+BestUI.TextLabel_20.TextSize = 14.000
+BestUI.TextLabel_20.TextWrapped = true
+
+BestUI.UICorner_28.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_28.Parent = BestUI.Button_19
+
+BestUI.Button_20.Name = "Button"
+BestUI.Button_20.Parent = BestUI.ScrollingFrame
+BestUI.Button_20.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_20.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_20.BorderSizePixel = 0
+BestUI.Button_20.Position = UDim2.new(0, 294, 0, 8)
+BestUI.Button_20.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_20.ZIndex = 2
+BestUI.Button_20.Font = Enum.Font.GothamSemibold
+BestUI.Button_20.Text = ""
+BestUI.Button_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_20.TextScaled = true
+BestUI.Button_20.TextSize = 14.000
+BestUI.Button_20.TextWrapped = true
+
+BestUI.TextLabel_21.Parent = BestUI.Button_20
+BestUI.TextLabel_21.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_21.BackgroundTransparency = 1.000
+BestUI.TextLabel_21.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_21.BorderSizePixel = 0
+BestUI.TextLabel_21.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_21.Size = UDim2.new(1.32299995, -20, 1.69000006, -20)
+BestUI.TextLabel_21.ZIndex = 2
+BestUI.TextLabel_21.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_21.Text = "Rose Hub"
+BestUI.TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_21.TextScaled = true
+BestUI.TextLabel_21.TextSize = 14.000
+BestUI.TextLabel_21.TextWrapped = true
+
+BestUI.UICorner_29.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_29.Parent = BestUI.Button_20
+
+BestUI.Button_21.Name = "Button"
+BestUI.Button_21.Parent = BestUI.ScrollingFrame
+BestUI.Button_21.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_21.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_21.BorderSizePixel = 0
+BestUI.Button_21.Position = UDim2.new(0, 223, 0, 90)
+BestUI.Button_21.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_21.ZIndex = 2
+BestUI.Button_21.Font = Enum.Font.GothamSemibold
+BestUI.Button_21.Text = ""
+BestUI.Button_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_21.TextScaled = true
+BestUI.Button_21.TextSize = 14.000
+BestUI.Button_21.TextWrapped = true
+
+BestUI.TextLabel_22.Parent = BestUI.Button_21
+BestUI.TextLabel_22.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_22.BackgroundTransparency = 1.000
+BestUI.TextLabel_22.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_22.BorderSizePixel = 0
+BestUI.TextLabel_22.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+BestUI.TextLabel_22.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+BestUI.TextLabel_22.ZIndex = 2
+BestUI.TextLabel_22.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_22.Text = "Dark Dex"
+BestUI.TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_22.TextScaled = true
+BestUI.TextLabel_22.TextSize = 14.000
+BestUI.TextLabel_22.TextWrapped = true
+
+BestUI.UICorner_30.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_30.Parent = BestUI.Button_21
+
+BestUI.Button_22.Name = "Button"
+BestUI.Button_22.Parent = BestUI.ScrollingFrame
+BestUI.Button_22.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_22.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_22.BorderSizePixel = 0
+BestUI.Button_22.Position = UDim2.new(0, 295, 0, 90)
+BestUI.Button_22.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_22.ZIndex = 2
+BestUI.Button_22.Font = Enum.Font.GothamSemibold
+BestUI.Button_22.Text = ""
+BestUI.Button_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_22.TextScaled = true
+BestUI.Button_22.TextSize = 14.000
+BestUI.Button_22.TextWrapped = true
+
+BestUI.TextLabel_23.Parent = BestUI.Button_22
+BestUI.TextLabel_23.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_23.BackgroundTransparency = 1.000
+BestUI.TextLabel_23.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_23.BorderSizePixel = 0
+BestUI.TextLabel_23.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+BestUI.TextLabel_23.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+BestUI.TextLabel_23.ZIndex = 2
+BestUI.TextLabel_23.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_23.Text = "Xester (FE)"
+BestUI.TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_23.TextScaled = true
+BestUI.TextLabel_23.TextSize = 14.000
+BestUI.TextLabel_23.TextWrapped = true
+
+BestUI.UICorner_31.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_31.Parent = BestUI.Button_22
+
+BestUI.Button_23.Name = "Button"
+BestUI.Button_23.Parent = BestUI.ScrollingFrame
+BestUI.Button_23.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_23.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_23.BorderSizePixel = 0
+BestUI.Button_23.Position = UDim2.new(0, 366, 0, 89)
+BestUI.Button_23.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_23.ZIndex = 2
+BestUI.Button_23.Font = Enum.Font.GothamSemibold
+BestUI.Button_23.Text = ""
+BestUI.Button_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_23.TextScaled = true
+BestUI.Button_23.TextSize = 14.000
+BestUI.Button_23.TextWrapped = true
+
+BestUI.TextLabel_24.Parent = BestUI.Button_23
+BestUI.TextLabel_24.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_24.BackgroundTransparency = 1.000
+BestUI.TextLabel_24.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_24.BorderSizePixel = 0
+BestUI.TextLabel_24.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+BestUI.TextLabel_24.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+BestUI.TextLabel_24.ZIndex = 2
+BestUI.TextLabel_24.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_24.Text = "Sonic (FE)"
+BestUI.TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_24.TextScaled = true
+BestUI.TextLabel_24.TextSize = 14.000
+BestUI.TextLabel_24.TextWrapped = true
+
+BestUI.UICorner_32.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_32.Parent = BestUI.Button_23
+
+BestUI.Button_24.Name = "Button"
+BestUI.Button_24.Parent = BestUI.ScrollingFrame
+BestUI.Button_24.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_24.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_24.BorderSizePixel = 0
+BestUI.Button_24.Position = UDim2.new(0, 439, 0, 90)
+BestUI.Button_24.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_24.ZIndex = 2
+BestUI.Button_24.Font = Enum.Font.GothamSemibold
+BestUI.Button_24.Text = ""
+BestUI.Button_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_24.TextScaled = true
+BestUI.Button_24.TextSize = 14.000
+BestUI.Button_24.TextWrapped = true
+
+BestUI.TextLabel_25.Parent = BestUI.Button_24
+BestUI.TextLabel_25.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_25.BackgroundTransparency = 1.000
+BestUI.TextLabel_25.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_25.BorderSizePixel = 0
+BestUI.TextLabel_25.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+BestUI.TextLabel_25.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+BestUI.TextLabel_25.ZIndex = 2
+BestUI.TextLabel_25.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_25.Text = "Cadcus (FE)"
+BestUI.TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_25.TextScaled = true
+BestUI.TextLabel_25.TextSize = 14.000
+BestUI.TextLabel_25.TextWrapped = true
+
+BestUI.UICorner_33.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_33.Parent = BestUI.Button_24
+
+BestUI.Button_25.Name = "Button"
+BestUI.Button_25.Parent = BestUI.ScrollingFrame
+BestUI.Button_25.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_25.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_25.BorderSizePixel = 0
+BestUI.Button_25.Position = UDim2.new(0, 79, 0, 127)
+BestUI.Button_25.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_25.ZIndex = 2
+BestUI.Button_25.Font = Enum.Font.GothamSemibold
+BestUI.Button_25.Text = ""
+BestUI.Button_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_25.TextScaled = true
+BestUI.Button_25.TextSize = 14.000
+BestUI.Button_25.TextWrapped = true
+
+BestUI.TextLabel_26.Parent = BestUI.Button_25
+BestUI.TextLabel_26.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_26.BackgroundTransparency = 1.000
+BestUI.TextLabel_26.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_26.BorderSizePixel = 0
+BestUI.TextLabel_26.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+BestUI.TextLabel_26.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+BestUI.TextLabel_26.ZIndex = 2
+BestUI.TextLabel_26.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_26.Text = "Neko (FE)"
+BestUI.TextLabel_26.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_26.TextScaled = true
+BestUI.TextLabel_26.TextSize = 14.000
+BestUI.TextLabel_26.TextWrapped = true
+
+BestUI.TextLabel_27.Parent = BestUI.Button_25
+BestUI.TextLabel_27.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_27.BackgroundTransparency = 1.000
+BestUI.TextLabel_27.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_27.BorderSizePixel = 0
+BestUI.TextLabel_27.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+BestUI.TextLabel_27.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+BestUI.TextLabel_27.ZIndex = 2
+BestUI.TextLabel_27.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_27.Text = "Neko (FE)"
+BestUI.TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_27.TextScaled = true
+BestUI.TextLabel_27.TextSize = 14.000
+BestUI.TextLabel_27.TextWrapped = true
+
+BestUI.UICorner_34.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_34.Parent = BestUI.Button_25
+
+BestUI.Button_26.Name = "Button"
+BestUI.Button_26.Parent = BestUI.ScrollingFrame
+BestUI.Button_26.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_26.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_26.BorderSizePixel = 0
+BestUI.Button_26.Position = UDim2.new(0, 155, 0, 127)
+BestUI.Button_26.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_26.ZIndex = 2
+BestUI.Button_26.Font = Enum.Font.GothamSemibold
+BestUI.Button_26.Text = ""
+BestUI.Button_26.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_26.TextScaled = true
+BestUI.Button_26.TextSize = 14.000
+BestUI.Button_26.TextWrapped = true
+
+BestUI.TextLabel_28.Parent = BestUI.Button_26
+BestUI.TextLabel_28.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_28.BackgroundTransparency = 1.000
+BestUI.TextLabel_28.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_28.BorderSizePixel = 0
+BestUI.TextLabel_28.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+BestUI.TextLabel_28.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+BestUI.TextLabel_28.ZIndex = 2
+BestUI.TextLabel_28.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_28.Text = "Distraced (FE)"
+BestUI.TextLabel_28.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_28.TextScaled = true
+BestUI.TextLabel_28.TextSize = 14.000
+BestUI.TextLabel_28.TextWrapped = true
+
+BestUI.TextLabel_29.Parent = BestUI.Button_26
+BestUI.TextLabel_29.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_29.BackgroundTransparency = 1.000
+BestUI.TextLabel_29.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_29.BorderSizePixel = 0
+BestUI.TextLabel_29.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+BestUI.TextLabel_29.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+BestUI.TextLabel_29.ZIndex = 2
+BestUI.TextLabel_29.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_29.Text = ""
+BestUI.TextLabel_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_29.TextScaled = true
+BestUI.TextLabel_29.TextSize = 14.000
+BestUI.TextLabel_29.TextWrapped = true
+
+BestUI.UICorner_35.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_35.Parent = BestUI.Button_26
+
+BestUI.Button_27.Name = "Button"
+BestUI.Button_27.Parent = BestUI.ScrollingFrame
+BestUI.Button_27.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_27.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_27.BorderSizePixel = 0
+BestUI.Button_27.Position = UDim2.new(0, 222, 0, 127)
+BestUI.Button_27.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_27.ZIndex = 2
+BestUI.Button_27.Font = Enum.Font.GothamSemibold
+BestUI.Button_27.Text = ""
+BestUI.Button_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_27.TextScaled = true
+BestUI.Button_27.TextSize = 14.000
+BestUI.Button_27.TextWrapped = true
+
+BestUI.TextLabel_30.Parent = BestUI.Button_27
+BestUI.TextLabel_30.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_30.BackgroundTransparency = 1.000
+BestUI.TextLabel_30.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_30.BorderSizePixel = 0
+BestUI.TextLabel_30.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+BestUI.TextLabel_30.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+BestUI.TextLabel_30.ZIndex = 2
+BestUI.TextLabel_30.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_30.Text = "Krystal Dance (FE)"
+BestUI.TextLabel_30.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_30.TextScaled = true
+BestUI.TextLabel_30.TextSize = 14.000
+BestUI.TextLabel_30.TextWrapped = true
+
+BestUI.TextLabel_31.Parent = BestUI.Button_27
+BestUI.TextLabel_31.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_31.BackgroundTransparency = 1.000
+BestUI.TextLabel_31.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_31.BorderSizePixel = 0
+BestUI.TextLabel_31.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+BestUI.TextLabel_31.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+BestUI.TextLabel_31.ZIndex = 2
+BestUI.TextLabel_31.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_31.Text = ""
+BestUI.TextLabel_31.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_31.TextScaled = true
+BestUI.TextLabel_31.TextSize = 14.000
+BestUI.TextLabel_31.TextWrapped = true
+
+BestUI.UICorner_36.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_36.Parent = BestUI.Button_27
+
+BestUI.Button_28.Name = "Button"
+BestUI.Button_28.Parent = BestUI.ScrollingFrame
+BestUI.Button_28.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_28.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_28.BorderSizePixel = 0
+BestUI.Button_28.Position = UDim2.new(0, 295, 0, 127)
+BestUI.Button_28.Size = UDim2.new(0, 62, 0, 29)
+BestUI.Button_28.ZIndex = 2
+BestUI.Button_28.Font = Enum.Font.GothamSemibold
+BestUI.Button_28.Text = ""
+BestUI.Button_28.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_28.TextScaled = true
+BestUI.Button_28.TextSize = 14.000
+BestUI.Button_28.TextWrapped = true
+
+BestUI.TextLabel_32.Parent = BestUI.Button_28
+BestUI.TextLabel_32.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_32.BackgroundTransparency = 1.000
+BestUI.TextLabel_32.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_32.BorderSizePixel = 0
+BestUI.TextLabel_32.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+BestUI.TextLabel_32.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+BestUI.TextLabel_32.ZIndex = 2
+BestUI.TextLabel_32.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_32.Text = "VR (FE)"
+BestUI.TextLabel_32.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_32.TextScaled = true
+BestUI.TextLabel_32.TextSize = 14.000
+BestUI.TextLabel_32.TextWrapped = true
+
+BestUI.TextLabel_33.Parent = BestUI.Button_28
+BestUI.TextLabel_33.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_33.BackgroundTransparency = 1.000
+BestUI.TextLabel_33.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_33.BorderSizePixel = 0
+BestUI.TextLabel_33.Position = UDim2.new(0.5, 0, 0.471265048, 0)
+BestUI.TextLabel_33.Size = UDim2.new(1.3225807, -20, 1.33563232, -20)
+BestUI.TextLabel_33.ZIndex = 2
+BestUI.TextLabel_33.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_33.Text = ""
+BestUI.TextLabel_33.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_33.TextScaled = true
+BestUI.TextLabel_33.TextSize = 14.000
+BestUI.TextLabel_33.TextWrapped = true
+
+BestUI.UICorner_37.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_37.Parent = BestUI.Button_28
+
+BestUI.Button_29.Name = "Button"
+BestUI.Button_29.Parent = BestUI.ScrollingFrame
+BestUI.Button_29.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_29.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_29.BorderSizePixel = 0
+BestUI.Button_29.Position = UDim2.new(0.849624515, 0, 0.335434228, 0)
+BestUI.Button_29.Size = UDim2.new(0, 81, 0, 32)
+BestUI.Button_29.ZIndex = 2
+BestUI.Button_29.Font = Enum.Font.GothamSemibold
+BestUI.Button_29.Text = ""
+BestUI.Button_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_29.TextScaled = true
+BestUI.Button_29.TextSize = 14.000
+BestUI.Button_29.TextWrapped = true
+
+BestUI.TextLabel_34.Parent = BestUI.Button_29
+BestUI.TextLabel_34.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_34.BackgroundTransparency = 1.000
+BestUI.TextLabel_34.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_34.BorderSizePixel = 0
+BestUI.TextLabel_34.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_34.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_34.ZIndex = 2
+BestUI.TextLabel_34.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_34.Text = "Owl Hub"
+BestUI.TextLabel_34.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_34.TextScaled = true
+BestUI.TextLabel_34.TextSize = 14.000
+BestUI.TextLabel_34.TextWrapped = true
+
+BestUI.UICorner_38.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_38.Parent = BestUI.TextLabel_34
+
+BestUI.UICorner_39.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_39.Parent = BestUI.Button_29
+
+BestUI.UICorner_40.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_40.Parent = BestUI.ScrollingFrame
+
+BestUI.UICorner_41.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_41.Parent = BestUI.ScriptsUIFrame
+
+BestUI.FunUIFrame.Name = "FunUIFrame"
+BestUI.FunUIFrame.Parent = BestUI.BestFrame
+BestUI.FunUIFrame.AnchorPoint = Vector2.new(1, 0)
+BestUI.FunUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+BestUI.FunUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.FunUIFrame.BorderSizePixel = 0
+BestUI.FunUIFrame.Position = UDim2.new(0, 469, 0, 81)
+BestUI.FunUIFrame.Size = UDim2.new(0, 452, 0, 172)
+BestUI.FunUIFrame.Visible = false
+
+BestUI.FunUITitle.Name = "FunUITitle"
+BestUI.FunUITitle.Parent = BestUI.FunUIFrame
+BestUI.FunUITitle.AnchorPoint = Vector2.new(1, 0)
+BestUI.FunUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+BestUI.FunUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.FunUITitle.BorderSizePixel = 0
+BestUI.FunUITitle.Position = UDim2.new(1, 0, 0, 0)
+BestUI.FunUITitle.Size = UDim2.new(0, 452, 0, 31)
+
+BestUI.Title_3.Name = "Title"
+BestUI.Title_3.Parent = BestUI.FunUITitle
+BestUI.Title_3.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_3.BackgroundTransparency = 1.000
+BestUI.Title_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_3.BorderSizePixel = 0
+BestUI.Title_3.Position = UDim2.new(0.531504035, 0, 0.483870953, 0)
+BestUI.Title_3.Size = UDim2.new(0.42479676, -20, 1.93548381, -20)
+BestUI.Title_3.ZIndex = 2
+BestUI.Title_3.Font = Enum.Font.GothamSemibold
+BestUI.Title_3.Text = "Troll UI"
+BestUI.Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_3.TextScaled = true
+BestUI.Title_3.TextSize = 14.000
+BestUI.Title_3.TextWrapped = true
+
+BestUI.UICorner_42.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_42.Parent = BestUI.Title_3
+
+BestUI.UICorner_43.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_43.Parent = BestUI.FunUITitle
+
+BestUI.TextButton.Parent = BestUI.FunUIFrame
+BestUI.TextButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BestUI.TextButton.Position = UDim2.new(0.0199115053, 0, 0.244186044, 0)
+BestUI.TextButton.Size = UDim2.new(0, 134, 0, 39)
+BestUI.TextButton.Font = Enum.Font.Cartoon
+BestUI.TextButton.Text = "Kill All"
+BestUI.TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextButton.TextSize = 14.000
+
+BestUI.UICorner_44.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_44.Parent = BestUI.TextButton
+
+BestUI.TextButton_2.Parent = BestUI.FunUIFrame
+BestUI.TextButton_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BestUI.TextButton_2.Position = UDim2.new(0.0199115053, 0, 0.511627913, 0)
+BestUI.TextButton_2.Size = UDim2.new(0, 134, 0, 39)
+BestUI.TextButton_2.Font = Enum.Font.Cartoon
+BestUI.TextButton_2.Text = "TP All To You"
+BestUI.TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextButton_2.TextSize = 14.000
+
+BestUI.UICorner_45.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_45.Parent = BestUI.TextButton_2
+
+BestUI.TextButton_3.Parent = BestUI.FunUIFrame
+BestUI.TextButton_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BestUI.TextButton_3.Position = UDim2.new(0.0199115053, 0, 0.773255825, 0)
+BestUI.TextButton_3.Size = UDim2.new(0, 134, 0, 32)
+BestUI.TextButton_3.Font = Enum.Font.Cartoon
+BestUI.TextButton_3.Text = "Kick All"
+BestUI.TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextButton_3.TextSize = 14.000
+
+BestUI.UICorner_46.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_46.Parent = BestUI.TextButton_3
+
+BestUI.TextButton_4.Parent = BestUI.FunUIFrame
+BestUI.TextButton_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BestUI.TextButton_4.Position = UDim2.new(0.340707958, 0, 0.244186044, 0)
+BestUI.TextButton_4.Size = UDim2.new(0, 119, 0, 123)
+BestUI.TextButton_4.Font = Enum.Font.Cartoon
+BestUI.TextButton_4.Text = "Remove BasePlate"
+BestUI.TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextButton_4.TextSize = 14.000
+
+BestUI.UICorner_47.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_47.Parent = BestUI.TextButton_4
+
+BestUI.TextButton_5.Parent = BestUI.FunUIFrame
+BestUI.TextButton_5.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+BestUI.TextButton_5.Position = UDim2.new(0.623893797, 0, 0.244186044, 0)
+BestUI.TextButton_5.Size = UDim2.new(0, 156, 0, 123)
+BestUI.TextButton_5.Font = Enum.Font.Cartoon
+BestUI.TextButton_5.Text = "Remove Both Legs All"
+BestUI.TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextButton_5.TextSize = 14.000
+
+BestUI.UICorner_48.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_48.Parent = BestUI.TextButton_5
+
+BestUI.UICorner_49.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_49.Parent = BestUI.FunUIFrame
+
+BestUI.GamesUIFrame.Name = "GamesUIFrame"
+BestUI.GamesUIFrame.Parent = BestUI.BestFrame
+BestUI.GamesUIFrame.AnchorPoint = Vector2.new(1, 0)
+BestUI.GamesUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+BestUI.GamesUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.GamesUIFrame.BorderSizePixel = 0
+BestUI.GamesUIFrame.Position = UDim2.new(0, 469, 0, 81)
+BestUI.GamesUIFrame.Size = UDim2.new(0, 452, 0, 172)
+BestUI.GamesUIFrame.Visible = false
+
+BestUI.GamesUITitle.Name = "GamesUITitle"
+BestUI.GamesUITitle.Parent = BestUI.GamesUIFrame
+BestUI.GamesUITitle.AnchorPoint = Vector2.new(1, 0)
+BestUI.GamesUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+BestUI.GamesUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.GamesUITitle.BorderSizePixel = 0
+BestUI.GamesUITitle.Position = UDim2.new(1, 0, 0, 0)
+BestUI.GamesUITitle.Size = UDim2.new(0, 452, 0, 31)
+
+BestUI.Title_4.Name = "Title"
+BestUI.Title_4.Parent = BestUI.GamesUITitle
+BestUI.Title_4.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_4.BackgroundTransparency = 1.000
+BestUI.Title_4.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_4.BorderSizePixel = 0
+BestUI.Title_4.Position = UDim2.new(0.531504035, 0, 0.483870953, 0)
+BestUI.Title_4.Size = UDim2.new(0.42479676, -20, 1.93548381, -20)
+BestUI.Title_4.ZIndex = 2
+BestUI.Title_4.Font = Enum.Font.GothamSemibold
+BestUI.Title_4.Text = "Players UI"
+BestUI.Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_4.TextScaled = true
+BestUI.Title_4.TextSize = 14.000
+BestUI.Title_4.TextWrapped = true
+
+BestUI.UICorner_50.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_50.Parent = BestUI.Title_4
+
+BestUI.UICorner_51.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_51.Parent = BestUI.GamesUITitle
+
+BestUI.Button_30.Name = "Button"
+BestUI.Button_30.Parent = BestUI.GamesUIFrame
+BestUI.Button_30.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_30.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_30.BorderSizePixel = 0
+BestUI.Button_30.Position = UDim2.new(0.416114956, 0, 0.258528829, 0)
+BestUI.Button_30.Size = UDim2.new(0, 180, 0, 45)
+BestUI.Button_30.ZIndex = 2
+BestUI.Button_30.Font = Enum.Font.GothamSemibold
+BestUI.Button_30.Text = ""
+BestUI.Button_30.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_30.TextScaled = true
+BestUI.Button_30.TextSize = 14.000
+BestUI.Button_30.TextWrapped = true
+
+BestUI.TextLabel_35.Parent = BestUI.Button_30
+BestUI.TextLabel_35.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_35.BackgroundTransparency = 1.000
+BestUI.TextLabel_35.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_35.BorderSizePixel = 0
+BestUI.TextLabel_35.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_35.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_35.ZIndex = 2
+BestUI.TextLabel_35.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_35.Text = "Build A Boat (TP TO GAME)"
+BestUI.TextLabel_35.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_35.TextScaled = true
+BestUI.TextLabel_35.TextSize = 14.000
+BestUI.TextLabel_35.TextWrapped = true
+
+BestUI.UICorner_52.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_52.Parent = BestUI.TextLabel_35
+
+BestUI.UICorner_53.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_53.Parent = BestUI.Button_30
+
+BestUI.UICorner_54.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_54.Parent = BestUI.GamesUIFrame
+
+BestUI.UniversalBABUIFrame.Name = "UniversalBABUIFrame"
+BestUI.UniversalBABUIFrame.Parent = BestUI.BestFrame
+BestUI.UniversalBABUIFrame.AnchorPoint = Vector2.new(1, 0)
+BestUI.UniversalBABUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+BestUI.UniversalBABUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.UniversalBABUIFrame.BorderSizePixel = 0
+BestUI.UniversalBABUIFrame.Position = UDim2.new(0, 469, 0, 81)
+BestUI.UniversalBABUIFrame.Size = UDim2.new(0, 452, 0, 172)
+BestUI.UniversalBABUIFrame.Visible = false
+
+BestUI.Button_31.Name = "Button"
+BestUI.Button_31.Parent = BestUI.UniversalBABUIFrame
+BestUI.Button_31.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_31.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_31.BorderSizePixel = 0
+BestUI.Button_31.Position = UDim2.new(0.9508816, 0, 0.73152709, 0)
+BestUI.Button_31.Size = UDim2.new(0, 180, 0, 45)
+BestUI.Button_31.ZIndex = 2
+BestUI.Button_31.Font = Enum.Font.GothamSemibold
+BestUI.Button_31.Text = ""
+BestUI.Button_31.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_31.TextScaled = true
+BestUI.Button_31.TextSize = 14.000
+BestUI.Button_31.TextWrapped = true
+
+BestUI.TextLabel_36.Parent = BestUI.Button_31
+BestUI.TextLabel_36.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_36.BackgroundTransparency = 1.000
+BestUI.TextLabel_36.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_36.BorderSizePixel = 0
+BestUI.TextLabel_36.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_36.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_36.ZIndex = 2
+BestUI.TextLabel_36.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_36.Text = "Set JumpPower"
+BestUI.TextLabel_36.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_36.TextScaled = true
+BestUI.TextLabel_36.TextSize = 14.000
+BestUI.TextLabel_36.TextWrapped = true
+
+BestUI.UICorner_55.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_55.Parent = BestUI.Button_31
+
+BestUI.JumpBox.Name = "JumpBox"
+BestUI.JumpBox.Parent = BestUI.UniversalBABUIFrame
+BestUI.JumpBox.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+BestUI.JumpBox.Position = UDim2.new(0.496634007, 0, 0.563889682, 0)
+BestUI.JumpBox.Size = UDim2.new(0, 180, 0, 24)
+BestUI.JumpBox.Font = Enum.Font.SciFi
+BestUI.JumpBox.PlaceholderText = "Enter Jump Here"
+BestUI.JumpBox.Text = ""
+BestUI.JumpBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+BestUI.JumpBox.TextSize = 20.000
+
+BestUI.UICorner_56.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_56.Parent = BestUI.JumpBox
+
+BestUI.SpeedBox.Name = "SpeedBox"
+BestUI.SpeedBox.Parent = BestUI.UniversalBABUIFrame
+BestUI.SpeedBox.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+BestUI.SpeedBox.Position = UDim2.new(0.0180445742, 0, 0.563889682, 0)
+BestUI.SpeedBox.Size = UDim2.new(0, 180, 0, 24)
+BestUI.SpeedBox.Font = Enum.Font.SciFi
+BestUI.SpeedBox.PlaceholderText = "Enter Speed Here"
+BestUI.SpeedBox.Text = ""
+BestUI.SpeedBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+BestUI.SpeedBox.TextSize = 20.000
+
+BestUI.UICorner_57.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_57.Parent = BestUI.SpeedBox
+
+BestUI.Button_32.Name = "Button"
+BestUI.Button_32.Parent = BestUI.UniversalBABUIFrame
+BestUI.Button_32.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_32.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_32.BorderSizePixel = 0
+BestUI.Button_32.Position = UDim2.new(0.472292185, 0, 0.72167486, 0)
+BestUI.Button_32.Size = UDim2.new(0, 180, 0, 45)
+BestUI.Button_32.ZIndex = 2
+BestUI.Button_32.Font = Enum.Font.GothamSemibold
+BestUI.Button_32.Text = ""
+BestUI.Button_32.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_32.TextScaled = true
+BestUI.Button_32.TextSize = 14.000
+BestUI.Button_32.TextWrapped = true
+
+BestUI.TextLabel_37.Parent = BestUI.Button_32
+BestUI.TextLabel_37.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_37.BackgroundTransparency = 1.000
+BestUI.TextLabel_37.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_37.BorderSizePixel = 0
+BestUI.TextLabel_37.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_37.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_37.ZIndex = 2
+BestUI.TextLabel_37.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_37.Text = "Set WalkSpeed"
+BestUI.TextLabel_37.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_37.TextScaled = true
+BestUI.TextLabel_37.TextSize = 14.000
+BestUI.TextLabel_37.TextWrapped = true
+
+BestUI.UICorner_58.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_58.Parent = BestUI.Button_32
+
+BestUI.UniversalBABUITitle.Name = "UniversalBABUITitle"
+BestUI.UniversalBABUITitle.Parent = BestUI.UniversalBABUIFrame
+BestUI.UniversalBABUITitle.AnchorPoint = Vector2.new(1, 0)
+BestUI.UniversalBABUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+BestUI.UniversalBABUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.UniversalBABUITitle.BorderSizePixel = 0
+BestUI.UniversalBABUITitle.Position = UDim2.new(1, 0, 0, 0)
+BestUI.UniversalBABUITitle.Size = UDim2.new(0, 397, 0, 31)
+
+BestUI.Title_5.Name = "Title"
+BestUI.Title_5.Parent = BestUI.UniversalBABUITitle
+BestUI.Title_5.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_5.BackgroundTransparency = 1.000
+BestUI.Title_5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_5.BorderSizePixel = 0
+BestUI.Title_5.Position = UDim2.new(0.531504035, 0, 0.483870953, 0)
+BestUI.Title_5.Size = UDim2.new(0.42479676, -20, 1.93548381, -20)
+BestUI.Title_5.ZIndex = 2
+BestUI.Title_5.Font = Enum.Font.GothamSemibold
+BestUI.Title_5.Text = "Build A Boat UI"
+BestUI.Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_5.TextScaled = true
+BestUI.Title_5.TextSize = 14.000
+BestUI.Title_5.TextWrapped = true
+
+BestUI.UICorner_59.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_59.Parent = BestUI.Title_5
+
+BestUI.UICorner_60.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_60.Parent = BestUI.UniversalBABUITitle
+
+BestUI.Button_33.Name = "Button"
+BestUI.Button_33.Parent = BestUI.UniversalBABUIFrame
+BestUI.Button_33.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_33.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_33.BorderSizePixel = 0
+BestUI.Button_33.Position = UDim2.new(0.9508816, 0, 0.204433501, 0)
+BestUI.Button_33.Size = UDim2.new(0, 370, 0, 59)
+BestUI.Button_33.ZIndex = 2
+BestUI.Button_33.Font = Enum.Font.GothamSemibold
+BestUI.Button_33.Text = ""
+BestUI.Button_33.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_33.TextScaled = true
+BestUI.Button_33.TextSize = 14.000
+BestUI.Button_33.TextWrapped = true
+
+BestUI.TextLabel_38.Parent = BestUI.Button_33
+BestUI.TextLabel_38.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_38.BackgroundTransparency = 1.000
+BestUI.TextLabel_38.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_38.BorderSizePixel = 0
+BestUI.TextLabel_38.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_38.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_38.ZIndex = 2
+BestUI.TextLabel_38.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_38.Text = "Build A Boat UI"
+BestUI.TextLabel_38.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_38.TextScaled = true
+BestUI.TextLabel_38.TextSize = 14.000
+BestUI.TextLabel_38.TextWrapped = true
+
+BestUI.UICorner_61.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_61.Parent = BestUI.Button_33
+
+BestUI.UICorner_62.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_62.Parent = BestUI.UniversalBABUIFrame
+
+BestUI.UniversalARSUIFrame.Name = "UniversalARSUIFrame"
+BestUI.UniversalARSUIFrame.Parent = BestUI.BestFrame
+BestUI.UniversalARSUIFrame.AnchorPoint = Vector2.new(1, 0)
+BestUI.UniversalARSUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+BestUI.UniversalARSUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.UniversalARSUIFrame.BorderSizePixel = 0
+BestUI.UniversalARSUIFrame.Position = UDim2.new(0, 469, 0, 81)
+BestUI.UniversalARSUIFrame.Size = UDim2.new(0, 452, 0, 172)
+BestUI.UniversalARSUIFrame.Visible = false
+
+BestUI.Button_34.Name = "Button"
+BestUI.Button_34.Parent = BestUI.UniversalARSUIFrame
+BestUI.Button_34.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_34.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_34.BorderSizePixel = 0
+BestUI.Button_34.Position = UDim2.new(0.9508816, 0, 0.73152709, 0)
+BestUI.Button_34.Size = UDim2.new(0, 180, 0, 45)
+BestUI.Button_34.ZIndex = 2
+BestUI.Button_34.Font = Enum.Font.GothamSemibold
+BestUI.Button_34.Text = ""
+BestUI.Button_34.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_34.TextScaled = true
+BestUI.Button_34.TextSize = 14.000
+BestUI.Button_34.TextWrapped = true
+
+BestUI.TextLabel_39.Parent = BestUI.Button_34
+BestUI.TextLabel_39.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_39.BackgroundTransparency = 1.000
+BestUI.TextLabel_39.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_39.BorderSizePixel = 0
+BestUI.TextLabel_39.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_39.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_39.ZIndex = 2
+BestUI.TextLabel_39.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_39.Text = "Set JumpPower"
+BestUI.TextLabel_39.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_39.TextScaled = true
+BestUI.TextLabel_39.TextSize = 14.000
+BestUI.TextLabel_39.TextWrapped = true
+
+BestUI.UICorner_63.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_63.Parent = BestUI.Button_34
+
+BestUI.JumpBox_2.Name = "JumpBox"
+BestUI.JumpBox_2.Parent = BestUI.UniversalARSUIFrame
+BestUI.JumpBox_2.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+BestUI.JumpBox_2.Position = UDim2.new(0.496634007, 0, 0.563889682, 0)
+BestUI.JumpBox_2.Size = UDim2.new(0, 180, 0, 24)
+BestUI.JumpBox_2.Font = Enum.Font.SciFi
+BestUI.JumpBox_2.PlaceholderText = "Enter Jump Here"
+BestUI.JumpBox_2.Text = ""
+BestUI.JumpBox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+BestUI.JumpBox_2.TextSize = 20.000
+
+BestUI.UICorner_64.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_64.Parent = BestUI.JumpBox_2
+
+BestUI.SpeedBox_2.Name = "SpeedBox"
+BestUI.SpeedBox_2.Parent = BestUI.UniversalARSUIFrame
+BestUI.SpeedBox_2.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+BestUI.SpeedBox_2.Position = UDim2.new(0.0180445742, 0, 0.563889682, 0)
+BestUI.SpeedBox_2.Size = UDim2.new(0, 180, 0, 24)
+BestUI.SpeedBox_2.Font = Enum.Font.SciFi
+BestUI.SpeedBox_2.PlaceholderText = "Enter Speed Here"
+BestUI.SpeedBox_2.Text = ""
+BestUI.SpeedBox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+BestUI.SpeedBox_2.TextSize = 20.000
+
+BestUI.UICorner_65.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_65.Parent = BestUI.SpeedBox_2
+
+BestUI.Button_35.Name = "Button"
+BestUI.Button_35.Parent = BestUI.UniversalARSUIFrame
+BestUI.Button_35.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_35.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_35.BorderSizePixel = 0
+BestUI.Button_35.Position = UDim2.new(0.472292185, 0, 0.72167486, 0)
+BestUI.Button_35.Size = UDim2.new(0, 180, 0, 45)
+BestUI.Button_35.ZIndex = 2
+BestUI.Button_35.Font = Enum.Font.GothamSemibold
+BestUI.Button_35.Text = ""
+BestUI.Button_35.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_35.TextScaled = true
+BestUI.Button_35.TextSize = 14.000
+BestUI.Button_35.TextWrapped = true
+
+BestUI.TextLabel_40.Parent = BestUI.Button_35
+BestUI.TextLabel_40.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_40.BackgroundTransparency = 1.000
+BestUI.TextLabel_40.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_40.BorderSizePixel = 0
+BestUI.TextLabel_40.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_40.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_40.ZIndex = 2
+BestUI.TextLabel_40.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_40.Text = "Set WalkSpeed"
+BestUI.TextLabel_40.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_40.TextScaled = true
+BestUI.TextLabel_40.TextSize = 14.000
+BestUI.TextLabel_40.TextWrapped = true
+
+BestUI.UICorner_66.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_66.Parent = BestUI.Button_35
+
+BestUI.UniversalARSUITitle.Name = "UniversalARSUITitle"
+BestUI.UniversalARSUITitle.Parent = BestUI.UniversalARSUIFrame
+BestUI.UniversalARSUITitle.AnchorPoint = Vector2.new(1, 0)
+BestUI.UniversalARSUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+BestUI.UniversalARSUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.UniversalARSUITitle.BorderSizePixel = 0
+BestUI.UniversalARSUITitle.Position = UDim2.new(1, 0, 0, 0)
+BestUI.UniversalARSUITitle.Size = UDim2.new(0, 397, 0, 31)
+
+BestUI.Title_6.Name = "Title"
+BestUI.Title_6.Parent = BestUI.UniversalARSUITitle
+BestUI.Title_6.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_6.BackgroundTransparency = 1.000
+BestUI.Title_6.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_6.BorderSizePixel = 0
+BestUI.Title_6.Position = UDim2.new(0.531504035, 0, 0.483870953, 0)
+BestUI.Title_6.Size = UDim2.new(0.42479676, -20, 1.93548381, -20)
+BestUI.Title_6.ZIndex = 2
+BestUI.Title_6.Font = Enum.Font.GothamSemibold
+BestUI.Title_6.Text = "Arsenal UI"
+BestUI.Title_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_6.TextScaled = true
+BestUI.Title_6.TextSize = 14.000
+BestUI.Title_6.TextWrapped = true
+
+BestUI.UICorner_67.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_67.Parent = BestUI.Title_6
+
+BestUI.UICorner_68.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_68.Parent = BestUI.UniversalARSUITitle
+
+BestUI.Button_36.Name = "Button"
+BestUI.Button_36.Parent = BestUI.UniversalARSUIFrame
+BestUI.Button_36.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_36.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_36.BorderSizePixel = 0
+BestUI.Button_36.Position = UDim2.new(0.9508816, 0, 0.204433501, 0)
+BestUI.Button_36.Size = UDim2.new(0, 370, 0, 59)
+BestUI.Button_36.ZIndex = 2
+BestUI.Button_36.Font = Enum.Font.GothamSemibold
+BestUI.Button_36.Text = ""
+BestUI.Button_36.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_36.TextScaled = true
+BestUI.Button_36.TextSize = 14.000
+BestUI.Button_36.TextWrapped = true
+
+BestUI.TextLabel_41.Parent = BestUI.Button_36
+BestUI.TextLabel_41.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_41.BackgroundTransparency = 1.000
+BestUI.TextLabel_41.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_41.BorderSizePixel = 0
+BestUI.TextLabel_41.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_41.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_41.ZIndex = 2
+BestUI.TextLabel_41.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_41.Text = "Arsenal UI"
+BestUI.TextLabel_41.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_41.TextScaled = true
+BestUI.TextLabel_41.TextSize = 14.000
+BestUI.TextLabel_41.TextWrapped = true
+
+BestUI.UICorner_69.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_69.Parent = BestUI.Button_36
+
+BestUI.UICorner_70.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_70.Parent = BestUI.UniversalARSUIFrame
+
+BestUI.CreditsUIFrame.Name = "CreditsUIFrame"
+BestUI.CreditsUIFrame.Parent = BestUI.BestFrame
+BestUI.CreditsUIFrame.AnchorPoint = Vector2.new(1, 0)
+BestUI.CreditsUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+BestUI.CreditsUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.CreditsUIFrame.BorderSizePixel = 0
+BestUI.CreditsUIFrame.Position = UDim2.new(0, 469, 0, 81)
+BestUI.CreditsUIFrame.Size = UDim2.new(0, 452, 0, 172)
+BestUI.CreditsUIFrame.Visible = false
+
+BestUI.CreditsUITitle.Name = "CreditsUITitle"
+BestUI.CreditsUITitle.Parent = BestUI.CreditsUIFrame
+BestUI.CreditsUITitle.AnchorPoint = Vector2.new(1, 0)
+BestUI.CreditsUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+BestUI.CreditsUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.CreditsUITitle.BorderSizePixel = 0
+BestUI.CreditsUITitle.Position = UDim2.new(1, 0, 0, 0)
+BestUI.CreditsUITitle.Size = UDim2.new(0, 458, 0, 31)
+
+BestUI.Title_7.Name = "Title"
+BestUI.Title_7.Parent = BestUI.CreditsUITitle
+BestUI.Title_7.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_7.BackgroundTransparency = 1.000
+BestUI.Title_7.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_7.BorderSizePixel = 0
+BestUI.Title_7.Position = UDim2.new(0.531504035, 0, 0.483870953, 0)
+BestUI.Title_7.Size = UDim2.new(0.42479676, -20, 1.93548381, -20)
+BestUI.Title_7.ZIndex = 2
+BestUI.Title_7.Font = Enum.Font.GothamSemibold
+BestUI.Title_7.Text = "Credits UI"
+BestUI.Title_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_7.TextScaled = true
+BestUI.Title_7.TextSize = 14.000
+BestUI.Title_7.TextWrapped = true
+
+BestUI.UICorner_71.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_71.Parent = BestUI.Title_7
+
+BestUI.Title_8.Name = "Title"
+BestUI.Title_8.Parent = BestUI.CreditsUITitle
+BestUI.Title_8.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_8.BackgroundTransparency = 1.000
+BestUI.Title_8.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_8.BorderSizePixel = 0
+BestUI.Title_8.Position = UDim2.new(0.114965782, 0, 1.67858052, 0)
+BestUI.Title_8.Size = UDim2.new(0.216405481, -20, 1.55070937, -20)
+BestUI.Title_8.ZIndex = 2
+BestUI.Title_8.Font = Enum.Font.GothamSemibold
+BestUI.Title_8.Text = "FrostyDev:"
+BestUI.Title_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_8.TextScaled = true
+BestUI.Title_8.TextSize = 14.000
+BestUI.Title_8.TextWrapped = true
+
+BestUI.UICorner_72.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_72.Parent = BestUI.Title_8
+
+BestUI.Title_9.Name = "Title"
+BestUI.Title_9.Parent = BestUI.CreditsUITitle
+BestUI.Title_9.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_9.BackgroundTransparency = 1.000
+BestUI.Title_9.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_9.BorderSizePixel = 0
+BestUI.Title_9.Position = UDim2.new(0.274198711, 0, 1.67858052, 0)
+BestUI.Title_9.Size = UDim2.new(0.194990233, -20, 1.55070937, -20)
+BestUI.Title_9.ZIndex = 2
+BestUI.Title_9.Font = Enum.Font.GothamSemibold
+BestUI.Title_9.Text = "Scripting"
+BestUI.Title_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_9.TextScaled = true
+BestUI.Title_9.TextSize = 14.000
+BestUI.Title_9.TextWrapped = true
+
+BestUI.UICorner_73.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_73.Parent = BestUI.Title_9
+
+BestUI.Title_10.Name = "Title"
+BestUI.Title_10.Parent = BestUI.CreditsUITitle
+BestUI.Title_10.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_10.BackgroundTransparency = 1.000
+BestUI.Title_10.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_10.BorderSizePixel = 0
+BestUI.Title_10.Position = UDim2.new(0.123551548, 0, 2.32374239, 0)
+BestUI.Title_10.Size = UDim2.new(0.238614678, -20, 1.67974174, -20)
+BestUI.Title_10.ZIndex = 2
+BestUI.Title_10.Font = Enum.Font.GothamSemibold
+BestUI.Title_10.Text = "FrostyDev:"
+BestUI.Title_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_10.TextScaled = true
+BestUI.Title_10.TextSize = 14.000
+BestUI.Title_10.TextWrapped = true
+
+BestUI.UICorner_74.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_74.Parent = BestUI.Title_10
+
+BestUI.Title_11.Name = "Title"
+BestUI.Title_11.Parent = BestUI.CreditsUITitle
+BestUI.Title_11.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_11.BackgroundTransparency = 1.000
+BestUI.Title_11.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_11.BorderSizePixel = 0
+BestUI.Title_11.Position = UDim2.new(0.303257287, 0, 2.32374239, 0)
+BestUI.Title_11.Size = UDim2.new(0.214446038, -20, 1.67974174, -20)
+BestUI.Title_11.ZIndex = 2
+BestUI.Title_11.Font = Enum.Font.GothamSemibold
+BestUI.Title_11.Text = "Building"
+BestUI.Title_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_11.TextScaled = true
+BestUI.Title_11.TextSize = 14.000
+BestUI.Title_11.TextWrapped = true
+
+BestUI.UICorner_75.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_75.Parent = BestUI.Title_11
+
+BestUI.Title_12.Name = "Title"
+BestUI.Title_12.Parent = BestUI.CreditsUITitle
+BestUI.Title_12.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_12.BackgroundTransparency = 1.000
+BestUI.Title_12.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_12.BorderSizePixel = 0
+BestUI.Title_12.Position = UDim2.new(0.509931803, 0, 4.85599947, 0)
+BestUI.Title_12.Size = UDim2.new(1.00331259, -20, 1.38942003, -20)
+BestUI.Title_12.ZIndex = 2
+BestUI.Title_12.Font = Enum.Font.GothamSemibold
+BestUI.Title_12.Text = "All Made By Me Only Sorry If you thought multiable people made this too but only made by me (NOT THE OWNER / CREATOR OF THE GUI SCRIPTS IN FUN, AND SCRIPTS MENU, OR THE UNIVERSAL MENU WITH THE GUI SCRIPTS INSIDE!!"
+BestUI.Title_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_12.TextScaled = true
+BestUI.Title_12.TextSize = 14.000
+BestUI.Title_12.TextWrapped = true
+
+BestUI.UICorner_76.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_76.Parent = BestUI.Title_12
+
+BestUI.Title_13.Name = "Title"
+BestUI.Title_13.Parent = BestUI.CreditsUITitle
+BestUI.Title_13.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_13.BackgroundTransparency = 1.000
+BestUI.Title_13.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_13.BorderSizePixel = 0
+BestUI.Title_13.Position = UDim2.new(0.125734955, 0, 3.13019395, 0)
+BestUI.Title_13.Size = UDim2.new(0.238614678, -20, 1.67974174, -20)
+BestUI.Title_13.ZIndex = 2
+BestUI.Title_13.Font = Enum.Font.GothamSemibold
+BestUI.Title_13.Text = "FrostyDev:"
+BestUI.Title_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_13.TextScaled = true
+BestUI.Title_13.TextSize = 14.000
+BestUI.Title_13.TextWrapped = true
+
+BestUI.UICorner_77.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_77.Parent = BestUI.Title_13
+
+BestUI.Title_14.Name = "Title"
+BestUI.Title_14.Parent = BestUI.CreditsUITitle
+BestUI.Title_14.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_14.BackgroundTransparency = 1.000
+BestUI.Title_14.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_14.BorderSizePixel = 0
+BestUI.Title_14.Position = UDim2.new(0.305440694, 0, 3.13019395, 0)
+BestUI.Title_14.Size = UDim2.new(0.214446038, -20, 1.67974174, -20)
+BestUI.Title_14.ZIndex = 2
+BestUI.Title_14.Font = Enum.Font.GothamSemibold
+BestUI.Title_14.Text = "Epicness"
+BestUI.Title_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_14.TextScaled = true
+BestUI.Title_14.TextSize = 14.000
+BestUI.Title_14.TextWrapped = true
+
+BestUI.UICorner_78.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_78.Parent = BestUI.Title_14
+
+BestUI.Title_15.Name = "Title"
+BestUI.Title_15.Parent = BestUI.CreditsUITitle
+BestUI.Title_15.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_15.BackgroundTransparency = 1.000
+BestUI.Title_15.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_15.BorderSizePixel = 0
+BestUI.Title_15.Position = UDim2.new(0.496913999, 0, 3.35600042, 0)
+BestUI.Title_15.Size = UDim2.new(0.238614678, -20, 1.67974174, -20)
+BestUI.Title_15.ZIndex = 2
+BestUI.Title_15.Font = Enum.Font.GothamSemibold
+BestUI.Title_15.Text = "FrostyDev:"
+BestUI.Title_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_15.TextScaled = true
+BestUI.Title_15.TextSize = 14.000
+BestUI.Title_15.TextWrapped = true
+
+BestUI.UICorner_79.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_79.Parent = BestUI.Title_15
+
+BestUI.Title_16.Name = "Title"
+BestUI.Title_16.Parent = BestUI.CreditsUITitle
+BestUI.Title_16.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_16.BackgroundTransparency = 1.000
+BestUI.Title_16.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_16.BorderSizePixel = 0
+BestUI.Title_16.Position = UDim2.new(0.678803146, 0, 3.32374239, 0)
+BestUI.Title_16.Size = UDim2.new(0.214446038, -20, 1.67974174, -20)
+BestUI.Title_16.ZIndex = 2
+BestUI.Title_16.Font = Enum.Font.GothamSemibold
+BestUI.Title_16.Text = "Updates"
+BestUI.Title_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_16.TextScaled = true
+BestUI.Title_16.TextSize = 14.000
+BestUI.Title_16.TextWrapped = true
+
+BestUI.UICorner_80.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_80.Parent = BestUI.Title_16
+
+BestUI.Title_17.Name = "Title"
+BestUI.Title_17.Parent = BestUI.CreditsUITitle
+BestUI.Title_17.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_17.BackgroundTransparency = 1.000
+BestUI.Title_17.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_17.BorderSizePixel = 0
+BestUI.Title_17.Position = UDim2.new(0.488180369, 0, 2.32374239, 0)
+BestUI.Title_17.Size = UDim2.new(0.238614678, -20, 1.67974174, -20)
+BestUI.Title_17.ZIndex = 2
+BestUI.Title_17.Font = Enum.Font.GothamSemibold
+BestUI.Title_17.Text = "Creators Of Scripts:"
+BestUI.Title_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_17.TextScaled = true
+BestUI.Title_17.TextSize = 14.000
+BestUI.Title_17.TextWrapped = true
+
+BestUI.UICorner_81.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_81.Parent = BestUI.Title_17
+
+BestUI.Title_18.Name = "Title"
+BestUI.Title_18.Parent = BestUI.CreditsUITitle
+BestUI.Title_18.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_18.BackgroundTransparency = 1.000
+BestUI.Title_18.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_18.BorderSizePixel = 0
+BestUI.Title_18.Position = UDim2.new(0.486144811, 0, 1.45277405, 0)
+BestUI.Title_18.Size = UDim2.new(0.216405481, -20, 1.55070937, -20)
+BestUI.Title_18.ZIndex = 2
+BestUI.Title_18.Font = Enum.Font.GothamSemibold
+BestUI.Title_18.Text = "FrostyDev:"
+BestUI.Title_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_18.TextScaled = true
+BestUI.Title_18.TextSize = 14.000
+BestUI.Title_18.TextWrapped = true
+
+BestUI.UICorner_82.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_82.Parent = BestUI.Title_18
+
+BestUI.Title_19.Name = "Title"
+BestUI.Title_19.Parent = BestUI.CreditsUITitle
+BestUI.Title_19.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_19.BackgroundTransparency = 1.000
+BestUI.Title_19.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_19.BorderSizePixel = 0
+BestUI.Title_19.Position = UDim2.new(0.645377755, 0, 1.45277405, 0)
+BestUI.Title_19.Size = UDim2.new(0.194990233, -20, 1.55070937, -20)
+BestUI.Title_19.ZIndex = 2
+BestUI.Title_19.Font = Enum.Font.GothamSemibold
+BestUI.Title_19.Text = "GUI's"
+BestUI.Title_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_19.TextScaled = true
+BestUI.Title_19.TextSize = 14.000
+BestUI.Title_19.TextWrapped = true
+
+BestUI.UICorner_83.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_83.Parent = BestUI.Title_19
+
+BestUI.Title_20.Name = "Title"
+BestUI.Title_20.Parent = BestUI.CreditsUITitle
+BestUI.Title_20.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_20.BackgroundTransparency = 1.000
+BestUI.Title_20.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_20.BorderSizePixel = 0
+BestUI.Title_20.Position = UDim2.new(0.672252953, 0, 2.32374239, 0)
+BestUI.Title_20.Size = UDim2.new(0.214446038, -20, 1.67974174, -20)
+BestUI.Title_20.ZIndex = 2
+BestUI.Title_20.Font = Enum.Font.GothamSemibold
+BestUI.Title_20.Text = "All Credit goes to them! :D"
+BestUI.Title_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_20.TextScaled = true
+BestUI.Title_20.TextSize = 14.000
+BestUI.Title_20.TextWrapped = true
+
+BestUI.UICorner_84.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_84.Parent = BestUI.Title_20
+
+BestUI.Title_21.Name = "Title"
+BestUI.Title_21.Parent = BestUI.CreditsUITitle
+BestUI.Title_21.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_21.BackgroundTransparency = 1.000
+BestUI.Title_21.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_21.BorderSizePixel = 0
+BestUI.Title_21.Position = UDim2.new(0.881859899, 0, 1.64632297, 0)
+BestUI.Title_21.Size = UDim2.new(0.279948205, -20, 1.61522508, -20)
+BestUI.Title_21.ZIndex = 2
+BestUI.Title_21.Font = Enum.Font.GothamSemibold
+BestUI.Title_21.Text = "Shout-Outs:"
+BestUI.Title_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_21.TextScaled = true
+BestUI.Title_21.TextSize = 14.000
+BestUI.Title_21.TextWrapped = true
+
+BestUI.UICorner_85.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_85.Parent = BestUI.Title_21
+
+BestUI.Title_22.Name = "Title"
+BestUI.Title_22.Parent = BestUI.CreditsUITitle
+BestUI.Title_22.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_22.BackgroundTransparency = 1.000
+BestUI.Title_22.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_22.BorderSizePixel = 0
+BestUI.Title_22.Position = UDim2.new(0.881859899, 0, 2.38825846, 0)
+BestUI.Title_22.Size = UDim2.new(0.279948205, -20, 1.61522508, -20)
+BestUI.Title_22.ZIndex = 2
+BestUI.Title_22.Font = Enum.Font.GothamSemibold
+BestUI.Title_22.Text = "Exult Hub"
+BestUI.Title_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_22.TextScaled = true
+BestUI.Title_22.TextSize = 14.000
+BestUI.Title_22.TextWrapped = true
+
+BestUI.Title_23.Name = "Title"
+BestUI.Title_23.Parent = BestUI.CreditsUITitle
+BestUI.Title_23.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_23.BackgroundTransparency = 1.000
+BestUI.Title_23.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_23.BorderSizePixel = 0
+BestUI.Title_23.Position = UDim2.new(0.881859899, 0, 3.13019395, 0)
+BestUI.Title_23.Size = UDim2.new(0.279948205, -20, 1.61522508, -20)
+BestUI.Title_23.ZIndex = 2
+BestUI.Title_23.Font = Enum.Font.GothamSemibold
+BestUI.Title_23.Text = "For Him Showcasing my UI!!"
+BestUI.Title_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_23.TextScaled = true
+BestUI.Title_23.TextSize = 14.000
+BestUI.Title_23.TextWrapped = true
+
+BestUI.UICorner_86.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_86.Parent = BestUI.Title_23
+
+BestUI.Title_24.Name = "Title"
+BestUI.Title_24.Parent = BestUI.CreditsUITitle
+BestUI.Title_24.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_24.BackgroundTransparency = 1.000
+BestUI.Title_24.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_24.BorderSizePixel = 0
+BestUI.Title_24.Position = UDim2.new(0.14823544, 0, 3.96890354, 0)
+BestUI.Title_24.Size = UDim2.new(0.279948205, -20, 1.61522508, -20)
+BestUI.Title_24.ZIndex = 2
+BestUI.Title_24.Font = Enum.Font.GothamSemibold
+BestUI.Title_24.Text = "Exult Hub:"
+BestUI.Title_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_24.TextScaled = true
+BestUI.Title_24.TextSize = 14.000
+BestUI.Title_24.TextWrapped = true
+
+BestUI.UICorner_87.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_87.Parent = BestUI.Title_24
+
+BestUI.Title_25.Name = "Title"
+BestUI.Title_25.Parent = BestUI.CreditsUITitle
+BestUI.Title_25.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_25.BackgroundTransparency = 1.000
+BestUI.Title_25.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_25.BorderSizePixel = 0
+BestUI.Title_25.Position = UDim2.new(0.620942891, 0, 3.93780637, 0)
+BestUI.Title_25.Size = UDim2.new(0.753747344, -20, 1.22580719, -20)
+BestUI.Title_25.ZIndex = 2
+BestUI.Title_25.Font = Enum.Font.GothamSemibold
+BestUI.Title_25.Text = "https://www.youtube.com/channel/UCm4CtVwXeC2K_YX5z-LatFg"
+BestUI.Title_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_25.TextScaled = true
+BestUI.Title_25.TextSize = 14.000
+BestUI.Title_25.TextWrapped = true
+
+BestUI.UICorner_88.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_88.Parent = BestUI.Title_25
+
+BestUI.UICorner_89.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_89.Parent = BestUI.CreditsUITitle
+
+BestUI.UICorner_90.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_90.Parent = BestUI.CreditsUIFrame
+
+BestUI.UniversalMM2UIFrame.Name = "UniversalMM2UIFrame"
+BestUI.UniversalMM2UIFrame.Parent = BestUI.BestFrame
+BestUI.UniversalMM2UIFrame.AnchorPoint = Vector2.new(1, 0)
+BestUI.UniversalMM2UIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+BestUI.UniversalMM2UIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.UniversalMM2UIFrame.BorderSizePixel = 0
+BestUI.UniversalMM2UIFrame.Position = UDim2.new(0, 470, 0, 80)
+BestUI.UniversalMM2UIFrame.Size = UDim2.new(0, 453, 0, 177)
+BestUI.UniversalMM2UIFrame.Visible = false
+
+BestUI.UniversalMM2UITitle.Name = "UniversalMM2UITitle"
+BestUI.UniversalMM2UITitle.Parent = BestUI.UniversalMM2UIFrame
+BestUI.UniversalMM2UITitle.AnchorPoint = Vector2.new(1, 0)
+BestUI.UniversalMM2UITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+BestUI.UniversalMM2UITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.UniversalMM2UITitle.BorderSizePixel = 0
+BestUI.UniversalMM2UITitle.Position = UDim2.new(1, 0, 0, 0)
+BestUI.UniversalMM2UITitle.Size = UDim2.new(0, 459, 0, 31)
+
+BestUI.Title_26.Name = "Title"
+BestUI.Title_26.Parent = BestUI.UniversalMM2UITitle
+BestUI.Title_26.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_26.BackgroundTransparency = 1.000
+BestUI.Title_26.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_26.BorderSizePixel = 0
+BestUI.Title_26.Position = UDim2.new(0.498758465, 0, 0.483870924, 0)
+BestUI.Title_26.Size = UDim2.new(0.42479676, -20, 1.93548381, -20)
+BestUI.Title_26.ZIndex = 2
+BestUI.Title_26.Font = Enum.Font.GothamSemibold
+BestUI.Title_26.Text = "MM2 UI"
+BestUI.Title_26.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_26.TextScaled = true
+BestUI.Title_26.TextSize = 14.000
+BestUI.Title_26.TextWrapped = true
+
+BestUI.UICorner_91.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_91.Parent = BestUI.UniversalMM2UITitle
+
+BestUI.Button_37.Name = "Button"
+BestUI.Button_37.Parent = BestUI.UniversalMM2UIFrame
+BestUI.Button_37.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_37.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_37.BorderSizePixel = 0
+BestUI.Button_37.Position = UDim2.new(0.963953495, 0, 0.204433456, 0)
+BestUI.Button_37.Size = UDim2.new(0, 426, 0, 135)
+BestUI.Button_37.ZIndex = 2
+BestUI.Button_37.Font = Enum.Font.GothamSemibold
+BestUI.Button_37.Text = ""
+BestUI.Button_37.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_37.TextScaled = true
+BestUI.Button_37.TextSize = 14.000
+BestUI.Button_37.TextWrapped = true
+
+BestUI.TextLabel_42.Parent = BestUI.Button_37
+BestUI.TextLabel_42.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_42.BackgroundTransparency = 1.000
+BestUI.TextLabel_42.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_42.BorderSizePixel = 0
+BestUI.TextLabel_42.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_42.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_42.ZIndex = 2
+BestUI.TextLabel_42.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_42.Text = "MM2 UI"
+BestUI.TextLabel_42.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_42.TextScaled = true
+BestUI.TextLabel_42.TextSize = 14.000
+BestUI.TextLabel_42.TextWrapped = true
+
+BestUI.UICorner_92.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_92.Parent = BestUI.Button_37
+
+BestUI.UICorner_93.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_93.Parent = BestUI.UniversalMM2UIFrame
+
+BestUI.UniversalISGUIFrame.Name = "UniversalISGUIFrame"
+BestUI.UniversalISGUIFrame.Parent = BestUI.BestFrame
+BestUI.UniversalISGUIFrame.AnchorPoint = Vector2.new(1, 0)
+BestUI.UniversalISGUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+BestUI.UniversalISGUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.UniversalISGUIFrame.BorderSizePixel = 0
+BestUI.UniversalISGUIFrame.Position = UDim2.new(0, 469, 0, 81)
+BestUI.UniversalISGUIFrame.Size = UDim2.new(0, 452, 0, 172)
+BestUI.UniversalISGUIFrame.Visible = false
+
+BestUI.UniversalISGUITitle.Name = "UniversalISGUITitle"
+BestUI.UniversalISGUITitle.Parent = BestUI.UniversalISGUIFrame
+BestUI.UniversalISGUITitle.AnchorPoint = Vector2.new(1, 0)
+BestUI.UniversalISGUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+BestUI.UniversalISGUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.UniversalISGUITitle.BorderSizePixel = 0
+BestUI.UniversalISGUITitle.Position = UDim2.new(1, 0, 0, 0)
+BestUI.UniversalISGUITitle.Size = UDim2.new(0, 397, 0, 31)
+
+BestUI.Title_27.Name = "Title"
+BestUI.Title_27.Parent = BestUI.UniversalISGUITitle
+BestUI.Title_27.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_27.BackgroundTransparency = 1.000
+BestUI.Title_27.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_27.BorderSizePixel = 0
+BestUI.Title_27.Position = UDim2.new(0.531504035, 0, 0.483870953, 0)
+BestUI.Title_27.Size = UDim2.new(0.42479676, -20, 1.93548381, -20)
+BestUI.Title_27.ZIndex = 2
+BestUI.Title_27.Font = Enum.Font.GothamSemibold
+BestUI.Title_27.Text = "Squid Game UI"
+BestUI.Title_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_27.TextScaled = true
+BestUI.Title_27.TextSize = 14.000
+BestUI.Title_27.TextWrapped = true
+
+BestUI.UICorner_94.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_94.Parent = BestUI.Title_27
+
+BestUI.UICorner_95.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_95.Parent = BestUI.UniversalISGUITitle
+
+BestUI.Button_38.Name = "Button"
+BestUI.Button_38.Parent = BestUI.UniversalISGUIFrame
+BestUI.Button_38.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button_38.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button_38.BorderSizePixel = 0
+BestUI.Button_38.Position = UDim2.new(0.9508816, 0, 0.204433501, 0)
+BestUI.Button_38.Size = UDim2.new(0, 370, 0, 59)
+BestUI.Button_38.ZIndex = 2
+BestUI.Button_38.Font = Enum.Font.GothamSemibold
+BestUI.Button_38.Text = ""
+BestUI.Button_38.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button_38.TextScaled = true
+BestUI.Button_38.TextSize = 14.000
+BestUI.Button_38.TextWrapped = true
+
+BestUI.TextLabel_43.Parent = BestUI.Button_38
+BestUI.TextLabel_43.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_43.BackgroundTransparency = 1.000
+BestUI.TextLabel_43.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_43.BorderSizePixel = 0
+BestUI.TextLabel_43.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_43.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_43.ZIndex = 2
+BestUI.TextLabel_43.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_43.Text = "Squid Game UI"
+BestUI.TextLabel_43.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_43.TextScaled = true
+BestUI.TextLabel_43.TextSize = 14.000
+BestUI.TextLabel_43.TextWrapped = true
+
+BestUI.UICorner_96.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_96.Parent = BestUI.Button_38
+
+BestUI.UICorner_97.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_97.Parent = BestUI.UniversalISGUIFrame
+
+BestUI.UniversalUIFrame.Name = "UniversalUIFrame"
+BestUI.UniversalUIFrame.Parent = BestUI.BestFrame
+BestUI.UniversalUIFrame.AnchorPoint = Vector2.new(1, 0)
+BestUI.UniversalUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+BestUI.UniversalUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.UniversalUIFrame.BorderSizePixel = 0
+BestUI.UniversalUIFrame.Position = UDim2.new(0, 480, 0, 81)
+BestUI.UniversalUIFrame.Size = UDim2.new(0, 469, 0, 177)
+BestUI.UniversalUIFrame.Visible = false
+
+BestUI.Button1.Name = "Button1"
+BestUI.Button1.Parent = BestUI.UniversalUIFrame
+BestUI.Button1.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button1.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button1.BorderSizePixel = 0
+BestUI.Button1.Position = UDim2.new(0.472292185, 0, 0.65763545, 0)
+BestUI.Button1.Size = UDim2.new(0.383795321, 0, 0.254237294, 0)
+BestUI.Button1.ZIndex = 2
+BestUI.Button1.Font = Enum.Font.GothamSemibold
+BestUI.Button1.Text = ""
+BestUI.Button1.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button1.TextScaled = true
+BestUI.Button1.TextSize = 14.000
+BestUI.Button1.TextWrapped = true
+
+BestUI.TextLabel_44.Parent = BestUI.Button1
+BestUI.TextLabel_44.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_44.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_44.BackgroundTransparency = 1.000
+BestUI.TextLabel_44.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_44.BorderSizePixel = 0
+BestUI.TextLabel_44.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_44.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_44.ZIndex = 2
+BestUI.TextLabel_44.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_44.Text = "God Mode"
+BestUI.TextLabel_44.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_44.TextScaled = true
+BestUI.TextLabel_44.TextSize = 14.000
+BestUI.TextLabel_44.TextWrapped = true
+
+BestUI.UICorner_98.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_98.Parent = BestUI.Button1
+
+BestUI.Button2.Name = "Button2"
+BestUI.Button2.Parent = BestUI.UniversalUIFrame
+BestUI.Button2.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button2.BorderSizePixel = 0
+BestUI.Button2.Position = UDim2.new(0.953400493, 0, 0.381773412, 0)
+BestUI.Button2.Size = UDim2.new(0.383795321, 0, 0.254237294, 0)
+BestUI.Button2.ZIndex = 2
+BestUI.Button2.Font = Enum.Font.GothamSemibold
+BestUI.Button2.Text = ""
+BestUI.Button2.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button2.TextScaled = true
+BestUI.Button2.TextSize = 14.000
+BestUI.Button2.TextWrapped = true
+
+BestUI.TextLabel_45.Parent = BestUI.Button2
+BestUI.TextLabel_45.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_45.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_45.BackgroundTransparency = 1.000
+BestUI.TextLabel_45.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_45.BorderSizePixel = 0
+BestUI.TextLabel_45.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_45.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_45.ZIndex = 2
+BestUI.TextLabel_45.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_45.Text = "Set JumpPower"
+BestUI.TextLabel_45.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_45.TextScaled = true
+BestUI.TextLabel_45.TextSize = 14.000
+BestUI.TextLabel_45.TextWrapped = true
+
+BestUI.UICorner_99.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_99.Parent = BestUI.Button2
+
+BestUI.JumpBox_3.Name = "JumpBox"
+BestUI.JumpBox_3.Parent = BestUI.UniversalUIFrame
+BestUI.JumpBox_3.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+BestUI.JumpBox_3.Position = UDim2.new(0.569515347, 0, 0.193802088, 0)
+BestUI.JumpBox_3.Size = UDim2.new(0.383795321, 0, 0.135593221, 0)
+BestUI.JumpBox_3.Font = Enum.Font.SciFi
+BestUI.JumpBox_3.PlaceholderText = "Enter Jump Here"
+BestUI.JumpBox_3.Text = ""
+BestUI.JumpBox_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+BestUI.JumpBox_3.TextSize = 20.000
+
+BestUI.UICorner_100.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_100.Parent = BestUI.JumpBox_3
+
+BestUI.SpeedBox_3.Name = "SpeedBox"
+BestUI.SpeedBox_3.Parent = BestUI.UniversalUIFrame
+BestUI.SpeedBox_3.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+BestUI.SpeedBox_3.Position = UDim2.new(0.0909259394, 0, 0.198728204, 0)
+BestUI.SpeedBox_3.Size = UDim2.new(0.383795321, 0, 0.135593221, 0)
+BestUI.SpeedBox_3.Font = Enum.Font.SciFi
+BestUI.SpeedBox_3.PlaceholderText = "Enter Speed Here"
+BestUI.SpeedBox_3.Text = ""
+BestUI.SpeedBox_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+BestUI.SpeedBox_3.TextSize = 20.000
+
+BestUI.UICorner_101.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_101.Parent = BestUI.SpeedBox_3
+
+BestUI.Button3.Name = "Button3"
+BestUI.Button3.Parent = BestUI.UniversalUIFrame
+BestUI.Button3.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button3.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button3.BorderSizePixel = 0
+BestUI.Button3.Position = UDim2.new(0.474811077, 0, 0.386699498, 0)
+BestUI.Button3.Size = UDim2.new(0.383795321, 0, 0.254237294, 0)
+BestUI.Button3.ZIndex = 2
+BestUI.Button3.Font = Enum.Font.GothamSemibold
+BestUI.Button3.Text = ""
+BestUI.Button3.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button3.TextScaled = true
+BestUI.Button3.TextSize = 14.000
+BestUI.Button3.TextWrapped = true
+
+BestUI.TextLabel_46.Parent = BestUI.Button3
+BestUI.TextLabel_46.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_46.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_46.BackgroundTransparency = 1.000
+BestUI.TextLabel_46.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_46.BorderSizePixel = 0
+BestUI.TextLabel_46.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_46.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_46.ZIndex = 2
+BestUI.TextLabel_46.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_46.Text = "Set WalkSpeed"
+BestUI.TextLabel_46.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_46.TextScaled = true
+BestUI.TextLabel_46.TextSize = 14.000
+BestUI.TextLabel_46.TextWrapped = true
+
+BestUI.UICorner_102.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_102.Parent = BestUI.Button3
+
+BestUI.UniversalPlayerUITitle.Name = "UniversalPlayerUITitle"
+BestUI.UniversalPlayerUITitle.Parent = BestUI.UniversalUIFrame
+BestUI.UniversalPlayerUITitle.AnchorPoint = Vector2.new(1, 0)
+BestUI.UniversalPlayerUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+BestUI.UniversalPlayerUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.UniversalPlayerUITitle.BorderSizePixel = 0
+BestUI.UniversalPlayerUITitle.Position = UDim2.new(1, 0, 0, 0)
+BestUI.UniversalPlayerUITitle.Size = UDim2.new(1, 0, 0.175141245, 0)
+
+BestUI.Title_28.Name = "Title"
+BestUI.Title_28.Parent = BestUI.UniversalPlayerUITitle
+BestUI.Title_28.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_28.BackgroundTransparency = 1.000
+BestUI.Title_28.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_28.BorderSizePixel = 0
+BestUI.Title_28.Position = UDim2.new(0.477750659, 0, 0.483870953, 0)
+BestUI.Title_28.Size = UDim2.new(0.461044043, 0, 1.29032254, 0)
+BestUI.Title_28.ZIndex = 2
+BestUI.Title_28.Font = Enum.Font.GothamSemibold
+BestUI.Title_28.Text = "Player UI"
+BestUI.Title_28.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_28.TextScaled = true
+BestUI.Title_28.TextSize = 14.000
+BestUI.Title_28.TextWrapped = true
+
+BestUI.UICorner_103.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_103.Parent = BestUI.UniversalPlayerUITitle
+
+BestUI.Button1_2.Name = "Button1"
+BestUI.Button1_2.Parent = BestUI.UniversalUIFrame
+BestUI.Button1_2.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button1_2.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button1_2.BorderSizePixel = 0
+BestUI.Button1_2.Position = UDim2.new(0.953400493, 0, 0.65763545, 0)
+BestUI.Button1_2.Size = UDim2.new(0.383795321, 0, 0.254237294, 0)
+BestUI.Button1_2.ZIndex = 2
+BestUI.Button1_2.Font = Enum.Font.GothamSemibold
+BestUI.Button1_2.Text = ""
+BestUI.Button1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button1_2.TextScaled = true
+BestUI.Button1_2.TextSize = 14.000
+BestUI.Button1_2.TextWrapped = true
+
+BestUI.TextLabel_47.Parent = BestUI.Button1_2
+BestUI.TextLabel_47.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_47.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_47.BackgroundTransparency = 1.000
+BestUI.TextLabel_47.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_47.BorderSizePixel = 0
+BestUI.TextLabel_47.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_47.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_47.ZIndex = 2
+BestUI.TextLabel_47.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_47.Text = "Fly Mode (Press 'E')"
+BestUI.TextLabel_47.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_47.TextScaled = true
+BestUI.TextLabel_47.TextSize = 14.000
+BestUI.TextLabel_47.TextWrapped = true
+
+BestUI.UICorner_104.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_104.Parent = BestUI.Button1_2
+
+BestUI.UICorner_105.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_105.Parent = BestUI.UniversalUIFrame
+
+BestUI.ExecutorUIFrame.Name = "ExecutorUIFrame"
+BestUI.ExecutorUIFrame.Parent = BestUI.BestFrame
+BestUI.ExecutorUIFrame.AnchorPoint = Vector2.new(1, 0)
+BestUI.ExecutorUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+BestUI.ExecutorUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.ExecutorUIFrame.BorderSizePixel = 0
+BestUI.ExecutorUIFrame.Position = UDim2.new(0, 477, 0, 78)
+BestUI.ExecutorUIFrame.Size = UDim2.new(0, 469, 0, 177)
+BestUI.ExecutorUIFrame.Visible = false
+
+BestUI.Button1_3.Name = "Button1"
+BestUI.Button1_3.Parent = BestUI.ExecutorUIFrame
+BestUI.Button1_3.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button1_3.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button1_3.BorderSizePixel = 0
+BestUI.Button1_3.Position = UDim2.new(0.395533115, 0, 0.65763545, 0)
+BestUI.Button1_3.Size = UDim2.new(0.383795321, 0, 0.254237294, 0)
+BestUI.Button1_3.ZIndex = 2
+BestUI.Button1_3.Font = Enum.Font.GothamSemibold
+BestUI.Button1_3.Text = ""
+BestUI.Button1_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button1_3.TextScaled = true
+BestUI.Button1_3.TextSize = 14.000
+BestUI.Button1_3.TextWrapped = true
+
+BestUI.TextLabel_48.Parent = BestUI.Button1_3
+BestUI.TextLabel_48.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_48.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_48.BackgroundTransparency = 1.000
+BestUI.TextLabel_48.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_48.BorderSizePixel = 0
+BestUI.TextLabel_48.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_48.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_48.ZIndex = 2
+BestUI.TextLabel_48.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_48.Text = "Execute"
+BestUI.TextLabel_48.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_48.TextScaled = true
+BestUI.TextLabel_48.TextSize = 14.000
+BestUI.TextLabel_48.TextWrapped = true
+
+BestUI.UICorner_106.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_106.Parent = BestUI.Button1_3
+
+BestUI.ExecuteBox.Name = "ExecuteBox"
+BestUI.ExecuteBox.Parent = BestUI.ExecutorUIFrame
+BestUI.ExecuteBox.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+BestUI.ExecuteBox.Position = UDim2.new(0.0120346947, 0, 0.193078503, 0)
+BestUI.ExecuteBox.Size = UDim2.new(0.968017042, 0, 0.406779647, 0)
+BestUI.ExecuteBox.ClearTextOnFocus = false
+BestUI.ExecuteBox.Font = Enum.Font.SciFi
+BestUI.ExecuteBox.MultiLine = true
+BestUI.ExecuteBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+BestUI.ExecuteBox.PlaceholderText = "Enter Script Here! (ONLY DOES LOADSTRINGS!! AND GAME. COMMANDS!!)"
+BestUI.ExecuteBox.Text = ""
+BestUI.ExecuteBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+BestUI.ExecuteBox.TextScaled = true
+BestUI.ExecuteBox.TextSize = 20.000
+BestUI.ExecuteBox.TextWrapped = true
+
+BestUI.UICorner_107.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_107.Parent = BestUI.ExecuteBox
+
+BestUI.UniversalPlayerUITitle_2.Name = "UniversalPlayerUITitle"
+BestUI.UniversalPlayerUITitle_2.Parent = BestUI.ExecutorUIFrame
+BestUI.UniversalPlayerUITitle_2.AnchorPoint = Vector2.new(1, 0)
+BestUI.UniversalPlayerUITitle_2.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+BestUI.UniversalPlayerUITitle_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.UniversalPlayerUITitle_2.BorderSizePixel = 0
+BestUI.UniversalPlayerUITitle_2.Position = UDim2.new(1, 0, 0, 0)
+BestUI.UniversalPlayerUITitle_2.Size = UDim2.new(1, 0, 0.175141245, 0)
+
+BestUI.Title_29.Name = "Title"
+BestUI.Title_29.Parent = BestUI.UniversalPlayerUITitle_2
+BestUI.Title_29.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_29.BackgroundTransparency = 1.000
+BestUI.Title_29.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_29.BorderSizePixel = 0
+BestUI.Title_29.Position = UDim2.new(0.520394564, 0, 0.483870953, 0)
+BestUI.Title_29.Size = UDim2.new(0.461044043, 0, 1.29032254, 0)
+BestUI.Title_29.ZIndex = 2
+BestUI.Title_29.Font = Enum.Font.GothamSemibold
+BestUI.Title_29.Text = "Executor UI"
+BestUI.Title_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_29.TextScaled = true
+BestUI.Title_29.TextSize = 14.000
+BestUI.Title_29.TextWrapped = true
+
+BestUI.UICorner_108.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_108.Parent = BestUI.UniversalPlayerUITitle_2
+
+BestUI.Button1_4.Name = "Button1"
+BestUI.Button1_4.Parent = BestUI.ExecutorUIFrame
+BestUI.Button1_4.AnchorPoint = Vector2.new(1, 0)
+BestUI.Button1_4.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Button1_4.BorderSizePixel = 0
+BestUI.Button1_4.Position = UDim2.new(0.978986859, 0, 0.65763545, 0)
+BestUI.Button1_4.Size = UDim2.new(0.383795321, 0, 0.254237294, 0)
+BestUI.Button1_4.ZIndex = 2
+BestUI.Button1_4.Font = Enum.Font.GothamSemibold
+BestUI.Button1_4.Text = ""
+BestUI.Button1_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Button1_4.TextScaled = true
+BestUI.Button1_4.TextSize = 14.000
+BestUI.Button1_4.TextWrapped = true
+
+BestUI.TextLabel_49.Parent = BestUI.Button1_4
+BestUI.TextLabel_49.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_49.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_49.BackgroundTransparency = 1.000
+BestUI.TextLabel_49.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_49.BorderSizePixel = 0
+BestUI.TextLabel_49.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_49.Size = UDim2.new(1, -20, 1, -20)
+BestUI.TextLabel_49.ZIndex = 2
+BestUI.TextLabel_49.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_49.Text = "Clear"
+BestUI.TextLabel_49.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_49.TextScaled = true
+BestUI.TextLabel_49.TextSize = 14.000
+BestUI.TextLabel_49.TextWrapped = true
+
+BestUI.UICorner_109.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_109.Parent = BestUI.Button1_4
+
+BestUI.UICorner_110.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_110.Parent = BestUI.ExecutorUIFrame
+
+BestUI.HomeUIFrame.Name = "HomeUIFrame"
+BestUI.HomeUIFrame.Parent = BestUI.BestFrame
+BestUI.HomeUIFrame.AnchorPoint = Vector2.new(1, 0)
+BestUI.HomeUIFrame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+BestUI.HomeUIFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.HomeUIFrame.BorderSizePixel = 0
+BestUI.HomeUIFrame.Position = UDim2.new(0, 477, 0, 78)
+BestUI.HomeUIFrame.Size = UDim2.new(0, 469, 0, 177)
+
+BestUI.HomeUITitle.Name = "HomeUITitle"
+BestUI.HomeUITitle.Parent = BestUI.HomeUIFrame
+BestUI.HomeUITitle.AnchorPoint = Vector2.new(1, 0)
+BestUI.HomeUITitle.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+BestUI.HomeUITitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.HomeUITitle.BorderSizePixel = 0
+BestUI.HomeUITitle.Position = UDim2.new(1, 0, 0, 0)
+BestUI.HomeUITitle.Size = UDim2.new(1, 0, 0.175141245, 0)
+
+BestUI.Title_30.Name = "Title"
+BestUI.Title_30.Parent = BestUI.HomeUITitle
+BestUI.Title_30.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.Title_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_30.BackgroundTransparency = 1.000
+BestUI.Title_30.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.Title_30.BorderSizePixel = 0
+BestUI.Title_30.Position = UDim2.new(0.520394564, 0, 0.483870953, 0)
+BestUI.Title_30.Size = UDim2.new(0.461044043, 0, 1.29032254, 0)
+BestUI.Title_30.ZIndex = 2
+BestUI.Title_30.Font = Enum.Font.GothamSemibold
+BestUI.Title_30.Text = "Home UI"
+BestUI.Title_30.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Title_30.TextScaled = true
+BestUI.Title_30.TextSize = 14.000
+BestUI.Title_30.TextWrapped = true
+
+BestUI.UICorner_111.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_111.Parent = BestUI.Title_30
+
+BestUI.UICorner_112.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_112.Parent = BestUI.HomeUITitle
+
+BestUI.DescriptionPlayerText.Name = "DescriptionPlayerText"
+BestUI.DescriptionPlayerText.Parent = BestUI.HomeUIFrame
+BestUI.DescriptionPlayerText.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.DescriptionPlayerText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.DescriptionPlayerText.BackgroundTransparency = 1.000
+BestUI.DescriptionPlayerText.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.DescriptionPlayerText.BorderSizePixel = 0
+BestUI.DescriptionPlayerText.Position = UDim2.new(0.519328475, 0, 0.757882178, 0)
+BestUI.DescriptionPlayerText.Size = UDim2.new(0.646545172, 0, 0.188627601, 0)
+BestUI.DescriptionPlayerText.ZIndex = 2
+BestUI.DescriptionPlayerText.Font = Enum.Font.GothamSemibold
+BestUI.DescriptionPlayerText.Text = "Welcome Player!! Thank You For Using BestUI!! :D"
+BestUI.DescriptionPlayerText.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.DescriptionPlayerText.TextScaled = true
+BestUI.DescriptionPlayerText.TextSize = 14.000
+BestUI.DescriptionPlayerText.TextWrapped = true
+
+BestUI.UICorner_113.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_113.Parent = BestUI.DescriptionPlayerText
+
+BestUI.PlayerImage.Name = "PlayerImage"
+BestUI.PlayerImage.Parent = BestUI.HomeUIFrame
+BestUI.PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.PlayerImage.BackgroundTransparency = 1.000
+BestUI.PlayerImage.Position = UDim2.new(0.411513865, 0, 0.197740108, 0)
+BestUI.PlayerImage.Size = UDim2.new(0, 90, 0, 82)
+BestUI.PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+BestUI.UICorner_114.CornerRadius = UDim.new(0.5, 0)
+BestUI.UICorner_114.Parent = BestUI.PlayerImage
+
+BestUI.UICorner_115.CornerRadius = UDim.new(0.075000003, 0)
+BestUI.UICorner_115.Parent = BestUI.HomeUIFrame
+
+BestUI.Open.Name = "Open"
+BestUI.Open.Parent = BestUI.BestUI
+BestUI.Open.AnchorPoint = Vector2.new(1, 0)
+BestUI.Open.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+BestUI.Open.BorderSizePixel = 0
+BestUI.Open.Position = UDim2.new(0.99452889, 0, 0.0115207378, 0)
+BestUI.Open.Size = UDim2.new(0.0522796363, 0, 0.186635941, 0)
+BestUI.Open.ZIndex = 2
+BestUI.Open.Font = Enum.Font.GothamSemibold
+BestUI.Open.Text = ""
+BestUI.Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.Open.TextScaled = true
+BestUI.Open.TextSize = 14.000
+BestUI.Open.TextWrapped = true
+
+BestUI.TextLabel_50.Parent = BestUI.Open
+BestUI.TextLabel_50.AnchorPoint = Vector2.new(0.5, 0.5)
+BestUI.TextLabel_50.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_50.BackgroundTransparency = 1.000
+BestUI.TextLabel_50.BorderColor3 = Color3.fromRGB(27, 42, 53)
+BestUI.TextLabel_50.BorderSizePixel = 0
+BestUI.TextLabel_50.Position = UDim2.new(0.5, 0, 0.5, 0)
+BestUI.TextLabel_50.Size = UDim2.new(0.791666687, 0, 0.285714298, 0)
+BestUI.TextLabel_50.ZIndex = 2
+BestUI.TextLabel_50.Font = Enum.Font.GothamSemibold
+BestUI.TextLabel_50.Text = "Close"
+BestUI.TextLabel_50.TextColor3 = Color3.fromRGB(255, 255, 255)
+BestUI.TextLabel_50.TextScaled = true
+BestUI.TextLabel_50.TextSize = 14.000
+BestUI.TextLabel_50.TextWrapped = true
+
+BestUI.UICorner_116.CornerRadius = UDim.new(0.5, 0)
+BestUI.UICorner_116.Parent = BestUI.Open
+
+-- Scripts:
+
+local function TRGM_fake_script() -- BestUI.Button.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Scripts = script.Parent.Parent.Parent.ScriptsUIFrame
+		script.Parent.Parent.Parent.UniversalUIFrame.Visible = true
+		script.Parent.Parent.Parent.FunUIFrame.Visible = false
+		script.Parent.Parent.Parent.UniversalBABUIFrame.Visible = false
+		script.Parent.Parent.Parent.GamesUIFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsUIFrame.Visible = false
+		script.Parent.Parent.Parent.ExecutorUIFrame.Visible = false
+		script.Parent.Parent.Parent.HomeUIFrame.Visible = false
+		Scripts.Visible = false
+		if game.PlaceId == 537413528 then
+			script.Parent.Parent.Parent.UniversalARSUIFrame.Visible = false
+			script.Parent.Parent.Parent.UniversalISGUIFrame.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.BackgroundTransparency = 1
+			script.Parent.Parent.Parent.UniversalUIFrame.UniversalPlayerUITitle.BackgroundTransparency = 1
+			script.Parent.Parent.Parent.UniversalUIFrame.UniversalPlayerUITitle.Title.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.Button1.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.Button2.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.Button3.Visible = false
+			script.Parent.Parent.Parent.UniversalBABUIFrame.Visible = true
+		end
+		if game.PlaceId == 286090429 then
+			script.Parent.Parent.Parent.UniversalBABUIFrame.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.UniversalPlayerUITitle.Title.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.BackgroundTransparency = 1
+			script.Parent.Parent.Parent.UniversalUIFrame.UniversalPlayerUITitle.BackgroundTransparency = 1
+			script.Parent.Parent.Parent.UniversalUIFrame.UniversalPlayerUITitle.Title.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.Button1.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.Button2.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.Button3.Visible = false
+			script.Parent.Parent.Parent.UniversalARSUIFrame.Visible = true
+		end
+		if game.PlaceId == 142823291 then
+			script.Parent.Parent.Parent.UniversalBABUIFrame.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.UniversalPlayerUITitle.Title.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.BackgroundTransparency = 1
+			script.Parent.Parent.Parent.UniversalUIFrame.UniversalPlayerUITitle.BackgroundTransparency = 1
+			script.Parent.Parent.Parent.UniversalUIFrame.UniversalPlayerUITitle.Title.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.Button1.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.Button2.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.Button3.Visible = false
+			script.Parent.Parent.Parent.UniversalARSUIFrame.Visible = false
+			script.Parent.Parent.Parent.UniversalMM2UIFrame.Visible = true
+		end
+		if game.PlaceId == 7638310821 then
+			script.Parent.Parent.Parent.UniversalBABUIFrame.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.UniversalPlayerUITitle.Title.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.BackgroundTransparency = 1
+			script.Parent.Parent.Parent.UniversalUIFrame.UniversalPlayerUITitle.BackgroundTransparency = 1
+			script.Parent.Parent.Parent.UniversalUIFrame.UniversalPlayerUITitle.Title.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.Button1.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.Button2.Visible = false
+			script.Parent.Parent.Parent.UniversalUIFrame.Button3.Visible = false
+			script.Parent.Parent.Parent.UniversalARSUIFrame.Visible = false
+			script.Parent.Parent.Parent.UniversalMM2UIFrame.Visible = false
+			script.Parent.Parent.Parent.UniversalISGUIFrame.Visible = true
+		end
+	end)
+end
+coroutine.wrap(TRGM_fake_script)()
+local function AUBCUL_fake_script() -- BestUI.Button_2.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Scripts = script.Parent.Parent.Parent.ScriptsUIFrame
+		script.Parent.Parent.Parent.UniversalUIFrame.Visible = false
+		script.Parent.Parent.Parent.FunUIFrame.Visible = false
+		script.Parent.Parent.Parent.UniversalBABUIFrame.Visible = false
+		script.Parent.Parent.Parent.GamesUIFrame.Visible = false
+		script.Parent.Parent.Parent.HomeUIFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsUIFrame.Visible = false
+		script.Parent.Parent.Parent.UniversalMM2UIFrame.Visible = false
+		script.Parent.Parent.Parent.UniversalISGUIFrame.Visible = false
+		Scripts.Visible = true
+		script.Parent.Parent.Parent.ExecutorUIFrame.Visible = false
+	end)
+end
+coroutine.wrap(AUBCUL_fake_script)()
+local function HFODST_fake_script() -- BestUI.Button_3.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.UniversalUIFrame.Visible = false
+		script.Parent.Parent.Parent.ScriptsUIFrame.Visible = false
+		script.Parent.Parent.Parent.UniversalBABUIFrame.Visible = false
+		script.Parent.Parent.Parent.GamesUIFrame.Visible = false
+		script.Parent.Parent.Parent.FunUIFrame.Visible = true
+		script.Parent.Parent.Parent.HomeUIFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsUIFrame.Visible = false
+		script.Parent.Parent.Parent.UniversalMM2UIFrame.Visible = false
+		script.Parent.Parent.Parent.UniversalISGUIFrame.Visible = false
+		script.Parent.Parent.Parent.ExecutorUIFrame.Visible = false
+	end)
+end
+coroutine.wrap(HFODST_fake_script)()
+local function ADLDPVX_fake_script() -- BestUI.Button_4.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Scripts = script.Parent.Parent.Parent.ScriptsUIFrame
+		script.Parent.Parent.Parent.UniversalUIFrame.Visible = false
+		script.Parent.Parent.Parent.FunUIFrame.Visible = false
+		script.Parent.Parent.Parent.UniversalBABUIFrame.Visible = false
+		script.Parent.Parent.Parent.GamesUIFrame.Visible = false
+		script.Parent.Parent.Parent.HomeUIFrame.Visible = false
+		script.Parent.Parent.Parent.UniversalMM2UIFrame.Visible = false
+		script.Parent.Parent.Parent.UniversalISGUIFrame.Visible = false
+		Scripts.Visible = false
+		script.Parent.Parent.Parent.CreditsUIFrame.Visible = true
+		script.Parent.Parent.Parent.ExecutorUIFrame.Visible = false
+	end)
+end
+coroutine.wrap(ADLDPVX_fake_script)()
+local function DRUSZD_fake_script() -- BestUI.Button_5.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.UniversalUIFrame.Visible = false
+		script.Parent.Parent.Parent.ScriptsUIFrame.Visible = false
+		script.Parent.Parent.Parent.FunUIFrame.Visible = false
+		script.Parent.Parent.Parent.UniversalBABUIFrame.Visible = false
+		script.Parent.Parent.Parent.GamesUIFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsUIFrame.Visible = false
+		script.Parent.Parent.Parent.UniversalMM2UIFrame.Visible = false
+		script.Parent.Parent.Parent.UniversalISGUIFrame.Visible = false
+		script.Parent.Parent.Parent.HomeUIFrame.Visible = false
+		script.Parent.Parent.Parent.ExecutorUIFrame.Visible = true
+	end)
+end
+coroutine.wrap(DRUSZD_fake_script)()
+local function APHGL_fake_script() -- BestUI.Button_6.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Scripts = script.Parent.Parent.Parent.ScriptsUIFrame
+		script.Parent.Parent.Parent.UniversalUIFrame.Visible = false
+		script.Parent.Parent.Parent.FunUIFrame.Visible = false
+		script.Parent.Parent.Parent.UniversalBABUIFrame.Visible = false
+		script.Parent.Parent.Parent.GamesUIFrame.Visible = false
+		script.Parent.Parent.Parent.CreditsUIFrame.Visible = false
+		script.Parent.Parent.Parent.ExecutorUIFrame.Visible = false
+		script.Parent.Parent.Parent.HomeUIFrame.Visible = true
+		Scripts.Visible = false
+	end)
+end
+coroutine.wrap(APHGL_fake_script)()
+local function XEHNHEM_fake_script() -- BestUI.Button_7.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_7)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end)
+end
+coroutine.wrap(XEHNHEM_fake_script)()
+local function GBNQL_fake_script() -- BestUI.Button_8.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_8)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+	end)
+end
+coroutine.wrap(GBNQL_fake_script)()
+local function HMNAEGX_fake_script() -- BestUI.Button_9.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_9)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/EGWGE/main/synapse%20x%20ui.txt'))()
+	end)
+end
+coroutine.wrap(HMNAEGX_fake_script)()
+local function FGRXALM_fake_script() -- BestUI.Button_10.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_10)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/FAFAFAF/main/SGDGF'))()
+	end)
+end
+coroutine.wrap(FGRXALM_fake_script)()
+local function XQJQV_fake_script() -- BestUI.Button_11.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_11)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/FDSFSGFG/main/VERY%20OP%20ADMIN%20GUI.txt'))()
+	end)
+end
+coroutine.wrap(XQJQV_fake_script)()
+local function TUKRJ_fake_script() -- BestUI.Button_12.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_12)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/FDSFSGFG/main/FGtgjKwD.txt'))()
+	end)
+end
+coroutine.wrap(TUKRJ_fake_script)()
+local function DIJFGQJ_fake_script() -- BestUI.Button_13.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_13)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+	end)
+end
+coroutine.wrap(DIJFGQJ_fake_script)()
+local function HTDFKKG_fake_script() -- BestUI.Button_14.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_14)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/EUOHFIWIDKA/main/FE%20Gui.txt'))()
+	end)
+end
+coroutine.wrap(HTDFKKG_fake_script)()
+local function EKSOB_fake_script() -- BestUI.Button_15.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_15)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/GRHRG/main/EGSEGE'))()
+	end)
+end
+coroutine.wrap(EKSOB_fake_script)()
+local function CZJERH_fake_script() -- BestUI.Button_16.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_16)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/FDSFSGFG/main/Cobra_Kai_GUI_rscripts.net.txt'))()
+	end)
+end
+coroutine.wrap(CZJERH_fake_script)()
+local function LAEGQFA_fake_script() -- BestUI.Button_17.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_17)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/FSFGEGEGE/main/Reviz%20admin%20V2%20ROBLOX.txt'))()
+	end)
+end
+coroutine.wrap(LAEGQFA_fake_script)()
+local function OZQQB_fake_script() -- BestUI.Button_18.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_18)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/EGEGESGGH/main/FE%20Animation%20GUI.txt'))()
+	end)
+end
+coroutine.wrap(OZQQB_fake_script)()
+local function GKQLG_fake_script() -- BestUI.Button_19.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_19)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/FDSFSGFG/main/CASE%20CLICKER%20SCRIPT.txt'))()
+	end)
+end
+coroutine.wrap(GKQLG_fake_script)()
+local function ITRHCA_fake_script() -- BestUI.Button_20.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_20)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		--local coreGui = game:GetService("Players").LocalPlayer.PlayerGui
+		local coreGui = game:GetService("CoreGui")
+		local tweening = false
+		local tabPos = 5
+		local scriptsTabText = ""
+		local feTabText = ""
+		local gameScriptsTabText = ""
+		local guiTabText = ""
+	
+		local scripttabList = {
+			{"Infinite Yield", "MjBzRjmT", 1},
+			{"Knife V3", "W833RBFr", 1},
+			{"Bird Wings", "RQ9b8UTv", 1},
+			{"M4A1", "eP1zq8tb", 1},
+			{"Dungun", "90M7Mi8e", 1},
+			{"Bomb Vest", "tG1PPuMd", 1},
+			{"Music Bars", "SvYebC2r", 1},
+			{"Omni God", "87NeeChc", 1},
+			{"Pain Titan", "Hg5L8EtM", 1,},
+			{"Reaper Titan", "B0q3QBg6", 1},
+			{"Alter Chat", "ZSB4pN9R", 1},
+			{"Hoverbike", 01268225564, 2},
+			{"Rail Gun Titan", "0wFiFdwM", 1},
+			{"True Hero", "P8AQ2ebJ", 1},
+			{"Celestial Wheel", "bymTcgzf", 1},
+			{"Knive V4", "j0Ns1w1S", 1},
+			{"Ravenger Claws", "D7GxxvWL", 1},
+			{"John Doe", "m5wHsLhr", 1},
+			{"Messor Titan", "4bSrkLtA", 1},
+			{"Clown Titan", "L0WLDZvc", 1},
+			{"Chara", "HrWjgXtb", 1},
+			{"Shedlesky Rage", "2SPz35LS", 1},
+			{"LunchaThug", "x6GWFC5K", 1},
+			{"Nazi Flag", "ZCZNxFBD", 1},
+			{"Psychopath", "DGqk3bqY", 1},
+			{"Fireworks Wand", "GB29NAPv", 1},
+			{"Psycho Clown", "UgxKqKwE", 1},
+			{"Inferno", "qhMGk36S", 1},
+			{"Police Titan", "UCmufLU8", 1},
+			{"Galaxy Titan", "nKNdCrKj", 1},
+			{"Holy Wrench", "cKSh0a8C", 1},
+			{"Krystal Dance", "j7EqLfbP", 1},
+			{"Pee", "3CYmA0Pz", 1},
+			{"Jihad", "vSujnuaF", 1},
+			{"Hermit Purple", "R3C3ajQV", 1},
+			{"Golden Gun", "2574Sd9E", 1},
+			{"Goku", "yAXZZF9r", 1},
+			{"Emoji", "vKPcMKnm", 1},
+			{"Damn Son", "AMLHT8aJ", 1},
+			{"Devuzi", "q0mt2peM", 1},
+			{"Flash", "gGSVVq1H", 1},
+			{"Teal Scythe", "0TUBSaxt", 1},
+			{"Demon Demise", "ghMDMW63", 1},
+			{"Red Sayan", "uC5DBvf9", 1},
+			{"Ban Hammer", "1ynQ4Mu0", 1},
+			{"Dick Gun", "UR9FBjcj", 1},
+			{"Dat Boi", "Sz7KJHay", 1},
+			{"Watermelon Trap", "pypsM3hj", 1},
+			{"Whip", "XDsek3Rf", 1},
+			{"School Shooter", "EmmwRFDA", 1},
+			{"9/11", "3UmV26hG", 1},
+			{"Bong", "8Kb08E9s", 1},
+			{"Horse", "MVph7nmq", 1},
+			{"Scythe", "fEEVkJba", 1},
+			{"Disco Fog", "xg8d4PS0", 1},
+			{"Disco Mesh", "GvtPCRVR", 1},
+			{"Russian Dance", "RADQ2vH8", 1},
+			{"Sun God", "0uJhLJ5m", 1},
+			{"Rolling Light Ball", "S4Hj3MPd", 1},
+			{"Red Death Scythe", "KJ5nqeVF", 1},
+			{"Crystal Pistols", "GDLZ4VAq", 1},
+			{"Epic Sword", "DZVV9AGG", 1},
+			{"Circle Visualizer", "diJiteen", 1},
+			{"Hex Blade", "fA0bBELV", 1},
+			{"Bulldog", "nPPLxSA3", 1},
+			{"FS-627-SENDER", "R3m4gfuP", 1},
+			{"Voodoo Child", "w5TEtd0Q", 1},
+			{"Bye Bye", "XBysEMgg", 1},
+			{"Galil V2", "cnFz3h8D", 1},
+			{"Mario", "pKmtnc9u", 1},
+			{"Lighting Blade", "rMEe8R4N", 1},
+			{"Flamingo Skybox", "8rWM880e", 1},
+			{"Sin Unleashed", "ZQh5B023", 1},
+			{"Ravager", "VQEz6a6i", 1},
+			{"Brock", "Fe5YrxcY", 1},
+			{"M249", "J4ijx897", 1},
+			{"MG36", "zLZ4Auqn", 1},
+			{"Omega Scythe", "Ag8dKZYB", 1},
+			{"Omega Sword", "7JjxwhPn", 1},
+		}
+	
+		local fescripttabList = {
+			{"Fe God", "KduGECH6", 1},
+			{"Fe Fly", 1281055032, 2},
+			{"Fe Invisible", 1180480887, 2},
+			{"Spam", "74GjB7tB", 1},
+			{"Lag Switch", "58gjTUf5", 1},
+			{"FE Shutdown", "0wgKhFmf", 1},
+		}
+	
+		local gameScriptsList = {
+			{"PF Virgo 2.0", "7TeJszah", 1},
+			{"City Life Bomb Vest", "sLHGSBn1", 1},
+			{"City Life Suicide", "YdKKQ7yT", 1},
+			{"City Life Explosion", "vy78mqrG", 1},
+			{"CB:RO Aimbot", "t3yHg06t", 1},
+		}
+	
+		local guitabList = {
+			{"c00lgui", "Rz2EFsLU", 1},
+			{"Topkek 4.0", "d0CJRrcg", 1},
+			{"Topkek 3.0", "SikGfE9u", 1},
+			{"Ro-Xploit 4.0", 175137115, 2},
+			{"Ro-Xploit 5.0", 288646117, 2},
+			{"Ro-Xploit 6.0", 364364477, 2},
+			{"Dex 3.0", 492005721, 2},
+			{"Clown Van", "a5UZuuiT", 1},
+			{"Hell Elevator GUI", "8NYWpf2T", 1},
+			{"Chams / Aimlock", "Yi7fzELj", 1},
+			{"YourMom GUI", "289110135", 2},
+			{"Pepe GUI", "277881926", 2},
+			{"Brack Hub", "PT9Gf7d5", 2},
+		}
+	
+		local mapsList = {
+			{"Clockwork Arena", "EvnXCXhP", 1},
+			{"Town Map", 1345094164, 2},
+			{"Cave Island", "t29C42rm", 1},
+			{"Nature Map", "gmF4Kq5B", 1},
+			{"Nazi Map", "az8sLCLT", 1},
+			{"Ritual Room", "hYCTFiAC", 1},
+			{"Stripper", "jztW5Vuy", 1},
+			{"Witch Map", "R9epW292", 1},
+			{"Rainbow Tunnel", "8bznLitn", 1},
+			{"Scary Map", "fNw46f74", 1},
+			{"Nazi Camp", "KJNk4STm", 1},
+			{"Night Club", 1281063730, 2},
+		}
+	
+		local lists = {
+			{scripttabList, "Scripts"},
+			{fescripttabList, "FE Scripts"},
+			{gameScriptsList, "Game Scripts"},
+			{guitabList, "GUIs"},
+			{mapsList, "Maps"},
+		}
+	
+		local function makeFrame(Active, BackgroundColor3, BorderSizePixel, Name, Parent, Position, Size, ClipsDescendants, Draggable, BackgroundTransparency)
+			local Frame = Instance.new("Frame")
+			Frame.Active = Active
+			Frame.BackgroundColor3 = BackgroundColor3
+			Frame.BorderSizePixel = BorderSizePixel
+			Frame.Name = Name
+			Frame.Parent = Parent
+			Frame.Position = Position
+			Frame.Size = Size
+			Frame.ClipsDescendants = ClipsDescendants
+			Frame.Draggable = Draggable
+			Frame.BackgroundTransparency = BackgroundTransparency
+		end
+	
+		local function makeScrollingFrame(BackgroundColor3, BorderSizePixel, Name, Parent, Position, Size, CanvasSize, BackgroundTransparency, ScrollBarThickness)
+			local ScrollingFrame = Instance.new("ScrollingFrame")
+			ScrollingFrame.BackgroundColor3 = BackgroundColor3
+			ScrollingFrame.BorderSizePixel = BorderSizePixel
+			ScrollingFrame.Name = Name
+			ScrollingFrame.Parent = Parent
+			ScrollingFrame.Position = Position
+			ScrollingFrame.Size = Size
+			ScrollingFrame.CanvasSize = CanvasSize
+			ScrollingFrame.BackgroundTransparency = BackgroundTransparency
+			ScrollingFrame.ScrollBarThickness = ScrollBarThickness
+		end
+	
+		local function makeTextLabel(BackgroundColor3, BackgroundTransparency, Name, Parent, Position, Size, Font, Text, TextColor3, TextSize, BorderSizePixel, TextWrapped)
+			local TextLabel = Instance.new("TextLabel")
+			TextLabel.BackgroundColor3 = BackgroundColor3
+			TextLabel.BackgroundTransparency = BackgroundTransparency
+			TextLabel.Name = Name
+			TextLabel.Parent = Parent
+			TextLabel.Position = Position
+			TextLabel.Size = Size
+			TextLabel.Font = Font
+			TextLabel.Text = Text
+			TextLabel.TextColor3 = TextColor3
+			TextLabel.TextSize = TextSize
+			TextLabel.BorderSizePixel = BorderSizePixel
+			TextLabel.TextWrapped = TextWrapped
+		end
+	
+		local function makeTextBox(BackgroundColor3, BackgroundTransparency, MultiLine, Name, Parent, Position, Size, Font, Text, TextColor3, TextSize, TextWrapped, TextYAlignment, BorderSizePixel, PlaceholderText, TextXAlignment)
+			local TextBox = Instance.new("TextBox")
+			TextBox.BackgroundColor3 = BackgroundColor3
+			TextBox.BackgroundTransparency = BackgroundTransparency
+			TextBox.MultiLine = MultiLine
+			TextBox.Name = Name
+			TextBox.Parent = Parent
+			TextBox.Position = Position
+			TextBox.Size = Size
+			TextBox.Font = Font
+			TextBox.Text = Text
+			TextBox.TextColor3 = TextColor3
+			TextBox.TextSize = TextSize
+			TextBox.TextWrapped = TextWrapped
+			TextBox.TextYAlignment = TextYAlignment
+			TextBox.BorderSizePixel = BorderSizePixel
+			TextBox.PlaceholderText = PlaceholderText
+			TextBox.TextXAlignment = TextXAlignment
+		end
+	
+		local function makeTextButton(BackgroundColor3, BorderSizePixel, Name, Parent, Position, Size, Font, Text, TextColor3, TextSize, BackgroundTransparency, func)
+			local TextButton = Instance.new("TextButton")
+			TextButton.BackgroundColor3 = BackgroundColor3
+			TextButton.BorderSizePixel = BorderSizePixel
+			TextButton.Name = Name
+			TextButton.Parent = Parent
+			TextButton.Position = Position
+			TextButton.Size = Size
+			TextButton.Font = Font
+			TextButton.Text = Text
+			TextButton.TextColor3 = TextColor3
+			TextButton.TextSize = TextSize
+			TextButton.BackgroundTransparency = BackgroundTransparency
+			TextButton.MouseButton1Down:connect(func)
+		end
+	
+		local function makeImageLabel(BackgroundColor3, BackgroundTransparency, BorderSizePixel, Name, Parent, Selectable, Size, Image, Position, Rotation)
+			local ImageLabel = Instance.new("ImageLabel")
+			ImageLabel.BackgroundColor3 = BackgroundColor3
+			ImageLabel.BackgroundTransparency = BackgroundTransparency
+			ImageLabel.BorderSizePixel = BorderSizePixel
+			ImageLabel.Name = Name
+			ImageLabel.Parent = Parent
+			ImageLabel.Selectable = Selectable
+			ImageLabel.Size = Size
+			ImageLabel.Image = Image
+			ImageLabel.Position = Position
+			ImageLabel.Rotation = Rotation
+		end
+	
+		local tabs = {
+			"Home",
+			"Scripts",
+			"FE Scripts",
+			"Game Scripts",
+			"GUIs",
+			"Maps",
+			"Executor",
+			"Credits",
+		}
+	
+		local selectedTab = tabs[1]
+	
+		local function changeTab(newTab)
+			if tweening == false and newTab ~= selectedTab then
+				tweening = true
+				if selectedTab == "Credits" then
+					for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+						if object.ClassName == "ImageLabel" then
+							local sTween = game:GetService("TweenService")
+							local part = object		
+							local goal = {}
+							goal.ImageTransparency = 1
+							local tweenInfo = TweenInfo.new(0.5)
+							local tween = sTween:Create(part, tweenInfo, goal)
+							tween:Play()
+						end
+					end
+					wait(0.5)
+				end
+				screenGui.MainFrame.MainStuff[selectedTab]:TweenPosition(UDim2.new(-1, 0, 0, 0), "Out", "Quad", 0.5)
+				screenGui.MainFrame.MainStuff[newTab]:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.5)
+				screenGui.MainFrame.SelectedTab.SelectedTab:TweenPosition(UDim2.new(0, 0, -1, 0), "Out", "Quad", 0.25)
+				wait(0.25)
+				screenGui.MainFrame.SelectedTab.SelectedTab.Text = newTab
+				wait()
+				screenGui.MainFrame.SelectedTab.SelectedTab:TweenPosition(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.25)
+				wait(0.25)
+				screenGui.MainFrame.MainStuff[selectedTab].Position = UDim2.new(1, 0, 0, 0)
+				if newTab == "Credits" then
+					for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+						if object.ClassName == "ImageLabel" then
+							local sTween = game:GetService("TweenService")
+							local part = object		
+							local goal = {}
+							goal.ImageTransparency = 0
+							local tweenInfo = TweenInfo.new(0.5)
+							local tween = sTween:Create(part, tweenInfo, goal)
+							tween:Play()
+						end
+					end
+					wait(0.5)
+				end
+				selectedTab = newTab
+				tweening = false
+			end
+		end
+	
+		local function mainTween(what)
+			if tweening == false then
+				tweening = true
+				if what == "Open" then
+					screenGui.open:TweenPosition(UDim2.new(-1,0,0.531,0), "Out", "Quad", 0.6)
+					screenGui.MainFrame:TweenSize(UDim2.new(0, 350, 0, 40), "Out", "Quad", 0.6)
+					wait(0.6)
+					screenGui.MainFrame:TweenSize(UDim2.new(0, 350, 0, 340), "Out", "Quad", 0.6)
+					if selectedTab == "Credits" then
+						wait(0.6)
+						for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+							if object.ClassName == "ImageLabel" then
+								local sTween = game:GetService("TweenService")
+								local part = object		
+								local goal = {}
+								goal.ImageTransparency = 0
+								local tweenInfo = TweenInfo.new(0.5)
+								local tween = sTween:Create(part, tweenInfo, goal)
+								tween:Play()
+							end
+						end
+						wait(0.5)
+					end
+				elseif what == "Close" then
+					if selectedTab == "Credits" then
+						for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+							if object.ClassName == "ImageLabel" then
+								local sTween = game:GetService("TweenService")
+								local part = object		
+								local goal = {}
+								goal.ImageTransparency = 1
+								local tweenInfo = TweenInfo.new(0.5)
+								local tween = sTween:Create(part, tweenInfo, goal)
+								tween:Play()
+							end
+						end
+						wait(0.5)
+					end
+					screenGui.MainFrame:TweenSize(UDim2.new(0, 350, 0, 40), "Out", "Quad", 0.6)
+					wait(0.6)
+					screenGui.MainFrame:TweenSize(UDim2.new(0, 0, 0, 40), "Out", "Quad", 0.6)
+					screenGui.open:TweenPosition(UDim2.new(0,0,0.531,0), "Out", "Quad", 0.6)
+				end
+				if selectedTab ~= "Credits" then
+					wait(0.6)
+				end
+				tweening = false
+			end
+		end
+	
+		--Make Screen
+		screenGui = Instance.new("ScreenGui")
+		screenGui.Parent = coreGui
+		screenGui.Name = "RoseHubV2"
+	
+		makeFrame(true, Color3.fromRGB(255, 35, 110), 0, "MainFrame", screenGui, UDim2.new(0.5, -175, 0.5, -170), UDim2.new(0, 350, 0, 340), true, true, 0)
+	
+		makeScrollingFrame(Color3.fromRGB(255, 0, 100), 0, "TabButtons", screenGui.MainFrame, UDim2.new(0, 0, 0, 40), UDim2.new(0, 125, 1, -40), UDim2.new(0, 0, 0, 0), 0, 12)
+	
+		makeFrame(false, Color3.fromRGB(225, 0, 100), 0, "TitleFrame", screenGui.MainFrame, UDim2.new(0, 0, 0, 0), UDim2.new(1, 0, 0, 40), true, false, 0)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "Title", screenGui.MainFrame.TitleFrame, UDim2.new(0, 45, 0, 0), UDim2.new(0, 265, 1, 0), Enum.Font.Fantasy, "Rose Hub v2.0.8", Color3.fromRGB(255, 255, 255), 30, 1, false)
+	
+		makeImageLabel(Color3.fromRGB(255, 85, 127), 1, 0, "RoseIcon", screenGui.MainFrame.TitleFrame, false, UDim2.new(0, 45, 0, 41), "rbxassetid://1342740333", UDim2.new(0, 0, 0, 0), 0)
+	
+		makeTextButton(Color3.fromRGB(255, 255, 255), 1, "Close", screenGui.MainFrame.TitleFrame, UDim2.new(0, 310, 0, 0), UDim2.new(0, 40, 0, 40), Enum.Font.ArialBold, "X", Color3.fromRGB(255, 255, 255), 30, 1, function()
+			mainTween("Close")
+		end)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "MOTD", screenGui.MainFrame, UDim2.new(0, 125, 0, 315), UDim2.new(0, 225, 0, 25), Enum.Font.Fantasy, "MOTD: RIP Humanoid", Color3.fromRGB(255, 255, 255), 16, 0, true)
+	
+		makeFrame(false, Color3.fromRGB(255, 100, 150), 0, "MainStuff", screenGui.MainFrame, UDim2.new(0, 130, 0, 70), UDim2.new(0, 215, 0, 245), true, false, 0.5)
+	
+		makeFrame(false, Color3.fromRGB(0, 0, 0), 0, "SelectedTab", screenGui.MainFrame, UDim2.new(0, 125, 0, 40), UDim2.new(0, 225, 0, 30), true, false, 1)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "SelectedTab", screenGui.MainFrame.SelectedTab, UDim2.new(0, 0, 0, 0), UDim2.new(0, 225, 0, 30), Enum.Font.Fantasy, "Home", Color3.fromRGB(255, 255, 255), 25, 0, false)
+	
+		makeFrame(true, Color3.fromRGB(255, 84, 126), 0, "open", screenGui, UDim2.new(-0.5, 0, 0.5, 0), UDim2.new(0, 150, 0, 50), true, false, 1)
+	
+		makeTextButton(Color3.fromRGB(255, 50, 127), 1, "openbutton", screenGui.open, UDim2.new(0, 0, 0, 0), UDim2.new(1, 0, 1, 0), Enum.Font.Fantasy, "OPEN", Color3.fromRGB(255, 255, 255), 32, false, function()
+			mainTween("Open")
+		end)
+	
+		for i,tabButton in pairs(tabs) do
+			makeTextButton(Color3.fromRGB(255, 50, 127), 0, tabButton.."Button", screenGui.MainFrame.TabButtons, UDim2.new(0, 5, 0, tabPos), UDim2.new(0, 115, 0, 30), Enum.Font.Fantasy, tabButton, Color3.fromRGB(255, 255, 255), 20, 0, function()
+				changeTab(tabs[i])
+			end)
+			local mainStuffPos = 0
+			if tabButton == selectedTab then
+				mainStuffPos = 0
+			else
+				mainStuffPos = 1
+			end
+			makeScrollingFrame(Color3.fromRGB(0, 0, 0), 1, tabButton, screenGui.MainFrame.MainStuff, UDim2.new(mainStuffPos, 0, 0, 0), UDim2.new(1, 0, 1, 0), UDim2.new(1, 0, 0, 0), 1)
+	
+			tabPos = tabPos + 35
+		end
+	
+		--Sort lists and insert them
+		for _,list in pairs(lists) do
+			local toSort = {}
+			local sortedList = {}
+			local pos = 28
+	
+			for _,v in pairs(list[1]) do
+				table.insert(toSort, v[1])
+			end
+	
+			table.sort(toSort)
+	
+			for i,name in pairs(toSort) do
+				for i,actualTable in pairs(list[1]) do
+					if name == actualTable[1] then
+						table.insert(sortedList, {actualTable[1], actualTable[2], actualTable[3]})
+					end
+				end
+			end
+	
+			local function createButons(text)
+				pos = 28
+				for _,button in pairs(sortedList) do
+					if text == "" or string.sub(string.lower(button[1]), 1, string.len(text)) == string.lower(text) then
+						makeTextButton(Color3.fromRGB(255, 50, 127), 0, button[1], screenGui.MainFrame.MainStuff[list[2]], UDim2.new(0, 5, 0, pos), UDim2.new(1, -10, 0, 20), Enum.Font.Fantasy, button[1], Color3.fromRGB(255, 255, 255), 14, 0, function()
+							if button[3] == 1 then
+								loadstring(game:HttpGet("https://pastebin.com/raw/"..button[2], true))()
+							elseif button[3] == 2 then
+								loadstring(game:GetObjects("rbxassetid://"..button[2])[1].Source)()
+							end
+						end)
+						pos = pos + 23
+					end
+				end
+			end
+	
+			--Remove Buttons and create new on search
+			local function removeButtons()
+				for _,button in pairs(screenGui.MainFrame.MainStuff[list[2]]:GetChildren()) do
+					if button.ClassName == "TextButton" then
+						button:Destroy()
+					end
+				end
+			end
+	
+			--Search Box
+			makeTextBox(Color3.fromRGB(255, 50, 127), 0, false, "Search", screenGui.MainFrame.MainStuff[list[2]], UDim2.new(0, 5, 0, 5), UDim2.new(1, -10, 0, 20), Enum.Font.Fantasy, "", Color3.fromRGB(255, 255, 255), 14, false, "Center", 0, "Search "..list[2], "Center")
+			local function searchBar(chosenList)	
+				local search = screenGui.MainFrame.MainStuff[chosenList].Search
+				local currentSearch = ""
+				search.Changed:connect(function(property)
+					if property == "Text" then
+						if search.Text ~= "" and search.Text ~= currentSearch then
+							currentSearch = search.Text
+							removeButtons()
+							createButons(search.Text)
+						elseif search.Text == "" and currentSearch.Text ~= "" then
+							currentSearch = search.Text
+							removeButtons()
+							createButons("")
+						end
+					end
+				end)
+			end
+	
+			searchBar(list[2])	
+	
+			createButons("")
+	
+			screenGui.MainFrame.MainStuff[list[2]].CanvasSize = UDim2.new(1, 0, 0, pos+2)
+			screenGui.MainFrame.MainStuff[list[2]].ScrollBarThickness = 0
+		end
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "WelcomeMSG", screenGui.MainFrame.MainStuff.Home, UDim2.new(0.102, 0, 0.045, 0), UDim2.new(0, 170, 0, 29), Enum.Font.Fantasy, "Welcome to Rose Hub!", Color3.fromRGB(255, 255, 255), 20, 1, false)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "FEStatus", screenGui.MainFrame.MainStuff.Home, UDim2.new(0.2, 0, 0.155, 0), UDim2.new(0, 128, 0, 22), Enum.Font.Fantasy, "FE: Unknown", Color3.fromRGB(255, 255, 255), 16, 1, false)
+		if game:GetService("Workspace").FilteringEnabled then --Rather have Enabled/Disabled than true/false
+			screenGui.MainFrame.MainStuff.Home.FEStatus.Text = "FE: Enabled!"
+		else
+			screenGui.MainFrame.MainStuff.Home.FEStatus.Text = "FE: Disabled!"
+		end
+	
+		makeFrame(false, Color3.fromRGB(255, 0, 127), 0, "SegLine", screenGui.MainFrame.MainStuff.Home, UDim2.new(0, 0, 0.245, 0), UDim2.new(0, 215, 0, 2), false, false, 0.5)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "Explanation", screenGui.MainFrame.MainStuff.Home, UDim2.new(0, 0, 0.253, 0), UDim2.new(0, 215, 0, 183), Enum.Font.SourceSans, 'To get started click the tabs to find what scripts your looking for.\nThe scrolling bar is invisible so to scroll use your scroll wheel.\n\nWant scripts or features added?\n\nJoin our Discord for Support donations and more!', Color3.fromRGB(255, 255, 255), 14, 1, true)
+		screenGui.MainFrame.MainStuff.Home.Explanation.TextYAlignment = "Top"
+	
+		makeTextButton(Color3.fromRGB(255, 50, 127), 0, "DiscordInvite", screenGui.MainFrame.MainStuff.Home, UDim2.new(0.179, 0, 0.816, 0), UDim2.new(0, 138, 0, 32), Enum.Font.Fantasy, "Discord", Color3.fromRGB(255, 255, 255), 14, 0, function()
+			local copy = true
+			if pcall(function() Synapse:Copy("https://discord.me/rosehub") end) then
+	
+			else
+				local clip = setclipboard or Clipboard.set
+				clip("https://discord.me/rosehub")
+			end
+	
+			screenGui.MainFrame.MainStuff.Home.DiscordInvite.text = "Copied!"
+			wait(1)
+			screenGui.MainFrame.MainStuff.Home.DiscordInvite.text = "Discord"
+		end)
+	
+		makeTextButton(Color3.fromRGB(255, 0, 127), 0, "Clear", screenGui.MainFrame.MainStuff.Executor, UDim2.new(0, 5, 1, -25), UDim2.new(0, 100, 0, 20), Enum.Font.SourceSansBold, "Clear", Color3.fromRGB(255, 255, 255), 14, 0, function()
+			screenGui.MainFrame.MainStuff.Executor.InputHolder.Input.Text = ""
+		end)
+	
+		makeScrollingFrame(Color3.fromRGB(255, 255, 255), 0, "InputHolder", screenGui.MainFrame.MainStuff.Executor, UDim2.new(0, 5, 0, 5), UDim2.new(0, 205, 0, 205), UDim2.new(0, 0, 0, 0), 1, 0)
+	
+		makeTextBox(Color3.fromRGB(255, 0, 128), 1, true, "Input", screenGui.MainFrame.MainStuff.Executor.InputHolder, UDim2.new(0, 0, 0, 0), UDim2.new(1, 0, 1, 0), Enum.Font.Fantasy, "", Color3.fromRGB(255, 255, 255), 14, true, Enum.TextYAlignment.Top, 0, "Paste/Type Scripts Here", Enum.TextXAlignment.Left)
+		local execHolder = screenGui.MainFrame.MainStuff.Executor.InputHolder
+		local execInput = execHolder.Input
+		local movedExec196 = false
+		execInput.ClearTextOnFocus = false
+		--Checks if executor text changed, if so it will change your canvas position IF you are at the bottom of the script. Has an extra check for the first time moving so it doesnt get annoying
+		execInput.Changed:connect(function(property)
+			if property == "Text" then
+				execHolder.CanvasSize = UDim2.new(1, -10, 0, execInput.TextBounds.Y + execInput.TextSize)
+				if execInput.TextBounds.Y - execHolder.CanvasPosition.Y == 205 then
+					execHolder.CanvasPosition = Vector2.new(0, execInput.TextBounds.Y+205)
+					movedExec196 = false
+				elseif movedExec196 == false and execInput.TextBounds.Y == 196 and execHolder.CanvasPosition.Y == 0 then
+					execHolder.CanvasPosition = Vector2.new(0, execInput.TextBounds.Y+205)
+					movedExec196 = true
+				elseif movedExec196 == true and execInput.TextBounds.Y < 196 then
+					movedExec196 = false
+				end
+			end
+		end)
+	
+		makeTextButton(Color3.fromRGB(255, 0, 127), 0, "Execute", screenGui.MainFrame.MainStuff.Executor, UDim2.new(0.5, 2, 1, -25), UDim2.new(0, 100, 0, 20), Enum.Font.SourceSansBold, "Execute", Color3.fromRGB(255, 255, 255), 14, 0, function()
+			loadstring(screenGui.MainFrame.MainStuff.Executor.InputHolder.Input.Text)()
+		end)
+	
+		--Credits
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "RoseCredit", screenGui.MainFrame.MainStuff.Credits, UDim2.new(0.202, 0, 0.053, 0), UDim2.new(0, 128, 0, 32), Enum.Font.Fantasy, "Rose\nHumanoid#4613", Color3.fromRGB(255, 255, 255), 20, 0, false)
+	
+		makeImageLabel(Color3.fromRGB(255, 255, 255), 1, 1, "RoseDrops", screenGui.MainFrame.MainStuff.Credits.RoseCredit, false, UDim2.new(0, 66, 0, 65), "rbxassetid://1342740333", UDim2.new(-0.25, 0, -0.844, 0), 80)
+	
+		makeImageLabel(Color3.fromRGB(255, 255, 255), 1, 1, "RoseDrops2", screenGui.MainFrame.MainStuff.Credits.RoseCredit, false, UDim2.new(0, 66, 0, 65), "rbxassetid://1342740333", UDim2.new(0.891, 0, 4.438, 0), -40)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "ZwolfCredit", screenGui.MainFrame.MainStuff.Credits, UDim2.new(0.221, 0, 0.253, 0), UDim2.new(0, 120, 0, 30), Enum.Font.Fantasy, "Zwolf\nZwolf#3762", Color3.fromRGB(255, 255, 255), 20, 1, false)
+	
+		makeImageLabel(Color3.fromRGB(255, 255, 255), 1, 1, "RoseDrops3", screenGui.MainFrame.MainStuff.Credits.ZwolfCredit, false, UDim2.new(0, 62, 0, 59), "rbxassetid://1342740333", UDim2.new(0.875, 0, 0, 0), -10)
+	
+		makeImageLabel(Color3.fromRGB(255, 255, 255), 1, 1, "ImageLabel", screenGui.MainFrame.MainStuff.Credits.ZwolfCredit, false, UDim2.new(0, 70, 0, 60), "rbxassetid://1342740333", UDim2.new(-0.483, 0, 0.433, 0), 59)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "AlexCredit", screenGui.MainFrame.MainStuff.Credits, UDim2.new(0.191, 0, 0.469, 0), UDim2.new(0, 139, 0, 29), Enum.Font.Fantasy, "Alex\nAlex the Great#9740", Color3.fromRGB(255, 255, 255), 20, 1, false)
+	
+		makeTextLabel(Color3.fromRGB(255, 255, 255), 1, "DeanCredit", screenGui.MainFrame.MainStuff.Credits, UDim2.new(0.153, 0, 0.755, 0), UDim2.new(0, 139, 0, 40), Enum.Font.Fantasy, "Miya - Intro\nKiwi#4879", Color3.fromRGB(255, 255, 255), 20, 1, false)
+	
+		for _,object in pairs(screenGui.MainFrame.MainStuff.Credits:GetDescendants()) do
+			if object.ClassName == "ImageLabel" then
+				object.ImageTransparency = 1
+			end
+		end
+	
+		screenGui.MainFrame.Size = UDim2.new(0, 0, 0, 40)
+	
+		--Intro
+		introgui = Instance.new('ScreenGui',coreGui)
+		holder = Instance.new('Frame', introgui)
+		imhx = Instance.new('ImageLabel',holder)
+		blnhx = Instance.new('ImageLabel',holder)
+		blnhx2 = Instance.new('ImageLabel',holder)
+		pooftemp = Instance.new('ImageLabel',holder)
+		text = Instance.new('ImageLabel',holder)
+		bar = Instance.new('Frame',holder)
+		tomatosauce = Instance.new('Sound',holder)
+		large = Instance.new('Sound',holder)
+		smol = Instance.new('Sound',holder)
+		wosh = Instance.new('Sound',holder)
+		blur = Instance.new('BlurEffect',workspace.CurrentCamera)
+		blur.Size = 0
+	
+		-- Properties
+		holder.Position = UDim2.new(0.5,-50,0.5,-50)
+		holder.Size = UDim2.new(0,100,0,100)
+		holder.BackgroundTransparency = 1
+	
+		imhx.Image = "rbxassetid://1491878692"
+		imhx.BackgroundTransparency = 1
+		imhx.Size = UDim2.new(0,100,0,100)
+		imhx.Position = UDim2.new(0,0,0,-500)
+		imhx.ZIndex = 3
+	
+		blnhx.Image = "rbxassetid://1491878477"
+		blnhx.BackgroundTransparency = 1
+		blnhx.ImageTransparency = 1
+		blnhx.Size = UDim2.new(0,100,0,100)
+		blnhx.Position = UDim2.new(0,0,0,0)
+		blnhx.ZIndex = 4
+	
+		tomatosauce.SoundId = "rbxassetid://752527668"
+		tomatosauce.Volume = 1
+	
+		large.SoundId = "rbxassetid://541909867"
+		large.Volume = 1
+	
+		smol.SoundId = "rbxassetid://541909763"
+		smol.Volume = 1
+	
+		wosh.SoundId = "rbxassetid://147722270"
+		wosh.Volume = 1
+	
+	
+		blnhx2.Image = "rbxassetid://1491878477"
+		blnhx2.BackgroundTransparency = 1
+		blnhx2.ImageTransparency = 1
+		blnhx2.Size = UDim2.new(0,100,0,100)
+		blnhx2.Position = UDim2.new(0,0,0,0)
+	
+		pooftemp.Image = "rbxassetid://1491979712"
+		pooftemp.BackgroundTransparency = 1
+		pooftemp.ImageTransparency = 1
+		pooftemp.Size = UDim2.new(0,100,0,100)
+		pooftemp.Position = UDim2.new(0,0,0,0)
+	
+		text.Image = "rbxassetid://1491935743"
+		text.BackgroundTransparency = 1
+		text.ImageTransparency = 1
+		text.Size = UDim2.new(0,500,0,100)
+		text.Position = UDim2.new(0.5,-250,0,0)
+		text.ZIndex = 6
+	
+		bar.Size = UDim2.new(0,0,0,100)
+		bar.Position = UDim2.new(0.5,0,0,0)
+		bar.BorderSizePixel = 0
+		bar.ZIndex = 5
+		bar.BackgroundColor3 = Color3.fromRGB(255, 35, 110)
+	
+		-- Animation
+		local tweenService = game:GetService("TweenService")
+	
+		local tween1 = TweenInfo.new(  
+			2,
+			Enum.EasingStyle.Quint,
+			Enum.EasingDirection.Out
+		) 
+		local stuff1 = {
+			Position = UDim2.new(0,0,0,0);
+			Rotation = -720
+		}
+		local stuff6 = {
+			Size = 34
+		}
+		local stuff7 = {
+			Size = 0
+		}
+	
+	
+		local imagetween = tweenService:Create(imhx,tween1,stuff1)
+	
+		local tween2 = TweenInfo.new(
+			2,
+			Enum.EasingStyle.Quint,
+			Enum.EasingDirection.Out
+		)
+		local stuff2 = {
+			Position = UDim2.new(0,-50,0,-50);
+			Size = UDim2.new(0,200,0,200);
+			ImageTransparency = 1
+		}
+	
+		local bloop = tweenService:Create(pooftemp,tween2,stuff2)
+	
+		local tween3 = TweenInfo.new(
+			1,
+			Enum.EasingStyle.Quint,
+			Enum.EasingDirection.Out
+		)
+	
+		local tween4 = TweenInfo.new(
+			2,
+			Enum.EasingStyle.Quint,
+			Enum.EasingDirection.Out
+		)
+		local stuff3 = {
+			ImageTransparency = 0
+		}
+	
+		local poof = tweenService:Create(blnhx,tween3,stuff3)
+	
+		local fadein = tweenService:Create(blur,tween1,stuff6)
+		local fadeout = tweenService:Create(blur,tween1,stuff7)
+	
+		local textappere = tweenService:Create(text,tween4,stuff3)
+		-- Playing animations/sounds
+		imagetween:Play()
+		large:Play()
+		fadein:Play()
+		wait(2)
+		pooftemp.ImageTransparency = 0
+		bloop:play()
+		tomatosauce:Play()
+		wait(2)
+		poof:Play()
+		wait(1)
+		imhx.ImageTransparency = 1
+		blnhx2.ImageTransparency = 0
+		bar:TweenSizeAndPosition(UDim2.new(0,500,0,100),UDim2.new(0.5,-250,0.5,-50),"Out","Quint",2)
+		blnhx2:TweenPosition(UDim2.new(0,250,0,0),"Out","Quint",2)
+		blnhx:TweenPosition(UDim2.new(0,-250,0,0),"Out","Quint",2)
+		smol:Play()
+		wait(1.3)
+		textappere:Play()
+		wait(2)
+		holder:TweenPosition(UDim2.new(0,5000,0.5,-50),"In","Quint",2)
+		wosh:Play()
+		wait(1.4)
+		fadeout:Play()
+		wait(2)
+		introgui:Destroy()
+		blur:Destroy()
+	
+		wait()
+	
+		tweening = true
+		screenGui.open:TweenPosition(UDim2.new(0, 0, 0.5, 0),'Out','Quad',0.6)
+		wait(0.6)
+		tweening = false
+	end)
+end
+coroutine.wrap(ITRHCA_fake_script)()
+local function ADVECR_fake_script() -- BestUI.Button_21.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_21)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/LiT0AivK",true))()
+	end)
+end
+coroutine.wrap(ADVECR_fake_script)()
+local function ZYUDSHP_fake_script() -- BestUI.Button_22.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_22)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/GEGEGG/main/FE_xester%5B1%5D.txt"))()
+	end)
+end
+coroutine.wrap(ZYUDSHP_fake_script)()
+local function FPXMBFE_fake_script() -- BestUI.Button_23.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_23)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/GEGEGG/main/FE_sonic%5B1%5D.txt"))()
+	end)
+end
+coroutine.wrap(FPXMBFE_fake_script)()
+local function SRTS_fake_script() -- BestUI.Button_24.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_24)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/GEGEGG/main/FE_caducus_or_somen%5B1%5D.txt"))()
+	end)
+end
+coroutine.wrap(SRTS_fake_script)()
+local function GYFXRRC_fake_script() -- BestUI.Button_25.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_25)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/FEERGG/main/FE_neko%5B1%5D.txt"))()
+	end)
+end
+coroutine.wrap(GYFXRRC_fake_script)()
+local function LWRXS_fake_script() -- BestUI.Button_26.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_26)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/GEGEGG/main/FE_distracted%5B1%5D.txt"))()
+	end)
+end
+coroutine.wrap(LWRXS_fake_script)()
+local function GTIEVW_fake_script() -- BestUI.Button_27.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_27)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/GEGEGG/main/FE_krystal_dance%5B1%5D.txt"))()
+	end)
+end
+coroutine.wrap(GTIEVW_fake_script)()
+local function SEVRE_fake_script() -- BestUI.Button_28.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_28)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/GEGEGG/main/FE_vr_headset%5B1%5D.lua"))()
+	end)
+end
+coroutine.wrap(SEVRE_fake_script)()
+local function NATLBKB_fake_script() -- BestUI.Button_29.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_29)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+	end)
+end
+coroutine.wrap(NATLBKB_fake_script)()
+local function YMSBMUE_fake_script() -- BestUI.TextButton.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, plr in pairs(game.Players:GetPlayers()) do
+			plr.Character.Humanoid.Health = 0
+		end
+	end)
+end
+coroutine.wrap(YMSBMUE_fake_script)()
+local function BBHGLN_fake_script() -- BestUI.TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, plr in pairs(game.Players:GetPlayers()) do
+			plr.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+		end
+	end)
+end
+coroutine.wrap(BBHGLN_fake_script)()
+local function ZSQKL_fake_script() -- BestUI.TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, plr in pairs(game.Players:GetPlayers()) do
+			plr:Kick()
+		end
+	end)
+end
+coroutine.wrap(ZSQKL_fake_script)()
+local function BYSW_fake_script() -- BestUI.TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.TextButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+			game.Workspace.Baseplate:Destroy()
+	end)
+end
+coroutine.wrap(BYSW_fake_script)()
+local function XINSJ_fake_script() -- BestUI.TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.TextButton_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, plr in pairs(game.Players:GetPlayers()) do
+			plr.Character.LeftLeg:Destroy()
+			plr.Character.RightLeg:Destroy()
+		end
+	end)
+end
+coroutine.wrap(XINSJ_fake_script)()
+local function VTZI_fake_script() -- BestUI.Button_30.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_30)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local TeleportService= game:GetService("TeleportService")
+		local ID = 537413528
+		local player = game.Players.LocalPlayer
+	
+		TeleportService:Teleport(ID, player)
+	end)
+end
+coroutine.wrap(VTZI_fake_script)()
+local function BWVLH_fake_script() -- BestUI.Button_31.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_31)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setjump = script.Parent.Parent.JumpBox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.JumpPower = setjump
+		end
+	end)
+end
+coroutine.wrap(BWVLH_fake_script)()
+local function JGJD_fake_script() -- BestUI.Button_32.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_32)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setspeed = script.Parent.Parent.SpeedBox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.WalkSpeed = setspeed
+		end
+	end)
+end
+coroutine.wrap(JGJD_fake_script)()
+local function TPWMV_fake_script() -- BestUI.Button_33.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_33)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Build%20A%20Boat%20For%20Treasure/BABFT"))()
+	end)
+end
+coroutine.wrap(TPWMV_fake_script)()
+local function XWHG_fake_script() -- BestUI.Button_34.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_34)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setjump = script.Parent.Parent.JumpBox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.JumpPower = setjump
+		end
+	end)
+end
+coroutine.wrap(XWHG_fake_script)()
+local function GHYZAW_fake_script() -- BestUI.Button_35.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_35)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setspeed = script.Parent.Parent.SpeedBox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.WalkSpeed = setspeed
+		end
+	end)
+end
+coroutine.wrap(GHYZAW_fake_script)()
+local function LRUMFYW_fake_script() -- BestUI.Button_36.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_36)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+	end)
+end
+coroutine.wrap(LRUMFYW_fake_script)()
+local function PLBBG_fake_script() -- BestUI.BestFrame.Dragify 
+	local script = Instance.new('LocalScript', BestUI.BestFrame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+coroutine.wrap(PLBBG_fake_script)()
+local function LGOSQ_fake_script() -- BestUI.Button_37.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_37)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeyocutgHAH12/RGGSEGEGS/main/Eclipse_GUI.txt"))();
+	end)
+end
+coroutine.wrap(LGOSQ_fake_script)()
+local function UXTV_fake_script() -- BestUI.Button_38.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button_38)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Urbanstorms/DomainX/main/Squid%20Game.lua'),true))()
+	end)
+end
+coroutine.wrap(UXTV_fake_script)()
+local function MRMNRC_fake_script() -- BestUI.Button1.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button1)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.Health = 999999999999999999
+			hum.MaxHealth = 999999999999999999
+		end
+	end)
+end
+coroutine.wrap(MRMNRC_fake_script)()
+local function SSPIYFJ_fake_script() -- BestUI.Button2.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setjump = script.Parent.Parent.JumpBox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.JumpPower = setjump
+		end
+	end)
+end
+coroutine.wrap(SSPIYFJ_fake_script)()
+local function XUQJRPL_fake_script() -- BestUI.Button3.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setspeed = script.Parent.Parent.SpeedBox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.WalkSpeed = setspeed
+		end
+	end)
+end
+coroutine.wrap(XUQJRPL_fake_script)()
+local function AFIIFEN_fake_script() -- BestUI.Button1_2.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button1_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		repeat wait() 
+		until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+		local mouse = game.Players.LocalPlayer:GetMouse() 
+		repeat wait() until mouse
+		local plr = game.Players.LocalPlayer 
+		local torso = plr.Character.Head 
+		local flying = false
+		local deb = true 
+		local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local maxspeed = 50 
+		local speed = 0 
+	
+		function Fly() 
+			local bg = Instance.new("BodyGyro", torso) 
+			bg.P = 9e4 
+			bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+			bg.cframe = torso.CFrame 
+			local bv = Instance.new("BodyVelocity", torso) 
+			bv.velocity = Vector3.new(0,0.1,0) 
+			bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+			repeat wait() 
+				plr.Character.Humanoid.PlatformStand = true 
+				if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+					speed = speed+.5+(speed/maxspeed) 
+					if speed > maxspeed then 
+						speed = maxspeed 
+					end 
+				elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+					speed = speed-1 
+					if speed < 0 then 
+						speed = 0 
+					end 
+				end 
+				if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+					lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+				elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				else 
+					bv.velocity = Vector3.new(0,0.1,0) 
+				end 
+				bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+			until not flying 
+			ctrl = {f = 0, b = 0, l = 0, r = 0} 
+			lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+			speed = 0 
+			bg:Destroy() 
+			bv:Destroy() 
+			plr.Character.Humanoid.PlatformStand = false 
+		end 
+		mouse.KeyDown:connect(function(key) 
+			if key:lower() == "e" then 
+				if flying then flying = false 
+				else 
+					flying = true 
+					Fly() 
+				end 
+			elseif key:lower() == "w" then 
+				ctrl.f = 1 
+			elseif key:lower() == "s" then 
+				ctrl.b = -1 
+			elseif key:lower() == "a" then 
+				ctrl.l = -1 
+			elseif key:lower() == "d" then 
+				ctrl.r = 1 
+			end 
+		end) 
+		mouse.KeyUp:connect(function(key) 
+			if key:lower() == "w" then 
+				ctrl.f = 0 
+			elseif key:lower() == "s" then 
+				ctrl.b = 0 
+			elseif key:lower() == "a" then 
+				ctrl.l = 0 
+			elseif key:lower() == "d" then 
+				ctrl.r = 0 
+			end 
+		end)
+		Fly()
+	end)
+end
+coroutine.wrap(AFIIFEN_fake_script)()
+local function DNMXUXW_fake_script() -- BestUI.Button1_3.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button1_3)
+
+	Source = script.Parent.Parent.ExecuteBox
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(Source.Text)()
+	end)
+end
+coroutine.wrap(DNMXUXW_fake_script)()
+local function XKXECQ_fake_script() -- BestUI.Button1_4.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Button1_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.ExecuteBox.Text = ""
+	end)
+end
+coroutine.wrap(XKXECQ_fake_script)()
+local function TYAT_fake_script() -- BestUI.DescriptionPlayerText.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.DescriptionPlayerText)
+
+	script.Parent.Text = "Welcome".." "..game.Players.LocalPlayer.Name.."!!".." ".."Thank You For Using BestUI!! :D"
+end
+coroutine.wrap(TYAT_fake_script)()
+local function MVCUQ_fake_script() -- BestUI.PlayerImage.Script 
+	local script = Instance.new('Script', BestUI.PlayerImage)
+
+	char = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"}
+	
+	function player()
+		plyr = script.Parent; repeat plyr=plyr.Parent until plyr:IsA("Player"); return plyr
+	end
+	
+	function onMouseEnter()
+		Leave = false
+	
+		repeat wait()
+			script.Parent.Important.BackgroundTransparency = script.Parent.Important.BackgroundTransparency -0.1
+			if Leave then break end
+		until script.Parent.Important.BackgroundTransparency <= 0.3
+		script.Parent.Important[string.upper(char[20])..char[5]..char[24]..char[20]]=string.upper(char[16])..char[12]..char[1]..char[25]..char[5]..char[18]..string.upper(char[9])..char[13]..char[1]..char[7]..char[5].." "..string.upper(char[2])..char[25].." "..char[1]..char[1]..char[19]..char[5]..string.reverse(tostring(9)..tostring(6))
+	end
+	
+	function onMouseLeave()
+		Leave = true
+	
+		repeat wait()
+			script.Parent.Important.BackgroundTransparency = script.Parent.Important.BackgroundTransparency + 0.1
+			if not Leave then break end
+		until script.Parent.Important.BackgroundTransparency >= 1
+	end
+	
+	script.Parent.MouseEnter:connect(onMouseEnter)
+	script.Parent.MouseLeave:connect(onMouseLeave)
+	
+	script.Parent.Image = "http://www.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&Format=Png&username="..player().Name
+end
+coroutine.wrap(MVCUQ_fake_script)()
+local function YGTEE_fake_script() -- BestUI.Open.LocalScript 
+	local script = Instance.new('LocalScript', BestUI.Open)
+
+	local OpenBtn = script.Parent
+	local BestFrame = script.Parent.Parent.BestFrame
+	OpenBtn.MouseButton1Click:Connect(function (click)
+		if BestFrame.Visible == false then
+			BestFrame.Visible = true
+			script.Parent.TextLabel.Text = "Close"
+		else
+			BestFrame.Visible = false
+		script.Parent.TextLabel.Text = "Open"
+		end
+	end)
+end
+coroutine.wrap(YGTEE_fake_script)()
