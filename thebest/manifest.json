@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-pilot-aura-sell-sky-fix-5-dc511e8fc05eef5e",
+  "release": "v016-aura-visibility-toggle-6-890f33d90f6c8622",
   "manifest": {
-    "bytes": 119423,
-    "sha256": "d50d4b8ca5954acc8e56efb2709e4e750ed9e55d87457281f0741a6eec0b183b"
+    "bytes": 119421,
+    "sha256": "5a459cf1039512da7803558d59672d5dff4a6215eb1bf50ec9fe3cd6d3742a4e"
   }
 }
