@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-arena-farm-sell-fix-3-1b10bc0ddd6e3a1e",
+  "release": "v016-visuals-native-sell-fix-4-d5facec28d94358e",
   "manifest": {
-    "bytes": 115734,
-    "sha256": "e558a66a2393d995a14006a80e11996d6d0d1aaf180dd1b63acaab019f40d8ce"
+    "bytes": 119290,
+    "sha256": "2e3ddfb25f0f183a6877e69e0a6715313222a34944390848bd4b192055bd0e61"
   }
 }
