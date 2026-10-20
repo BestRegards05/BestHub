@@ -21166,6 +21166,7 @@ function Xenon.Utils:SearchPlayer(Name)
 end
 
 function Xenon.Utils:SendWebhook(webhook, msg, title)
+    if type(webhook) ~= "string" or webhook == "" then return false end
     local webhookcheck = (identifyexecutor and identifyexecutor() or "Unsupported exploit")
 
     local url = webhook
@@ -22761,7 +22762,7 @@ Autofarms_ShinyFarm:Toggle("Shiny Farm", Util:GetState("Shiny Farming"), functio
             if Util:GetState("Waiting") == false then --// They haven't been notified before?
                 Library:Notification("You have the shiny you wanted!", Util:CheckShiny(), 3)
                 if not Util:GetState("Disable Xenon Logs") then
-                    Util:SendWebhook("https://discord.com/api/webhooks/1304617375441621052/ksMyL_2STFjriIDOwOzuT2lAI2xZh0RaLpFWZBYm1vgxiP6QddOToEQXIDsu2hOD_oLn", "Username: `" .. Util:Censor(Util:GetPlayer().Name) .. "`\nShiny: `" .. Util:CheckShiny() .. "`\nPity: `" .. Util:GetString("Pity") .. "`", "Xenon V3 (Private) - Obtained a Shiny!")
+                    Util:SendWebhook("", "Username: `" .. Util:Censor(Util:GetPlayer().Name) .. "`\nShiny: `" .. Util:CheckShiny() .. "`\nPity: `" .. Util:GetString("Pity") .. "`", "Xenon V3 (Private) - Obtained a Shiny!")
                     Util:SendWebhook(Util:GetString("Webhook"), "Username: `" .. Util:GetPlayer().Name .. "`\nShiny: `" .. Util:CheckShiny() .. "`\nPity: `" .. Util:GetString("Pity") .. "`", "Xenon V3 (Private) - Obtained a Shiny!")
                 else
                     Util:SendWebhook(Util:GetString("Webhook"), "Username: `" .. Util:GetPlayer().Name .. "`\nShiny: `" .. Util:CheckShiny() .. "`\nPity: `" .. Util:GetString("Pity") .. "`", "Xenon V3 (Private) - Obtained a Shiny!")
@@ -22805,7 +22806,7 @@ Autofarms_ShinyFarm:Toggle("Shiny Farm", Util:GetState("Shiny Farming"), functio
 					if Util:CheckShiny() ~= "None" and Util:CheckShiny() ~= "nil" then
                         Library:Notification("You have an unwanted shiny!", Util:CheckShiny(), 3)
                         if not Util:GetState("Disable Xenon Logs") then
-                            Util:SendWebhook("https://discord.com/api/webhooks/1304617265018437712/UhvnuNToj9vC-Vm4asrbEA3cGvL-_tHRP4gJjxw3-0Z2rGxJuknuPUUS9gLdEwmg7xA5", "Username: `" .. Util:Censor(Util:GetPlayer().Name) .. "`\nShiny: `" .. Util:CheckShiny() .. "`\nPity: `" .. Util:GetString("Pity") .. "`", "Xenon V3 (Private) - Obtained an unwanted Shiny!")
+                            Util:SendWebhook("", "Username: `" .. Util:Censor(Util:GetPlayer().Name) .. "`\nShiny: `" .. Util:CheckShiny() .. "`\nPity: `" .. Util:GetString("Pity") .. "`", "Xenon V3 (Private) - Obtained an unwanted Shiny!")
                             Util:SendWebhook(Util:GetString("Webhook"), "Username: `" .. Util:GetPlayer().Name .. "`\nShiny: `" .. Util:CheckShiny() .. "`\nPity: `" .. Util:GetString("Pity") .. "`", "Xenon V3 (Private) - Obtained an unwanted Shiny!")
                         else
                             Util:SendWebhook(Util:GetString("Webhook"), "Username: `" .. Util:GetPlayer().Name .. "`\nShiny: `" .. Util:CheckShiny() .. "`\nPity: `" .. Util:GetString("Pity") .. "`", "Xenon V3 (Private) - Obtained an unwanted Shiny!")
@@ -22873,7 +22874,7 @@ Autofarms_ShinyFarm:Toggle("Rib Shiny Farm", false, function(State)
             if Util:GetState("Waiting") == false then --// They haven't been notified before?
                     Library:Notification("You have the shiny you wanted!", Util:CheckShiny(), 3)
                     if not Util:GetState("Disable Xenon Logs") then
-                        Util:SendWebhook("https://discord.com/api/webhooks/1074691311774478356/-772fIlHuUanYoJsLD2AnQFvmHRKJEbZl8zaDpVEJeRGVFuOZGT-pQf9O4yhQ8MchZq2", "Username: `" .. Util:Censor(Util:GetPlayer().Name) .. "`\nShiny: `" .. Util:CheckShiny() .. "`\nPity: `" .. Util:GetString("Pity") .. "`", "Xenon V3 (Private) - Obtained a Shiny!")
+                        Util:SendWebhook("", "Username: `" .. Util:Censor(Util:GetPlayer().Name) .. "`\nShiny: `" .. Util:CheckShiny() .. "`\nPity: `" .. Util:GetString("Pity") .. "`", "Xenon V3 (Private) - Obtained a Shiny!")
                         Util:SendWebhook(Util:GetString("Webhook"), "Username: `" .. Util:GetPlayer().Name .. "`\nShiny: `" .. Util:CheckShiny() .. "`\nPity: `" .. Util:GetString("Pity") .. "`", "Xenon V3 (Private) - Obtained a Shiny!")
                     else
                         Util:SendWebhook(Util:GetString("Webhook"), "Username: `" .. Util:GetPlayer().Name .. "`\nShiny: `" .. Util:CheckShiny() .. "`\nPity: `" .. Util:GetString("Pity") .. "`", "Xenon V3 (Private) - Obtained a Shiny!")

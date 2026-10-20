@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-visuals-native-sell-fix-4-d5facec28d94358e",
+  "release": "v016-visuals-native-sell-fix-4-b79bdbaeb25f4c7e",
   "manifest": {
     "bytes": 119290,
-    "sha256": "2e3ddfb25f0f183a6877e69e0a6715313222a34944390848bd4b192055bd0e61"
+    "sha256": "fa56dfe8e2658ca177829f652d389bf4c9913cb9b691af46761c0dd15806b9e2"
   }
 }

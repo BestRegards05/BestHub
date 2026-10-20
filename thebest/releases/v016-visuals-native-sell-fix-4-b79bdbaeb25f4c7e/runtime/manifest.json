@@ -2,14 +2,14 @@
   "version": "v016",
   "revision": "visuals-native-sell-fix-4",
   "base": "v015",
-  "sourceSha256": "65cde8ccf39395df3304631a3fae6a83b32c9d9ae6193bd661db848eafe40da8",
-  "originalSourceBytes": 55662585,
-  "mainBytes": 1713061,
+  "sourceSha256": "4dd5f27624512fe44d3f9516276ad6a34198d360f95840fabc337943180d1e2e",
+  "originalSourceBytes": 55662294,
+  "mainBytes": 1712770,
   "bootBytes": 6229,
   "loaderBytes": 270,
   "literalReferences": 522,
   "uniqueResources": 517,
-  "mainSha256": "865129181ed417b4c31687cdb817e7cfc44058413a319b33d2df6d057d1df9c7",
+  "mainSha256": "594e8b2efc84a02b8b9f030459f44c4548206b8f193ffa5c36cfa32dc16114a7",
   "bootSha256": "364e05c5b6f73f8f4abf38cd005185366ec5193686ab4e059fa642dd0cc828f1",
   "resources": {
     "0819773c991e75e140c036dfb6da9a0d3c18a429ba6c06e71154a552b95fc0ec": {
