@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-aura-visibility-toggle-6-890f33d90f6c8622",
+  "release": "v016-interface-movement-sell-7-502f1c8fb31b28ac",
   "manifest": {
-    "bytes": 119421,
-    "sha256": "5a459cf1039512da7803558d59672d5dff4a6215eb1bf50ec9fe3cd6d3742a4e"
+    "bytes": 119423,
+    "sha256": "0e5d1de7fae1a04ca8c4cfc89b9185b2004d2331fa5a8ac194b13dfcfa1b7ee3"
   }
 }
