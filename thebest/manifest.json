@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-state-safety-deal-8-bf85a6dd26b1df8e",
+  "release": "v016-item-farm-movement-9-1f9060aa66dc86af",
   "manifest": {
-    "bytes": 119411,
-    "sha256": "7ed573d9e392203a10fbffa0a7b39b2cc8b82d9364482dd8b06f58f69f2bab64"
+    "bytes": 119413,
+    "sha256": "d61c4a1d9457807941b576b873566eaf07587109e9762080a28b58f8cbb8cf5b"
   }
 }
