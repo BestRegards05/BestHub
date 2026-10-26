@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-item-pickup-pacing-12-c9ff93b9c8b21eed",
+  "release": "v016-map-sweep-timing-13-b2eb57bead99676e",
   "manifest": {
-    "bytes": 119415,
-    "sha256": "106d522a4fd75eaee711ed74a91f8f22db1f57b7d3c10f3fec29ced8dff16ea5"
+    "bytes": 119411,
+    "sha256": "e1864e76a2b4485002b66f1267df1377c4a0b6764ce42e1518726468a0e85775"
   }
 }
