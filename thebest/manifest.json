@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-rollback-farms-10-f4238adad00239dd",
+  "release": "v016-xenon-farms-start-off-11-be803b2631b48a7d",
   "manifest": {
-    "bytes": 119407,
-    "sha256": "bf61366f00eb0bad6975c9f4eb5be1ffe0365e36ea997b721ef9dddd9a365ad6"
+    "bytes": 119421,
+    "sha256": "7c994d1110335d5519ceb97850bc878f69724e7db20949ea1c9d68085698e8fe"
   }
 }
