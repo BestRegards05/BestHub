@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-xenon-farms-start-off-11-be803b2631b48a7d",
+  "release": "v016-item-pickup-pacing-12-c9ff93b9c8b21eed",
   "manifest": {
-    "bytes": 119421,
-    "sha256": "7c994d1110335d5519ceb97850bc878f69724e7db20949ea1c9d68085698e8fe"
+    "bytes": 119415,
+    "sha256": "106d522a4fd75eaee711ed74a91f8f22db1f57b7d3c10f3fec29ced8dff16ea5"
   }
 }
