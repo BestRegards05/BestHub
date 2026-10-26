@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-map-sweep-timing-13-b2eb57bead99676e",
+  "release": "v016-skin-flash-capture-14-5713c0b930bdc860",
   "manifest": {
-    "bytes": 119411,
-    "sha256": "e1864e76a2b4485002b66f1267df1377c4a0b6764ce42e1518726468a0e85775"
+    "bytes": 119415,
+    "sha256": "af0197a8e3f5a4bb4183a881fd859649e70de42815894a087201ef21f4a16e4d"
   }
 }
