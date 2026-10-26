@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-item-farm-movement-9-1f9060aa66dc86af",
+  "release": "v016-rollback-farms-10-f4238adad00239dd",
   "manifest": {
-    "bytes": 119413,
-    "sha256": "d61c4a1d9457807941b576b873566eaf07587109e9762080a28b58f8cbb8cf5b"
+    "bytes": 119407,
+    "sha256": "bf61366f00eb0bad6975c9f4eb5be1ffe0365e36ea997b721ef9dddd9a365ad6"
   }
 }
