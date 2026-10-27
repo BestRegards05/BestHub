@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-skin-auras-catalog-18-2208d41fdf640833",
+  "release": "v016-base-startup-pacing-19-902789e45bf42267",
   "manifest": {
-    "bytes": 119415,
-    "sha256": "aa40b34e43824cbceabafba4cac4f02cab0f86cf50bdb44c1b85a15d2b72da16"
+    "bytes": 119417,
+    "sha256": "27adfcc2cd6a0c0db71016225faac28159cc2de5079dc5f2362de8e29d77d120"
   }
 }
