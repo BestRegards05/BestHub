@@ -37,6 +37,7 @@ local allSaveParts = {
 }
 
 local visualClasses = {
+	UnionOperation = true,
 	MeshPart = true,
 	Part = true,
 	SpecialMesh = true,
@@ -135,9 +136,74 @@ local function ensureAttachmentID(attachment)
     end
     return id
 end
+-- Native serialization retains UnionOperation CSG, including private mesh data.
+-- The API can be denied outside Studio/Open Cloud; never replace a failed union with a blank part.
+local function nativeStandUnionService()
+ local ok, service = pcall(function() return game:GetService("SerializationService") end)
+ if not ok or not service then error("UnionOperation needs SerializationService access; this executor/client does not provide it. Nothing was saved or replaced.") end
+ return service
+end
+local function validNativeStandUnion(part)
+ if typeof(part) ~= "Instance" or part.ClassName ~= "UnionOperation" then return false end
+ local size = part.Size
+ return size.X > 0 and size.Y > 0 and size.Z > 0
+  and size.X < math.huge and size.Y < math.huge and size.Z < math.huge
+end
+local function destroyNativeStandUnionList(instances)
+ if type(instances) == "table" then
+  for _, instance in pairs(instances) do
+   if typeof(instance) == "Instance" then instance:Destroy() end
+  end
+ end
+end
+local function decodeNativeStandUnion(payload)
+ if type(payload) ~= "table" or payload.format ~= "roblox-native-union-v1"
+  or type(payload.hex) ~= "string" or #payload.hex == 0 or #payload.hex % 2 ~= 0
+  or #payload.hex > 134217728 or payload.hex:find("[^0-9a-f]") then
+  error("Captured UnionOperation has invalid native geometry data")
+ end
+ local bytes = payload.hex:gsub("..", function(pair) return string.char(tonumber(pair, 16)) end)
+ local service = nativeStandUnionService()
+ local ok, instances = pcall(function() return service:DeserializeInstancesAsync(buffer.fromstring(bytes)) end)
+ if not ok then error("Cannot restore UnionOperation native geometry; SerializationService denied or incompatible: " .. tostring(instances)) end
+ if type(instances) ~= "table" or #instances ~= 1 or not validNativeStandUnion(instances[1]) then
+  destroyNativeStandUnionList(instances)
+  error("Native geometry did not restore exactly one valid UnionOperation")
+ end
+ local result = instances[1]
+ result.Parent = nil
+ if #result:GetChildren() ~= 0 then
+  result:Destroy()
+  error("Captured native union unexpectedly contains children")
+ end
+ return result
+end
+local function serializeNativeStandUnion(inst)
+ local clone = inst:Clone()
+ if not clone then error("Cannot clone UnionOperation native geometry: " .. tostring(inst.Name)) end
+ clone.Parent = nil
+ for _, child in ipairs(clone:GetChildren()) do child:Destroy() end
+ local ok, result = pcall(function()
+  local service = nativeStandUnionService()
+  local bytes = service:SerializeInstancesAsync({clone})
+  if typeof(bytes) ~= "buffer" or buffer.len(bytes) == 0 or buffer.len(bytes) > 67108864 then
+   error("SerializationService returned invalid UnionOperation geometry")
+  end
+  local payload = {format = "roblox-native-union-v1", hex = (buffer.tostring(bytes):gsub(".", function(char) return string.format("%02x", string.byte(char)) end))}
+  local restored = decodeNativeStandUnion(payload)
+  local a, b = clone.Size, restored.Size
+  local sameSize = math.abs(a.X-b.X) < 0.00001 and math.abs(a.Y-b.Y) < 0.00001 and math.abs(a.Z-b.Z) < 0.00001
+  restored:Destroy()
+  if not sameSize then error("UnionOperation native round-trip changed its saved size") end
+  return payload
+ end)
+ clone:Destroy()
+ if not ok then error("Cannot capture UnionOperation " .. tostring(inst.Name) .. ": " .. tostring(result)) end
+ return result
+end
 local function saveInstance(inst, parentPart)
 	local data = { ClassName = inst.ClassName, Name = inst.Name, Properties = {}, Children = {} }
-	if inst:IsA("MeshPart") or inst:IsA("Part") then
+	if inst:IsA("MeshPart") or inst:IsA("Part") or inst:IsA("UnionOperation") then
 		local props = {
 			"MeshId",
 			"TextureID",
@@ -178,6 +244,10 @@ local function saveInstance(inst, parentPart)
 			end
 		end
 		data.Properties.SizeOrig = saveProp(inst.Size)
+		if inst:IsA("UnionOperation") then
+			data.UnionGeometry = serializeNativeStandUnion(inst)
+			data.Properties.UsePartColor = inst.UsePartColor
+		end
 		for _, child in ipairs(inst:GetChildren()) do
 			if visualClasses[child.ClassName] then
 				table.insert(data.Children, saveInstance(child, inst))
@@ -477,7 +547,7 @@ local function markBaseStandPartData(data)
 	if type(data) ~= "table" then
 		return
 	end
-	if data.ClassName == "MeshPart" or data.ClassName == "Part" then
+	if data.ClassName == "MeshPart" or data.ClassName == "Part" or data.ClassName == "UnionOperation" then
 		data.Properties = data.Properties or {}
 		data.Properties.PreserveSize = true
 	end
@@ -679,7 +749,7 @@ local function cloneVisualSource(source)
     if not isRig(source) then error("Unsupported rig: need Head, Torso/UpperTorso and at least six body parts.") end
     if not source.Archivable then error("Source Archivable is false. Enable it in your own place and retry.") end
     for _, item in ipairs(source:GetDescendants()) do
-        if item:IsA("BasePart") and item.ClassName ~= "Part" and item.ClassName ~= "MeshPart" then
+        if item:IsA("BasePart") and item.ClassName ~= "Part" and item.ClassName ~= "MeshPart" and item.ClassName ~= "UnionOperation" then
             error("Unsupported visual part class: " .. item.ClassName .. " (" .. item.Name .. "). Convert it to a MeshPart in your own place.")
         end
         if (visualClasses[item.ClassName] or item:IsA("Folder")) and not item.Archivable then
@@ -752,7 +822,7 @@ local function captureData(source, auraCharacter)
     normalizeBodyKeys(data)
     local geometry = 0
     local function count(part)
-        if part.ClassName == "MeshPart" or part.ClassName == "Part" then geometry = geometry + 1 end
+        if part.ClassName == "MeshPart" or part.ClassName == "Part" or part.ClassName == "UnionOperation" then geometry = geometry + 1 end
         for _, child in ipairs(part.Children or {}) do count(child) end
     end
     for _, slot in pairs(data) do count(slot) end

@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-outfit-body-classic-15-25dffcd3188f83ad",
+  "release": "v016-captured-unions-16-c3ecb1b6ea221c9f",
   "manifest": {
-    "bytes": 119417,
-    "sha256": "44afcd0c3f001421dbcf613c29bffa6c2423500233f9ff8b86bf04aa318722f4"
+    "bytes": 119409,
+    "sha256": "e3602528f2d2e725c7adc6a85e12adafccbc2622d2954d2cc7b87d0058c75383"
   }
 }
