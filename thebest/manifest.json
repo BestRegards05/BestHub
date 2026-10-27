@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-captured-unions-16-c3ecb1b6ea221c9f",
+  "release": "v016-skin-auras-catalog-18-2208d41fdf640833",
   "manifest": {
-    "bytes": 119409,
-    "sha256": "e3602528f2d2e725c7adc6a85e12adafccbc2622d2954d2cc7b87d0058c75383"
+    "bytes": 119415,
+    "sha256": "aa40b34e43824cbceabafba4cac4f02cab0f86cf50bdb44c1b85a15d2b72da16"
   }
 }
