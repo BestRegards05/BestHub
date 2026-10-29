@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-base-startup-pacing-19-902789e45bf42267",
+  "release": "v016-hitbox-shrink-toggle-20-4506d382598d6421",
   "manifest": {
-    "bytes": 119417,
-    "sha256": "27adfcc2cd6a0c0db71016225faac28159cc2de5079dc5f2362de8e29d77d120"
+    "bytes": 119419,
+    "sha256": "f48f7c0b7363e186ae99f5ec8ebf678ad7a3c3fcf9e88cf5cca5a58dc6a7dbed"
   }
 }
