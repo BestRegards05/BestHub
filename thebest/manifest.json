@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-client-workload-21-92ae349b3029d017",
+  "release": "v016-money-persistence-22-265162ec9f58d260",
   "manifest": {
-    "bytes": 119409,
-    "sha256": "54efd3f862da81b01f4bbbf22be9a6bef49b473ef43669a06c54b6cfbb08f81d"
+    "bytes": 119413,
+    "sha256": "5056185c5fb1bb7fda7f6db34a1076131124c44e35d51e444337ddd7e9bd37cb"
   }
 }
