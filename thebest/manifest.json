@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-hitbox-shrink-toggle-20-4506d382598d6421",
+  "release": "v016-client-workload-21-92ae349b3029d017",
   "manifest": {
-    "bytes": 119419,
-    "sha256": "f48f7c0b7363e186ae99f5ec8ebf678ad7a3c3fcf9e88cf5cca5a58dc6a7dbed"
+    "bytes": 119409,
+    "sha256": "54efd3f862da81b01f4bbbf22be9a6bef49b473ef43669a06c54b6cfbb08f81d"
   }
 }
