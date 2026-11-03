@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-money-persistence-22-265162ec9f58d260",
+  "release": "v016-optimization-system-23-lighting-fix-a7659bf5d4f594f8",
   "manifest": {
-    "bytes": 119413,
-    "sha256": "5056185c5fb1bb7fda7f6db34a1076131124c44e35d51e444337ddd7e9bd37cb"
+    "bytes": 119443,
+    "sha256": "bc51bccc71f1267ec156f0ce4cc7da24c724dd941bd330e3f008c9f4a100f298"
   }
 }
