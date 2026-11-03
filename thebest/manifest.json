@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-optimization-system-23-867b329a56316e7c",
+  "release": "v016-money-persistence-22-265162ec9f58d260",
   "manifest": {
-    "bytes": 119417,
-    "sha256": "4618fa200800fea138de1ff3a87044f3609505a13dc23d36fda75ff339e9d5f4"
+    "bytes": 119413,
+    "sha256": "5056185c5fb1bb7fda7f6db34a1076131124c44e35d51e444337ddd7e9bd37cb"
   }
 }
