@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-optimization-system-23-lighting-fix-a7659bf5d4f594f8",
+  "release": "v016-stand-roll-skins-25-829a778c4f2cc1b0",
   "manifest": {
-    "bytes": 119443,
-    "sha256": "bc51bccc71f1267ec156f0ce4cc7da24c724dd941bd330e3f008c9f4a100f298"
+    "bytes": 119412,
+    "sha256": "d162ae20d8d0965387767e838da81a3765d2113734b4e53689bb3cfb9dc72c44"
   }
 }
