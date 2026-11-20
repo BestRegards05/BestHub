@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-esp-keybind-27-b12f4dd8afa13706",
+  "release": "v016-menu-controls-profiles-28-ac1cfd81dd978f17",
   "manifest": {
-    "bytes": 119402,
-    "sha256": "a7026442dd24f9c3fca910b2c9a7db40740d5a90d6ace8c3ac33ae79359f4c4d"
+    "bytes": 119424,
+    "sha256": "4445b2fdddcb3058435a4af6a77f849093b2aef519aaab4a5345c27ba0e71a26"
   }
 }
