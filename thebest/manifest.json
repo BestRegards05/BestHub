@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-stand-roll-skins-25-829a778c4f2cc1b0",
+  "release": "v016-esp-keybind-27-b12f4dd8afa13706",
   "manifest": {
-    "bytes": 119412,
-    "sha256": "d162ae20d8d0965387767e838da81a3765d2113734b4e53689bb3cfb9dc72c44"
+    "bytes": 119402,
+    "sha256": "a7026442dd24f9c3fca910b2c9a7db40740d5a90d6ace8c3ac33ae79359f4c4d"
   }
 }
