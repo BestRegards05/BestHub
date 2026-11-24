@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-keybind-notification-options-32-6d0ac0d93bd78e4e",
+  "release": "v016-core-honk-33-3cb52c3d9cbee18b",
   "manifest": {
-    "bytes": 119437,
-    "sha256": "de6d62579849d96f7cabaf864488bc45817239a7dc6317bd3d10c70d60b8ad02"
+    "bytes": 119399,
+    "sha256": "37afa12c9a0eb511a86e98f2c8aa0e122945d071ea81d06b62dd06ffd494888b"
   }
 }
