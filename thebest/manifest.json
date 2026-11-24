@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-environment-health-31-cdb32aa06a72f7a1",
+  "release": "v016-keybind-notification-options-32-6d0ac0d93bd78e4e",
   "manifest": {
-    "bytes": 119417,
-    "sha256": "a0584f767423b2b37c7308cb90a1a134520dd586a5c68cf1e92e896ec80992da"
+    "bytes": 119437,
+    "sha256": "de6d62579849d96f7cabaf864488bc45817239a7dc6317bd3d10c70d60b8ad02"
   }
 }
