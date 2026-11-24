@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-shuffle-input-forwarding-29-876d8aa50d7bf6d6",
+  "release": "v016-tools-dynamic-health-30-8c17ef812d18ef22",
   "manifest": {
-    "bytes": 119428,
-    "sha256": "80837bb066562dbe13f3a3baa6ca27a012a30fbc6a223a87ffe5f36ed542a77b"
+    "bytes": 119420,
+    "sha256": "4cf7bad04d22cf947f22e4c5b63a33a5b012ddb1f9df08e140ef5aabe6e0d748"
   }
 }
