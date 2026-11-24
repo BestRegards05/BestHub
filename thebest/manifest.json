@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-tools-dynamic-health-30-8c17ef812d18ef22",
+  "release": "v016-environment-health-31-cdb32aa06a72f7a1",
   "manifest": {
-    "bytes": 119420,
-    "sha256": "4cf7bad04d22cf947f22e4c5b63a33a5b012ddb1f9df08e140ef5aabe6e0d748"
+    "bytes": 119417,
+    "sha256": "a0584f767423b2b37c7308cb90a1a134520dd586a5c68cf1e92e896ec80992da"
   }
 }
