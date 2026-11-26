@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-cosmetic-catalog-34-3733364dadf55e2b",
+  "release": "v016-game-hud-35-bf9740f5e2616bd0",
   "manifest": {
-    "bytes": 119413,
-    "sha256": "12f73fe02018bd4b5466a76a5771cabfe3fe310e0ee524e809187ed9babbe3c6"
+    "bytes": 119397,
+    "sha256": "8851133f90cac2c5ce71a28a5a2011d450fc449bd643b2e8c910fa53b23ec88b"
   }
 }
