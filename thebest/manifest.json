@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-rollback-honk-36-8a5b1e4290d20ee9",
+  "release": "v016-captured-hud-37-e3aa3c24dc4d3b84",
   "manifest": {
-    "bytes": 119407,
-    "sha256": "20de7f0a70f63b0ebc914fa625b648ba9100e03fd4847a722999a1441801f845"
+    "bytes": 119405,
+    "sha256": "9b11eb34fed63336f7e0ff69c24e74cfa344bdd231f13731683bede08745a9e5"
   }
 }
