@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-game-hud-35-bf9740f5e2616bd0",
+  "release": "v016-rollback-honk-36-8a5b1e4290d20ee9",
   "manifest": {
-    "bytes": 119397,
-    "sha256": "8851133f90cac2c5ce71a28a5a2011d450fc449bd643b2e8c910fa53b23ec88b"
+    "bytes": 119407,
+    "sha256": "20de7f0a70f63b0ebc914fa625b648ba9100e03fd4847a722999a1441801f845"
   }
 }
