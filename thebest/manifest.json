@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-hud-activation-38-51ea04316cf77892",
+  "release": "v016-semantic-hud-39-7c342cc9ee295640",
   "manifest": {
-    "bytes": 119409,
-    "sha256": "022d980205145a3cdf6284a9605ed014b4017aa5186ec137aa53c50e54858519"
+    "bytes": 119405,
+    "sha256": "2ba0a8bd68e7d2097f58530d82f7dc01f8dc2e7d5108ca085b45d36b5788bbac"
   }
 }
