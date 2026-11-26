@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-core-honk-33-3cb52c3d9cbee18b",
+  "release": "v016-cosmetic-catalog-34-3733364dadf55e2b",
   "manifest": {
-    "bytes": 119399,
-    "sha256": "37afa12c9a0eb511a86e98f2c8aa0e122945d071ea81d06b62dd06ffd494888b"
+    "bytes": 119413,
+    "sha256": "12f73fe02018bd4b5466a76a5771cabfe3fe310e0ee524e809187ed9babbe3c6"
   }
 }
