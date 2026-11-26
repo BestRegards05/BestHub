@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-captured-hud-37-e3aa3c24dc4d3b84",
+  "release": "v016-hud-activation-38-51ea04316cf77892",
   "manifest": {
-    "bytes": 119405,
-    "sha256": "9b11eb34fed63336f7e0ff69c24e74cfa344bdd231f13731683bede08745a9e5"
+    "bytes": 119409,
+    "sha256": "022d980205145a3cdf6284a9605ed014b4017aa5186ec137aa53c50e54858519"
   }
 }
