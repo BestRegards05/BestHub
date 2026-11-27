@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "release": "v016-complete-hud-40-33d9b56f71cc2b87",
+  "release": "v016-hud-polish-41-6bbe8dc2099845ba",
   "manifest": {
-    "bytes": 119405,
-    "sha256": "3f4db124405d2e4c82bcecd004f16c550c011cae19d9409be46f905fc83bc0e2"
+    "bytes": 119401,
+    "sha256": "3d1ab308542c2c8eefc011969abb7a797401201eebf4fa66252e7f3a42662eb1"
   }
 }
